@@ -3,7 +3,7 @@ echo -n "What is s?"
 read s
 echo -n "What is e?"
 read e
-echo -n "How many between?"
+echo -n "Length of list?"
 read howmany
 howmany=$(($howmany-1))
 step=$(echo "($e-$s)/$howmany" | bc -l )
