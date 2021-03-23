@@ -12,13 +12,14 @@ event graphs (i++) {
   fprintf (stderr, "%g %g %g\n", t, s.min, s.max);
 }
 
-event images (t+= 4./300.) {
-  output_ppm (l, fp, min = 0, max = LEVEL);
+event images (t += 4./300.) {
+  output_ppm (h, linear = true);
+
   scalar l[];
   foreach()
     l[] = level;
   static FILE * fp = fopen ("grid.ppm", "w");
-  output_ppm (l, fp, min = 0, max = 8);
+  output_ppm (l, fp, min = 0, max = LEVEL);
 }
 
 event end (t = 4) {
@@ -30,7 +31,7 @@ event adapt (i++) {
 }
 
 int main() {
-  origin(-0.5, -0.5);
+  origin (-0.5, -0.5);
   init_grid (1 << LEVEL);
   run();
 }
