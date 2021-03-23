@@ -17,6 +17,13 @@ event init (t=0.)
   boundary (all);
 }
 
+// event viewer (t = 20; t <= 100; t += 0.1) {
+//  int x
+//  view(x = 4);
+//  clear();
+//  scatter(loc);
+//  save("contour.mp4");
+//}
 
 int main() {
   origin(-0.5, -0.5);
@@ -25,10 +32,6 @@ int main() {
   run();
 }
 
-event init (t=0.)
-{
-  foreach()
-  u.x[]=y;
-
-  boundary(all);
+event end (t = 4) {
+  printf ("i = %d t = %g\n", i, t);
 }
