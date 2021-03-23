@@ -1,0 +1,2 @@
+0fda0fdc04d9f40990ae72e7846e6730  bingham.c
+1dc534f885d0d09fa3f5d88fbba1381b  bingham.s
