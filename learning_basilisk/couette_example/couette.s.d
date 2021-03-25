@@ -1,5 +1,11 @@
 couette.s:	\
 	/gpfs/runtime/opt/basilisk/1.0/src/navier-stokes/centered.h \
+	/gpfs/runtime/opt/basilisk/1.0/src/embed.h \
+	/gpfs/runtime/opt/basilisk/1.0/src/fractions.h \
+	/gpfs/runtime/opt/basilisk/1.0/src/embed-tree.h \
+	/gpfs/runtime/opt/basilisk/1.0/src/geometry.h \
+	/gpfs/runtime/opt/basilisk/1.0/src/myc2d.h \
+	/gpfs/runtime/opt/basilisk/1.0/src/myc.h \
 	/gpfs/runtime/opt/basilisk/1.0/src/run.h \
 	/gpfs/runtime/opt/basilisk/1.0/src/timestep.h \
 	/gpfs/runtime/opt/basilisk/1.0/src/bcg.h \
