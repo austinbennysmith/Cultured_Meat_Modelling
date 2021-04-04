@@ -71,14 +71,14 @@ event end (t = 100) {
 }
 
 //The following successfuly gives profiles, but not the types of profiles I want (it does t slices rather than x and y slices)
-event profiles (t = end)
+event profiles (t=0; t+=0.1; t<=100)
 {
-  FILE * fp = fopen("xprof", "w");
+  FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)
     fprintf (fp, "%g %g\n", y, interpolate (u.x, 0, y));
   fclose (fp);
   
-  fp = fopen("yprof", "w");
+  fp = fopen("yprof", "a");
   for (double x = -0.5; x <= 0.5; x += 0.01)
     fprintf (fp, "%g %g\n", x, interpolate (u.y, x, 0));
   fclose (fp);
