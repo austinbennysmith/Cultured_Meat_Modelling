@@ -18,7 +18,7 @@ for i in xvals:
 print("all x vals:", xvalsunique)
 print("x vals len", len(xvalsunique))
 
-B = a.reshape(1001, 100)
+B = a.reshape(1001, 801)
 print(B[:, :])
 plt.contourf(B.transpose())
 cbar = plt.colorbar()
