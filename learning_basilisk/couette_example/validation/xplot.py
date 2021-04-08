@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-xprof = np.genfromtxt("xprof.txt", delimiter=" ")
+xprof = np.genfromtxt("xprof5.txt", delimiter=" ")
 print("xprof shape:", xprof.shape)
 a = xprof[:, 1]
 print("a", a)
