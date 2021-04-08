@@ -19,3 +19,4 @@ Here's the plot I get without those lines included:
 
 And here's the plot I get with them included:
 
+<img width="622" alt="Screen Shot 2021-04-08 at 12 38 37 PM" src="https://user-images.githubusercontent.com/69660053/114064664-dd7de180-9867-11eb-9622-fbda04f29c7e.png">
