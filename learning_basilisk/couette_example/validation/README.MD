@@ -6,3 +6,14 @@ L2 norm between computed and theoretical steady state horixontal (x-component) v
 L2 norm for y component (strangely it increases with mesh refinement....):
 
 <img width="615" alt="Screen Shot 2021-04-05 at 1 27 36 PM" src="https://user-images.githubusercontent.com/69660053/113604268-05283c00-9613-11eb-8579-5c3554bdc994.png">
+
+Per Radu's suggestion, I added best fit lines and included the following three lines before the run() command in couette_Final.c:
+
+NITERMIN = 1; // default 1
+NITERMAX = 200; // default 100
+TOLERANCE = 1e-6; // default 1e-3
+
+Here's the plot I get without those lines included:
+
+And here's the plot I get with them included:
+
