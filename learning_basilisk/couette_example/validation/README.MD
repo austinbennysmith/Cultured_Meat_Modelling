@@ -15,5 +15,7 @@ TOLERANCE = 1e-6; // default 1e-3
 
 Here's the plot I get without those lines included:
 
+<img width="610" alt="Screen Shot 2021-04-08 at 12 37 00 PM" src="https://user-images.githubusercontent.com/69660053/114064569-c7702100-9867-11eb-8a69-6bbc4cfa5f30.png">
+
 And here's the plot I get with them included:
 
