@@ -10,7 +10,7 @@ L2 norm for y component (strangely it increases with mesh refinement....):
 Per Radu's suggestion, I added best fit lines and included the following three lines before the run() command in couette_Final.c:
 
 NITERMIN = 1; // default 1</br>
-NITERMAX = 200; // default 100
+NITERMAX = 200; // default 100</br>
 TOLERANCE = 1e-6; // default 1e-3
 
 Here's the plot I get without those lines included:
