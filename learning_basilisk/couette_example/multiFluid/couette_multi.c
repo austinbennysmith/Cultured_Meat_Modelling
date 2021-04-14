@@ -5,6 +5,23 @@
 FILE *fp1 ;
 
 #define LEVEL 3
+
+// Dimensional quantities:
+#define rhoWater 1
+#define rhoOil 0.7*rhoWater
+#define muWater 0.01
+#define muOil 50*muWater
+#define sig 0.0728  //surface tension of water
+
+#define refLength 1  // height of the domain
+#define refVelocity 1  // velocity of the top plate
+
+// Dimensionless quantities:
+#define rho_ratio rhoOil/muwater
+#define mu_ratio muOil/muWater
+#define Re rhoWater*refVelocity*refLength/muWater  // Reynolds number
+#define We rhoWater*pow(refVelocity,2)*refLength/sig
+
 #define Re 100
 
 // RC
