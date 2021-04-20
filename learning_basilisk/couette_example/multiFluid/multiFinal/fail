@@ -1,0 +1,2201 @@
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.0287281 sum: 0.586398 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.0356875 sum: 0.728784 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.0940385 sum: -1.72064 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.218873 sum: -4.2519 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.105612 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.159278 sum: -1.49797 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.121326 sum: -2.08679 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.0673617 sum: -1.11296 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.210392 sum: 2.86134 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.0354016 sum: 1.59872e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.260126 sum: 4.71106 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.20709 sum: -0.208139 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.494872 sum: -2.86722 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.0719208 sum: -4.26326e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.75048 sum: -2.08175 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.153739 sum: -4.79616e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.36464 sum: 8.89912 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.10495 sum: -1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.40356 sum: 11.602 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.02519 sum: -4.35207e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.83007 sum: 6.81847 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.85727 sum: 4.9738e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.83371 sum: 10.3583 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.70617 sum: -1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.83151 sum: 13.7402 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.32398 sum: 3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.95484 sum: 12.2952 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.88585 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.20032 sum: 7.82321 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.89513 sum: 2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.35514 sum: 6.83124 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.964435 sum: 3.01981e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.48691 sum: 0.51768 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.809477 sum: 6.21725e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.86527 sum: 0.257922 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.242 sum: -4.32987e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.77439 sum: -8.734 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.99332 sum: 3.90799e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.01543 sum: -7.84509 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.348844 sum: -2.75335e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.54 sum: -5.2827 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.423381 sum: -1.5099e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.78338 sum: -3.39534 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.47209 sum: -1.33227e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.342357 sum: 1.29236 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.258913 sum: -2.66454e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.08886 sum: 1.2445 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.63698 sum: -5.86198e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.313488 sum: -3.03133 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.58765 sum: -1.59872e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.5025 sum: -3.46932 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.33945 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.79326 sum: -2.37117 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.17111 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.46113 sum: -5.37831 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.642725 sum: -4.9738e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.52776 sum: -4.9639 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.47101 sum: -3.01981e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.38709 sum: -3.78374 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.24842 sum: 9.41469e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.852828 sum: -3.28856 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.10231 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.22137 sum: -1.81863 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.64623 sum: 3.01981e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.2488 sum: -3.80052 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.934438 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.58992 sum: -3.02571 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.278976 sum: -3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.76938 sum: -1.33759 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.668954 sum: -2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.16192 sum: -2.4855 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.146503 sum: -2.19879 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.112645 sum: -2.16764 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.129185 sum: -2.34857 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.11704 sum: -2.39835 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.123259 sum: -2.47201 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.77592 sum: -6.39488e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.68739 sum: -2.23192 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.44102 sum: 5.68434e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.110028 sum: -2.33813 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.253684 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.871539 sum: -1.86244 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.12745 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.44695 sum: -1.52973 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.756528 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.2053 sum: 0.873036 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.126616 sum: -2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.205427 sum: 3.37264 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.0221937 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.02553 sum: -0.233778 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.73492 sum: 2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.5874 sum: -4.89253 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.16307 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.40317 sum: 0.803348 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.0907211 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.55898 sum: 3.75628 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.272701 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.11807 sum: -1.50169 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.494829 sum: 7.4607e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.95912 sum: -3.11765 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.10848 sum: -6.99075 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.275476 sum: -1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.75991 sum: -10.0908 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.03116 sum: 1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.75006 sum: -9.88322 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.22074 sum: -2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.15493 sum: 2.78766 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.84543 sum: 2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.69197 sum: 3.77706 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.00393 sum: -2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.14227 sum: 6.31524 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.708393 sum: -1.03029e-13 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.28714 sum: 7.87854 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.431366 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.35115 sum: 9.18707 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.46974 sum: -7.4607e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.69729 sum: 14.0881 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.0757 sum: -2.4869e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.03585 sum: 11.4948 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.575512 sum: 1.35003e-13 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.8861 sum: 6.60606 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.498526 sum: 2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.02807 sum: 2.96397 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.61345 sum: 1.10134e-13 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.499109 sum: 6.19968 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.878937 sum: -3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.7659 sum: 10.3381 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.09046 sum: 6.75016e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.63313 sum: 11.2212 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.2384 sum: -2.4869e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.00052 sum: 11.9906 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.68169 sum: -8.17124e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.52196 sum: 3.37855 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.34662 sum: 2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.64786 sum: -0.220821 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.3896 sum: -3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.25371 sum: 0.556797 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.73712 sum: 1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.46793 sum: 5.01794 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.06875 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.57023 sum: 7.69833 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.60903 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.2529 sum: 7.15446 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.964745 sum: -1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.48791 sum: 5.18056 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.441613 sum: -3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.73657 sum: 4.65993 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.569851 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.47585 sum: 4.01928 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.358529 sum: 1.24345e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.871636 sum: 3.52729 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.0715154 sum: -1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.738864 sum: 3.32523 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.290144 sum: 4.79616e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.5427 sum: 3.1628 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.472443 sum: -3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.51088 sum: 2.24073 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.545377 sum: 1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.44331 sum: 1.2738 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.525062 sum: -8.88178e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.0483237 sum: -0.668419 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.202002 sum: -2.61057 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.28162 sum: -3.32381 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.361001 sum: -4.14505 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.303418 sum: 1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.459196 sum: -3.57693 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.133025 sum: -4.21885e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.246409 sum: -3.4653 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.182237 sum: 3.06422e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.14202 sum: -3.18856 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.459171 sum: 2.9754e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.86255 sum: -5.35963 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.374348 sum: -1.24345e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.443413 sum: -5.64064 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.297698 sum: 1.24345e-14 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.402655 sum: -1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.973951 sum: -2.72637 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.684488 sum: 2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.78557 sum: -7.79197 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.531967 sum: -3.73035e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.20355 sum: -6.31954 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.272346 sum: 1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.84877 sum: -5.62855 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.315317 sum: -1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.15155 sum: -2.70622 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.194833 sum: 1.77636e-15 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.191135 sum: -3.01981e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.840168 sum: 4.96187 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.477832 sum: 8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.39019 sum: 3.02572 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.11628 sum: -9.32587e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.30163 sum: 3.78684 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.25289 sum: 5.92859e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.5731 sum: 9.19155 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.6525 sum: 6.30607e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.18415 sum: -4.35059 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.464796 sum: -3.01981e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.64495 sum: 5.56534 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.312675 sum: -4.08562e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.33007 sum: 7.29834 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.398851 sum: 1.15463e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.89863 sum: 7.57854 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.937523 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.1259 sum: 19.3395 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.09939 sum: -6.39488e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.42002 sum: 8.946 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.42665 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.6836 sum: 3.52107 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.94077 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.98227 sum: 7.27476 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.33554 sum: 3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.47101 sum: 13.5881 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.67511 sum: 3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.25945 sum: 12.2613 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.53742 sum: -1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.89886 sum: 17.9094 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.25476 sum: -1.19904e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.86315 sum: 0.535127 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.60181 sum: -6.21725e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.91394 sum: 14.6725 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.34347 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.49736 sum: 11.8071 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.34718 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.56631 sum: 20.4813 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.9123 sum: 1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 13.603 sum: 22.5981 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.06853 sum: -1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 13.9511 sum: 29.0632 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.47717 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 17.1986 sum: 24.7516 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.49363 sum: -1.32228e-13 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.35128 sum: 2.91784 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.63261 sum: -6.39488e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.29948 sum: -1.68194 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.14439 sum: -5.32907e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.74749 sum: -7.43788 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.17906 sum: -1.64313e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.00509 sum: 1.18973 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.86265 sum: 1.64313e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.447 sum: 0.370139 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.32166 sum: -1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.85571 sum: -4.98812 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.59273 sum: -3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.04078 sum: -6.00084 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.71456 sum: 2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.31959 sum: 2.49238 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.24146 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.01175 sum: -0.222916 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.09496 sum: 1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.23258 sum: -10.6988 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.711703 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.29522 sum: -1.29487 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.474352 sum: -4.9738e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.34031 sum: 5.04968 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.551482 sum: 2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.97695 sum: 17.7925 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.519217 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.58069 sum: 19.0989 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.58316 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.82598 sum: 15.4644 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.34456 sum: -4.26326e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.06104 sum: 11.0834 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.67212 sum: 4.26326e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.3719 sum: 16.7371 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.732742 sum: 2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.35738 sum: 19.9047 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.740362 sum: 2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.02455 sum: 4.0547 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.680092 sum: 4.9738e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.56186 sum: 4.47554 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.14384 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.93611 sum: 5.6081 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.26371 sum: -1.33227e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.17264 sum: 11.4358 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.60737 sum: -1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.01769 sum: 18.8823 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.39302 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.8393 sum: 15.3067 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.22563 sum: -5.55112e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.3771 sum: 21.7425 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.11882 sum: 4.77396e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.32997 sum: 15.8482 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.893989 sum: -3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.05982 sum: -6.65965 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.51459 sum: -5.32907e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.7707 sum: -15.7463 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.41483 sum: -2.22045e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.65636 sum: -2.18384 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.74603 sum: -1.9984e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.89981 sum: -22.2328 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.76895 sum: -4.77396e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.45303 sum: 0.635613 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.892394 sum: 4.44089e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.04707 sum: -1.69363 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.641028 sum: 3.60822e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.94034 sum: 6.1273 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.74451 sum: -3.33067e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.41098 sum: -5.42665 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.44998 sum: 5.77316e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.14183 sum: -21.3928 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.92762 sum: -2.498e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.92755 sum: -13.4343 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.299296 sum: -5.27356e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.37787 sum: -18.1482 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.10538 sum: -1.27676e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.63106 sum: 2.47294 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.39429 sum: -9.32587e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.01421 sum: 7.20986 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.21291 sum: -7.88258e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.4955 sum: 2.44387 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.44735 sum: 4.32987e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.93799 sum: 20.6362 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.90885 sum: 1.33227e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.16265 sum: -1.44481 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.51531 sum: 4.44089e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.7422 sum: 4.36051 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.33068 sum: -2.04281e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 16.639 sum: -22.7115 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.85269 sum: 1.11022e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.27794 sum: -2.87024 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.64548 sum: 9.10383e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.40145 sum: 2.26947 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.1255 sum: 1.39888e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.64104 sum: 1.64691 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.45226 sum: -6.66134e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.51477 sum: -14.9979 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.86319 sum: 1.38778e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.45104 sum: -5.89663 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.52414 sum: -2.9976e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.8089 sum: -19.4215 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.93026 sum: 1.66533e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.89764 sum: -22.0482 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.50356 sum: -6.41154e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.78037 sum: -7.07019 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.93141 sum: 1.85962e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.63295 sum: -16.2324 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.77087 sum: -1.04639e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.53675 sum: 1.79666 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.81141 sum: 2.19269e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.51751 sum: 27.7949 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.77609 sum: -1.27398e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.7939 sum: 30.5549 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.19506 sum: -2.26815e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.18501 sum: 32.5683 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.13202 sum: 7.96585e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.46924 sum: 49.4034 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.27656 sum: 7.71605e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.73834 sum: 55.4158 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.41163 sum: -8.99281e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.48393 sum: 46.4338 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.995196 sum: -1.44329e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.29468 sum: 41.929 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.604025 sum: -1.9984e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.09661 sum: 46.7771 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.343337 sum: 9.21485e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.25363 sum: 54.5192 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.148083 sum: 1.55431e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.0897 sum: 41.8001 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.161889 sum: -2.28706e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.91717 sum: 63.8427 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.387761 sum: 6.21725e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.18146 sum: 67.817 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.726552 sum: -1.67644e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.68215 sum: 87.0964 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.52574 sum: -1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.31613 sum: 67.1827 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.25563 sum: 8.21565e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.38526 sum: 45.5126 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.5816 sum: 79.5958 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.3019 sum: -1.64313e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.91768 sum: 90.2862 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 18.3803 sum: 104.48 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.43679 sum: -2.44249e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.88032 sum: 58.7774 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.57825 sum: -1.53766e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.51161 sum: 40.342 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.585494 sum: 7.23727e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.44757 sum: 32.5033 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.708616 sum: 1.96995e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.4623 sum: 25.5945 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.813598 sum: -8.90954e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.87296 sum: 25.8649 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.07157 sum: -1.24067e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.79374 sum: 15.76 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.56416 sum: 3.38618e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.84126 sum: 17.7594 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.15779 sum: 1.03806e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.63117 sum: 27.3968 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.9784 sum: -1.66533e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.16931 sum: 27.9038 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.07406 sum: 1.11022e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.57779 sum: 23.1723 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.69074 sum: 1.75415e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.30225 sum: 22.5192 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.30052 sum: -3.77476e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.70664 sum: 19.0908 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.21019 sum: -8.65974e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.79967 sum: 10.3013 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.160991 sum: -1.62093e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.39693 sum: 18.2059 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.363 sum: 2.35367e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.78461 sum: 21.771 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.12882 sum: -4.44089e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.87883 sum: 1.72809 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.64569 sum: 2.2593e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.03211 sum: 0.215624 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.21941 sum: -1.80411e-14 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.17841 sum: -8.9373e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.651609 sum: 2.26239 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.17984 sum: -3.08087e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.81735 sum: 8.75666 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.40231 sum: -1.23512e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.4612 sum: -5.32332 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.46204 sum: -2.20102e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.449138 sum: 5.61539 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.99754 sum: 12.4725 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.35475 sum: 16.2682 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.46264 sum: 17.5542 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.329554 sum: 3.79207 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.27767 sum: 27.3336 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.90801 sum: 37.956 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.20591 sum: 38.6163 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.22434 sum: 30.0312 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.80717 sum: 38.7431 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.84102 sum: 44.4174 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.5601 sum: 38.4069 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.78869 sum: 37.6433 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.5095 sum: 20.3784 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.46297 sum: 19.7524 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.51153 sum: 20.6317 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.39 sum: 20.1563 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.61993 sum: 21.0615 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.491133 sum: 6.38573 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.658682 sum: 8.90611 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.07788 sum: 13.8047 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.097179 sum: -1.11022e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.21023 sum: 15.7341 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.51766 sum: 16.6968 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.550141 sum: 6.5629 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.212469 sum: 3.88578e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.33527 sum: 13.2222 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.46932 sum: -3.28626e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.89935 sum: 21.6312 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.2552 sum: -3.61933e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.35741 sum: 14.4988 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.75374 sum: -3.06422e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.88068 sum: 17.4658 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.71881 sum: 17.0869 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.36603 sum: 10.2288 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.246678 sum: -2.5091e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.43051 sum: -3.82674 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.78027 sum: 2.22045e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.08312 sum: -8.37659 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.42448 sum: -8.63298 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.82394 sum: -12.2572 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.22333 sum: -26.2969 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.28149 sum: -7.66054e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.90323 sum: -21.0947 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.71938 sum: 1.73195e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.84809 sum: -4.30725 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.82362 sum: 1.5099e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.15742 sum: -10.4565 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.674358 sum: 6.05072e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.99942 sum: -17.2387 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.45134 sum: 1.97065e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.17109 sum: -20.5996 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.55913 sum: -1.38223e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.49509 sum: -32.0368 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.01069 sum: -1.97065e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.28848 sum: -27.7349 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.722117 sum: -2.39253e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.19767 sum: -21.5193 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.567244 sum: 3.01981e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.05426 sum: -15.5732 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.112171 sum: -4.77396e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.20758 sum: -9.35361 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.886184 sum: -7.21645e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.8078 sum: -11.8865 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.789723 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.58411 sum: -3.59173 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.42496 sum: 2.4435 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.38529 sum: 5.30838 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.0938493 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.22772 sum: 1.84951 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.20073 sum: 4.88498e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.91729 sum: 8.52076 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.76359 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.93211 sum: 11.4196 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.381834 sum: -2.66454e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.47006 sum: 12.965 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.95471 sum: -1.22125e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.2531 sum: 13.1297 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 18.2574 sum: 20.0388 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.49672 sum: 18.3578 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.757366 sum: 5.55112e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.45572 sum: 8.6329 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.516427 sum: -9.99201e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.32523 sum: 11.1548 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.294893 sum: 2.10942e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.50896 sum: 19.263 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.500488 sum: 1.88738e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.52831 sum: 11.5832 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.43209 sum: -5.55112e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.96976 sum: 12.4319 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.68931 sum: 1.9984e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.0351 sum: 22.2244 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.34732 sum: -1.08802e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.28288 sum: 7.85195 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.14719 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.53901 sum: 3.22069 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.39594 sum: 1.24345e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.75974 sum: 10.9822 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.29844 sum: 5.32907e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.06972 sum: 0.223505 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.7233 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.02913 sum: -1.91608 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.56735 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.34349 sum: 3.44555 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.34059 sum: 4.88498e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.06779 sum: -1.01544 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.31172 sum: 4.21885e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.17813 sum: -0.452454 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.98663 sum: -6.43929e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.97556 sum: 1.64835 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.13942 sum: 3.33067e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.86648 sum: -3.67083 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.37346 sum: -2.9976e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.76448 sum: 5.04555 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.02331 sum: 1.33227e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.02987 sum: 10.3793 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.69606 sum: -1.9984e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.71616 sum: 16.2912 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.82499 sum: 7.21645e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.64032 sum: 27.3706 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.76276 sum: 7.77156e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.43474 sum: 35.2719 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.52046 sum: -3.44169e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.3104 sum: 29.7005 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.879607 sum: 1.22125e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.66238 sum: 17.6955 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.466092 sum: 1.66533e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.09259 sum: 23.9533 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.412037 sum: 3.94129e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.83472 sum: 22.5136 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.782368 sum: 3.27516e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.43488 sum: 25.2663 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.63962 sum: 8.77076e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.92858 sum: 31.1354 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.64604 sum: 1.33227e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.25067 sum: 31.6325 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.64505 sum: -2.44249e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 33.9103 sum: 15.7486 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 11.9164 sum: -6.21725e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.6006 sum: 18.8041 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.103305 sum: 1.55431e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.5765 sum: 11.4044 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.70271 sum: 7.32747e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.598251 sum: -3.16668 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.97306 sum: 12.9243 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.00755 sum: 6.66134e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.20508 sum: -6.59397 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.52083 sum: -1.12133e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.90791 sum: 0.0082336 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.595716 sum: 1.37668e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.777922 sum: 4.43644 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.19399 sum: 5.16254e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.98983 sum: 3.5908 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.188169 sum: -9.38138e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.92201 sum: 6.7209 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.54278 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.8859 sum: 23.069 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.0759271 sum: -1.55431e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.15963 sum: 6.7199 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.201143 sum: 4.38538e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.01682 sum: 10.0414 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.87324 sum: 6.61558 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.433838 sum: 3.88578e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.72516 sum: 5.72398 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.16418 sum: -2.77556e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.26885 sum: 11.7761 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.488324 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.11366 sum: 16.6128 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.17083 sum: 10.7307 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.625548 sum: -2.22045e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.54302 sum: 23.2258 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.254373 sum: -1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.33125 sum: 31.4155 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.31431 sum: -2.10942e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.3158 sum: 21.8682 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.90453 sum: -8.32667e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.39669 sum: 26.006 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.38305 sum: -6.21725e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.8096 sum: 31.4855 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.34445 sum: -1.55431e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.89351 sum: 22.7249 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.96805 sum: 8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.40071 sum: 19.3827 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.68019 sum: -4.32987e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.34568 sum: 24.5092 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.37995 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.2154 sum: 29.5919 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.03504 sum: -8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.74507 sum: 18.7853 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.906882 sum: 1.85962e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.29929 sum: 18.3035 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.43989 sum: -2.3731e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.1569 sum: 16.8176 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.50963 sum: -3.95517e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.0935 sum: 18.3337 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.06433 sum: 12.1929 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.44086 sum: 11.2358 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.92365 sum: 13.4631 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.9226 sum: 15.1057 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.58083 sum: 9.2554 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.58254 sum: 6.7817 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.55012 sum: 8.77534 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.86621 sum: 11.5593 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.90751 sum: 7.19369 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.98384 sum: 5.82169 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.64416 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.62283 sum: 5.62486 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.31941 sum: 5.12731 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.16169 sum: -5.55112e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.06879 sum: 3.27107 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.10524 sum: 2.28596 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.606652 sum: 1.07973 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.00914 sum: -1.92003 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.307105 sum: 2.66454e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.19182 sum: -1.64172 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.404307 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.69829 sum: -4.14108 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.883133 sum: -4.11393 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.13775 sum: -5.1527 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.34445 sum: -6.52187 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.11649 sum: -6.71232 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.44116 sum: 2.66454e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.82763 sum: -5.85515 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.2638 sum: -6.712 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.2739 sum: -3.9968e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.28285 sum: -10.3902 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.30704 sum: -8.01726 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.715035 sum: -1.74513e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.72515 sum: -5.74075 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.92192 sum: -2.93587 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.9569 sum: -4.98286 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.17418 sum: -5.82078 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.479309 sum: 8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.68434 sum: -8.37681 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.22171 sum: -8.28653 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.86109 sum: -5.08764 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.96297 sum: -4.0284 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.541698 sum: 2.88658e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.81883 sum: -2.87257 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.34204 sum: 1.4312 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.92165 sum: -5.32907e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.11421 sum: -4.1965 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.90203 sum: -4.07316 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.296279 sum: 3.10862e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.40684 sum: -8.55008 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.1249 sum: -5.05958 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.79086 sum: -4.88498e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.21322 sum: -2.08485 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.501524 sum: -3.77476e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.39621 sum: -6.61029 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.832206 sum: 5.32907e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.45172 sum: -6.25478 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.55872 sum: -1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.75585 sum: -2.43668 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.40234 sum: -1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.62744 sum: 0.40591 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.39599 sum: -8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.4223 sum: 7.43491 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.22981 sum: 8.88178e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.64107 sum: -3.90773 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.53527 sum: 9.4369e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.57787 sum: 0.0174991 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.73768 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.526 sum: -4.59094 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.79849 sum: 1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.39994 sum: -4.79127 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.95537 sum: 3.10862e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.19226 sum: -4.86897 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.2776 sum: 4.44089e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.68303 sum: -7.57394 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.37372 sum: 6.10623e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.11095 sum: -0.192551 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.38672 sum: 1.27676e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.51503 sum: 4.03476 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.659943 sum: -2.27596e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.74676 sum: 6.24946 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.601037 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.41985 sum: 3.91953 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.99619 sum: 1.08108e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.72727 sum: 8.60601 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.5564 sum: 2.44249e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.9784 sum: 10.9503 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.35277 sum: -3.30291e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.1172 sum: 9.26398 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.55794 sum: 1.44329e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.28996 sum: 18.9025 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.86869 sum: 1.69864e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 17.5509 sum: 16.3097 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.74628 sum: 2.83827e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.223 sum: 20.6285 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.16273 sum: 1.33227e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.4887 sum: 26.8728 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.73021 sum: 2.19269e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 23.4732 sum: 19.5973 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 9.76997 sum: 1.94289e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.09543 sum: 12.5699 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.16763 sum: 7.16094e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 33.008 sum: 9.74141 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.83073 sum: 5.55112e-17 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.10045 sum: 7.155 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 18.9846 sum: 3.26206 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.85627 sum: 2.72005e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 22.2505 sum: -4.92052 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 10.8471 sum: 7.02771e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 35.9952 sum: -2.17849 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 14.7063 sum: -6.68354e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 31.0327 sum: -13.6726 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 13.8808 sum: -3.33067e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 15.49 sum: -9.56608 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.15059 sum: 2.25375e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.20671 sum: -3.10269 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.75778 sum: 6.02296e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.7588 sum: -4.79456 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.04589 sum: -4.15223e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.54384 sum: -2.32608 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.18185 sum: -1.5099e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.85127 sum: 1.72809 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 8.29581 sum: -3.77476e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.72951 sum: 0.830592 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.35777 sum: -2.70894e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.25752 sum: 6.54629 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 10.5586 sum: 3.68594e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 13.7304 sum: 15.4568 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 22.1554 sum: -1.09912e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 24.1306 sum: 19.0665 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 21.2773 sum: -6.10623e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.6936 sum: 25.2651 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 14.416 sum: -4.44089e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.593 sum: 16.142 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 11.2129 sum: -3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.76381 sum: 10.6825 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.6399 sum: 3.37508e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 25.8024 sum: 11.668 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.49113 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 34.005 sum: 14.3438 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.68167 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 25.3449 sum: 5.51355 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.44437 sum: 2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.7989 sum: 3.20537 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.69671 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.3573 sum: -1.00415 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.78222 sum: 5.32907e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.8619 sum: 0.495648 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.91674 sum: 1.19904e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.20834 sum: -4.95789 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.7221 sum: 3.21965e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.9227 sum: -2.29979 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.51704 sum: -4.88498e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.28974 sum: -5.48554 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.92345 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.57928 sum: -4.57631 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.44278 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.70792 sum: -2.28675 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.65541 sum: 1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.3931 sum: 2.38693 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.30551 sum: 8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.5573 sum: 13.4862 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.22801 sum: -8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 15.5059 sum: 25.3582 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.57136 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.41069 sum: 13.83 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.02174 sum: -8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.4559 sum: 28.2008 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.95725 sum: 3.10862e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.6797 sum: 32.4138 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.52285 sum: -4.73233e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.69352 sum: 18.4682 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.20902 sum: -4.44089e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 17.1986 sum: 24.5803 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.28408 sum: 1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 13.1254 sum: 16.6643 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.44017 sum: 1.24345e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.13463 sum: 16.0665 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.14495 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.83985 sum: 13.6659 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.301938 sum: -3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.7152 sum: 12.3778 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.83903 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 13.0014 sum: 7.221 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.13366 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.37557 sum: 6.92105 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.87557 sum: -2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.2249 sum: 7.14532 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.905341 sum: -2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.986072 sum: -1.0238 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.441732 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.67065 sum: -0.569696 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.939618 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.16684 sum: 0.59958 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.903602 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.83157 sum: -4.6984 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.728726 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.41883 sum: -4.0475 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.662908 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.91798 sum: -3.7297 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.29942 sum: 8.88178e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.61651 sum: 0.995978 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.57588 sum: -1.24345e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.32183 sum: -1.442 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.745485 sum: 3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.3048 sum: 1.8976 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.944511 sum: -3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.87441 sum: 13.0391 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.14951 sum: -3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.00261 sum: 7.32288 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.70932 sum: 5.77316e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.71252 sum: 6.93477 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.04432 sum: 1.73195e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.70111 sum: 11.6225 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.329948 sum: 3.10862e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.98014 sum: 14.7957 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.738 sum: 5.55112e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.16312 sum: 15.0937 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.08092 sum: -1.19904e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.37102 sum: 16.4254 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.11892 sum: 4.44089e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.86732 sum: 17.2678 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.991969 sum: -5.77316e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.87722 sum: 17.8024 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.249116 sum: -1.77636e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.12513 sum: 17.1285 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.512418 sum: -8.88178e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.00476 sum: 12.2071 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.559818 sum: 8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.63794 sum: 14.9525 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.220199 sum: 5.77316e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.13116 sum: 10.4173 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.39623 sum: 1.9984e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.62655 sum: 7.88504 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.74708 sum: 1.95399e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.795 sum: 9.75525 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.02785 sum: -4.44089e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.48414 sum: 15.916 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.81072 sum: 3.77476e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.68442 sum: 20.1128 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.54412 sum: 1.38778e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.36384 sum: 24.1078 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.92978 sum: 1.67644e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.67204 sum: 14.9278 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.44268 sum: -1.67089e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.11743 sum: 16.3338 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.95652 sum: -2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.27508 sum: 17.7622 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.59955 sum: 7.66054e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.32399 sum: 16.7998 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.65063 sum: -1.95954e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.3591 sum: 15.4637 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.65924 sum: 1.1019e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.69103 sum: 18.2151 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.4768 sum: 1.16573e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.38265 sum: 11.9767 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.58546 sum: 2.79776e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.98703 sum: 10.327 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.46016 sum: 10.0048 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.777321 sum: -2.28706e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.44473 sum: 6.56213 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.73365 sum: 2.08167e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 28.4386 sum: -8.48078 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 12.833 sum: 2.6229e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 25.3951 sum: -7.30053 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 12.1283 sum: 3.03577e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.0556 sum: -1.92488 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 8.65632 sum: 1.39611e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.9162 sum: -3.74079 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.27797 sum: 1.02696e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 22.9694 sum: -16.0811 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.15747 sum: -7.23033e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 15.7173 sum: -13.819 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.44416 sum: -1.82493e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.06848 sum: -19.6521 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.8122 sum: -19.0077 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.59326 sum: -17.7461 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.7076 sum: -26.787 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.580294 sum: -3.32234e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.08409 sum: -31.9587 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.539002 sum: -3.46945e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.23858 sum: -25.2644 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.365406 sum: -1.84019e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.50763 sum: -27.3017 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.304095 sum: -1.46549e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.21042 sum: -19.5132 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.07145 sum: -12.6121 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.506737 sum: -3.17524e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.65587 sum: -14.3299 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.64343 sum: -5.17364e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.28734 sum: -7.83631 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.2881 sum: 1.33227e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.38199 sum: -10.1365 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.848627 sum: 8.40161e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.82519 sum: -10.697 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.80828 sum: 3.10862e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.19808 sum: 3.58525 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.501595 sum: 2.30926e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.17092 sum: -6.23163 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.801199 sum: -3.19744e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.78581 sum: 5.34734 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.759387 sum: 1.06581e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.74577 sum: 5.197 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.69117 sum: -4.26326e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 17.2343 sum: 6.00513 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.56361 sum: -1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.0213 sum: 3.93215 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.70527 sum: -2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.7208 sum: 10.3388 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.70694 sum: 2.39808e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.09669 sum: 13.3779 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.0851 sum: -2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.45117 sum: 11.5456 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.16096 sum: 1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.76832 sum: 20.3781 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.48889 sum: 30.342 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.913398 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.1353 sum: 31.0254 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.58487 sum: -4.26326e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.7606 sum: 27.6813 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.6397 sum: -6.39488e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 15.0713 sum: 0.769557 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.77563 sum: -2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.9213 sum: -7.71342 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.43075 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.6373 sum: -4.55638 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 12.4104 sum: 3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.7945 sum: 1.75778 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 9.30945 sum: -4.9738e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 19.5144 sum: -3.81913 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 9.25523 sum: 2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 22.3975 sum: -15.7577 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 13.1192 sum: -2.4869e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 21.7455 sum: -16.0513 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 10.8247 sum: -7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.02076 sum: -22.0579 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 8.78726 sum: -2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.93951 sum: -26.0182 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 9.20518 sum: 3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 17.7201 sum: -30.5482 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.20605 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 27.589 sum: -34.7117 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.63133 sum: -2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 22.1053 sum: -25.1111 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 9.14324 sum: 3.55271e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.14417 sum: -25.3351 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.653538 sum: -4.9738e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 27.1054 sum: -26.2724 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.25307 sum: 1.42109e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 19.6895 sum: -29.8587 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.07133 sum: 1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.5167 sum: -35.1272 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.148 sum: -5.32907e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.91947 sum: -38.3933 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.64158 sum: -2.5091e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.2468 sum: -39.6537 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 11.9119 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.2467 sum: -43.8055 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 12.2479 sum: 7.10543e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.0622 sum: -42.7961 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 11.4427 sum: 2.66454e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.1509 sum: -44.7947 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 10.1449 sum: 2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.7519 sum: -43.1954 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.87739 sum: 8.88178e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.1679 sum: -46.9121 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.10049 sum: 2.66454e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.7704 sum: -49.7445 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.47705 sum: -3.55271e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 15.4739 sum: -45.1309 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.72845 sum: 3.10862e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.1143 sum: -46.785 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.31035 sum: 6.66134e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.5583 sum: -48.7459 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.87538 sum: -4.44089e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.2157 sum: -45.0065 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.25316 sum: -2.4869e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 19.2874 sum: -46.6512 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.39431 sum: -4.27436e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.3231 sum: -44.2509 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.90066 sum: -4.84057e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.8951 sum: -46.0986 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.62718 sum: -1.37668e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.1116 sum: -41.0028 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 7.03454 sum: 1.15463e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 15.2904 sum: -33.0145 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.81192 sum: -2.22045e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.0876 sum: -35.8899 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.39419 sum: 5.77316e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.7333 sum: -41.5696 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.36126 sum: -2.22045e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.46228 sum: -31.5854 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.41372 sum: 6.88338e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.25258 sum: -22.3155 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.94155 sum: 1.39888e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.03454 sum: -21.3249 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.89112 sum: -2.13163e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.40286 sum: -24.4053 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.529994 sum: -2.08722e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.71753 sum: -18.1066 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.53695 sum: 1.11022e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.03379 sum: -8.79976 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.936127 sum: 6.10623e-15 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.977973 sum: 2.49939e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.23442 sum: -6.94879 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.459872 sum: -7.52176e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.73736 sum: -3.90873 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.273912 sum: 2.22045e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.14685 sum: 7.31447 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.76666 sum: 3.11864 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.684527 sum: 7.99361e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.376112 sum: -2.31639 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.558697 sum: -1.98613 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.247882 sum: -9.76996e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 0.644039 sum: 1.16904 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.689289 sum: 7.32747e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 7.14525 sum: -10.0933 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.990166 sum: -6.21725e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 1.85219 sum: -7.69682 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.85309 sum: -1.26565e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.42638 sum: -3.28078 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.18531 sum: 1.08802e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.1415 sum: -8.35473 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.06778 sum: 1.11022e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.08055 sum: -1.42142 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.01883 sum: 1.02141e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.88797 sum: -0.0913112 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.948071 sum: 2.84217e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.94573 sum: -5.22833 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.76732 sum: 2.88658e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 21.5501 sum: -3.74003 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 9.99139 sum: -6.80012e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 27.0202 sum: 3.15086 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 8.40262 sum: 8.99281e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.1637 sum: -16.7703 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.45754 sum: -4.16334e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 16.6245 sum: -16.1993 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 8.70639 sum: 1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 18.1539 sum: -23.9033 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 11.6343 sum: -1.0103e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 18.5786 sum: -18.7195 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 9.19129 sum: -4.05231e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.5709 sum: -29.9176 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 6.16582 sum: 4.71845e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.01766 sum: -29.0115 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.29575 sum: -4.67681e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.5904 sum: -25.8399 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.99838 sum: -4.27436e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 12.982 sum: -29.9211 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.39002 sum: 2.08167e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 15.2007 sum: -24.2881 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.59987 sum: -3.41394e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.6303 sum: -25.7844 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.58031 sum: 1.77636e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 20.7439 sum: -27.0879 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.95412 sum: 6.21725e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 14.9591 sum: -13.1429 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 5.11521 sum: -1.66533e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 21.7774 sum: -24.1487 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.29975 sum: 4.45477e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 11.8987 sum: -13.1403 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.39643 sum: 9.32587e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.66978 sum: -8.66039 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.11904 sum: 5.32907e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.5391 sum: -5.52324 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.88326 sum: -8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 8.10936 sum: -3.53935 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.87677 sum: -1.15463e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.21939 sum: -1.37015 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.39753 sum: -1.33227e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 5.62547 sum: -0.429292 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.28786 sum: 9.76996e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 9.20671 sum: 2.13288 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 4.81021 sum: 8.88178e-16 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.05948 sum: -5.70209 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.14575 sum: 1.9984e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.43274 sum: 0.83158 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.489582 sum: 1.73195e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.4611 sum: 5.76577 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.97845 sum: -7.99361e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.3317 sum: -2.54327 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 2.97113 sum: -1.55431e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 10.0211 sum: -4.08793 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 3.86213 sum: 1.07553e-14 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 4.45831 sum: 4.14315 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 1.88557 sum: 4.77396e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 2.75376 sum: 7.03671 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.916047 sum: 0 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 3.22906 sum: 3.25314 nrelax: 100
+WARNING: convergence for p not reached after 100 iterations
+  res: 0.63238 sum: 5.32907e-15 nrelax: 100
+WARNING: convergence for pf not reached after 100 iterations
+  res: 6.91849 sum: 5.68369 nrelax: 100
+/gpfs/runtime/opt/basilisk/1.0/src/grid/tree.h:1254:error: Program received signal SIGINT, Interrupt.

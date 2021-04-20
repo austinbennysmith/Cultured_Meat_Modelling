@@ -47,7 +47,7 @@ int main() {
   // I rescale the system so that water has unit density, and the oil properties are just defined in terms of water
   rho1 = 1.0; // water density
   rho2 = rho_ratio; // oil density
-//  mu1 = 1./Re; // water dynamic viscosity
+  mu1 = 1./Re; // water dynamic viscosity
   mu2 = mu_ratio*mu1; // oil dynamic viscosity
   f.sigma=1./We;
 
@@ -60,18 +60,20 @@ int main() {
 event init(t = 0) {
 
   // RC set viscosity to 1/Re
-  const face vector muc[] = {1./Re,1./Re};
-  mu = muc;
+  //const face vector muc[] = {1./Re,1./Re};
+  //mu = muc;
 
   // flow out of the right -> into the left
   periodic(right);
 
-  /*vertex scalar phi[];
-  foreach_vertex() {
-    phi[] = intersection(0.5-y, 0.5+y);
-  }
-  boundary({phi});*/
-
+  // vertex scalar phi[];
+  // foreach_vertex() {
+  //  phi[] = intersection(0.5-y, 0.5+y);
+  // }
+  // boundary({phi});*/
+  
+  fraction (f, y-0.2);
+  
   // initially velocity is 0 everywhere
   foreach () {
     u.x[] = 0.;
