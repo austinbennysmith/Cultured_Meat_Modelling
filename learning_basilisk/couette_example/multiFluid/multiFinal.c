@@ -4,7 +4,7 @@
 
 FILE *fp1 ;
 
-#define LEVEL 5
+#define LEVEL 4
 
 // Dimensional quantities:
 #define rhoWater 1000 // density of water
@@ -13,8 +13,8 @@ FILE *fp1 ;
 #define muOil 0.03 // approximateley the viscosity of oil
 #define sig 0.0728  //surface tension of water
 
-#define refLength 1  // height of the domain
-#define refVelocity 1  // velocity of the top plate
+#define refLength 0.01  // height of the domain
+#define refVelocity 0.001  // velocity of the top plate
 
 // Dimensionless quantities:
 #define rho_ratio rhoOil/muWater

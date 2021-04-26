@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-xprof = np.genfromtxt("xprof2.txt", delimiter=" ")
+xprof = np.genfromtxt("xprofNEW.txt", delimiter=" ")
 print("xprof shape:", xprof.shape)
 a = xprof[:, 1]
 print("a", a)
@@ -13,7 +13,7 @@ for i in yvals:
 print("all y vals:", yvalsunique)
 print("y vals len", len(yvalsunique))
 
-B = a.reshape(9009, 100)
+B = a.reshape(len(xprof)/100, 100)
 print(B[:, :])
 plt.contourf(B.transpose())
 cbar = plt.colorbar()
