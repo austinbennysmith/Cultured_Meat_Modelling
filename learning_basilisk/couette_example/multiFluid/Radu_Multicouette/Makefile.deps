@@ -1,0 +1,46 @@
+# Automatically generated using 'make Makefile.tests'
+# DO NOT EDIT, edit 'Makefile' instead
+ALLTESTS = \
+	couette.c \
+
+plots: \
+
+TESTS = \
+
+SPECIAL_TESTS = \
+
+ALLPAGES = \
+
+couette.s:	\
+	/home/radu/basilisk/src/embed.h \
+	/home/radu/basilisk/src/navier-stokes/centered.h \
+	/home/radu/basilisk/src/tracer.h \
+	/home/radu/basilisk/src/bcg.h \
+	/home/radu/basilisk/src/run.h \
+	/home/radu/basilisk/src/timestep.h \
+	/home/radu/basilisk/src/bcg.h \
+	/home/radu/basilisk/src/viscosity-embed.h \
+	/home/radu/basilisk/src/viscosity.h \
+	/home/radu/basilisk/src/poisson.h \
+	/home/radu/basilisk/src/poisson.h \
+	/home/radu/basilisk/src/utils.h \
+	/home/radu/basilisk/src/output.h \
+	/home/radu/basilisk/src/fractions.h \
+	/home/radu/basilisk/src/embed-tree.h \
+	/home/radu/basilisk/src/geometry.h \
+	/home/radu/basilisk/src/myc2d.h \
+	/home/radu/basilisk/src/myc.h \
+	/home/radu/basilisk/src/grid/quadtree.h \
+	/home/radu/basilisk/src/grid/tree.h \
+	/home/radu/basilisk/src/grid/mempool.h \
+	/home/radu/basilisk/src/grid/foreach_cell.h \
+	/home/radu/basilisk/src/grid/neighbors.h \
+	/home/radu/basilisk/src/grid/tree-common.h \
+	/home/radu/basilisk/src/grid/tree-mpi.h \
+	/home/radu/basilisk/src/grid/balance.h \
+	/home/radu/basilisk/src/grid/multigrid-common.h \
+	/home/radu/basilisk/src/grid/cartesian-common.h \
+	/home/radu/basilisk/src/grid/events.h \
+	/home/radu/basilisk/src/grid/fpe.h \
+	/home/radu/basilisk/src/common.h \
+
