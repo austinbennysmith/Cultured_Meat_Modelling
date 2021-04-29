@@ -24,8 +24,9 @@
 #define We 1.*1.*1./0.037
 
 int main () {
+  L0 = 8.;
+  origin(-L0/2., -0.5);
   init_grid(1 << MAX_LEVEL);
-
   // Set up fluids, doing this in the init event doesn't work.
 
   // Fluid 1 is water 
@@ -76,3 +77,15 @@ event adapt (i++) {
   adapt_wavelet ({f, u}, (double []){1e-2, 1e-2, 1e-2}, MAX_LEVEL);
 }
 
+event profiles (t = 0; t+=1.0; t<=1000) // RC restricted the output a little, don't overdo it at first!
+{
+  FILE * fp = fopen("xprof", "a");
+  for (double y = -0.5; y <= 0.5; y += 0.01)
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 0, y));
+  fclose (fp);
+
+  fp = fopen("yprof", "a");
+  for (double x = -4; x <= 4; x += 0.01)
+    fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 0));
+  fclose (fp);
+}

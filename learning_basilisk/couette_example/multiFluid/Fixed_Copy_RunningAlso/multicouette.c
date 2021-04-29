@@ -58,8 +58,8 @@ int main() {
 
   DT = 1.0e-2; // RC
   NITERMIN = 1; // default 1
-  NITERMAX = 100; // default 100
-  TOLERANCE = 1e-3; // default 1e-3
+  NITERMAX = 200; // default 100
+  TOLERANCE = 1e-4; // default 1e-3
 
   run();
 

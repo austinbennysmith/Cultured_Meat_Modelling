@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
-xprof = np.genfromtxt("xprofALL.txt", delimiter=" ")
+xprof = np.genfromtxt("xprof268.txt", delimiter=" ")
 print("xprof shape:", xprof.shape)
-xprof = xprof[:28000, :]
+xprof = xprof[:25000, :]
 a = xprof[:, 2]
 print("a", a)
 print("a shape:", a.shape)
