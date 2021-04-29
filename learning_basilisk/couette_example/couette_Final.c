@@ -3,7 +3,7 @@
 
 FILE *fp1 ;
 
-#define LEVEL 5
+#define LEVEL 4
 #define Re 100
 
 // RC
