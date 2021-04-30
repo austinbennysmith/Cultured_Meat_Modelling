@@ -7,11 +7,13 @@
 
 FILE *fp1 ;
 
-#define LEVEL 8 // RC was 4, needs to be bigger to capture the setup
+#define LEVEL 7 // RC was 4, needs to be bigger to capture the setup
 
 // Dimensional quantities:
-#define rhoWater 1000 // density of water
-#define rhoOil 917 // density of olive oil at 20C
+//#define rhoWater 1000 // density of water
+//#define rhoOil 917 // density of olive oil at 20C
+#define rhoWater 0.997
+#define rhoOil 0.9188
 #define muWater 0.001 // approximatley the viscosity of water
 #define muOil 0.03 // approximateley the viscosity of oil
 

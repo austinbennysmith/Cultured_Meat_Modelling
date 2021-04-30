@@ -21,7 +21,8 @@
 #define rho_ratio rhoOil/muWater
 #define mu_ratio muOil/muWater
 #define Re rhoWater*refVelocity*refLength/muWater  // Reynolds number
-#define We rhoWater*pow(refVelocity,2)*refLength/sig
+//#define We rhoWater*pow(refVelocity,2)*refLength/sig
+#define We 30
 
 u.t[top] = dirichlet(1.0);
 u.n[top] = dirichlet(0.0);
@@ -42,7 +43,7 @@ int main () {
   mu2 = mu_ratio*mu1; // oil dynamic viscosity
   f.sigma=1./We;
   
-  DT = 1.0e-10;
+  DT = 1.0e-4;
   run();
 }
 

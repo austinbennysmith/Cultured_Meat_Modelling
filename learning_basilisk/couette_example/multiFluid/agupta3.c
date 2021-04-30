@@ -3,7 +3,7 @@
 #include "tension.h"
 #include "view.h"
 
-#define MAX_LEVEL 8
+#define MAX_LEVEL 7
 
 #define beta 0.3 // Location of the fluid interface
 
@@ -20,7 +20,7 @@
 // https://en.wikipedia.org/wiki/Sunflower_oil#Physical_properties
 
 #define Fr 1./sqrt(9.81)
-#define We 27.027
+#define We 0.013736
 //#define We 1.*1.*1./0.037
 
 u.t[top] = dirichlet(1.0);
