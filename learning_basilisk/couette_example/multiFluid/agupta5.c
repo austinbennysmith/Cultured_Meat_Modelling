@@ -10,22 +10,29 @@
 // Fluid 1 is water at 25°C
 #define rhoWater 0.9970
 //#define rhoWater 1000
-#define muWater 0.008937
+//#define muWater 0.008937
+#define muWater 0.001
 // Source: retrieved 7/9/20 from
 // https://en.wikipedia.org/wiki/Water_(data_page)#Liquid_physical_properties
 
 // Fluid 2 is sunflower oil at 25°C
 #define rhoOil 0.9188
 //#define rhoOil 917
-#define muOil 0.4914
+//#define muOil 0.4914
+#define muOil 0.03
 // Source: retrieved 7/9/20 from
 // https://en.wikipedia.org/wiki/Sunflower_oil#Physical_properties
 
-#define Fr 1./sqrt(9.81)
+//#define Fr 1./sqrt(9.81)
 #define We 13.736
 //#define We 1.*1.*1./0.037
 
+//#define refLength 0.01  // height of the domain
+//#define refVelocity 0.01  // velocity of the top plate
+
 #define rho_ratio rhoOil/muWater
+#define mu_ratio muOil/muWater
+//#define Re rhoWater*refVelocity*refLength/muWater  // Reynolds number
 
 u.t[top] = dirichlet(1.0);
 u.n[top] = dirichlet(0.0);
@@ -43,12 +50,14 @@ int main () {
   // Fluid 1 is water 
 //  rho1 = rhoWater;
   rho1 = 1.0;
-  mu1 = muWater;
+//  mu1 = muWater;
+  mu1 = 0.01;
 
   // Fluid 2 is sunflower oil
 //  rho2 = rhoOil;
   rho2 = rho_ratio;
-  mu2 = muOil;
+//  mu2 = muOil;
+  mu2 = mu_ratio*mu1;
 
   // Surface tension coefficient
   f.sigma = 1./We;

@@ -9,19 +9,23 @@
 
 // Fluid 1 is water at 25°C
 #define rhoWater 0.9970
+//#define rhoWater 1000
 #define muWater 0.008937
 // Source: retrieved 7/9/20 from
 // https://en.wikipedia.org/wiki/Water_(data_page)#Liquid_physical_properties
 
 // Fluid 2 is sunflower oil at 25°C
 #define rhoOil 0.9188
+//#define rhoOil 917
 #define muOil 0.4914
 // Source: retrieved 7/9/20 from
 // https://en.wikipedia.org/wiki/Sunflower_oil#Physical_properties
 
 #define Fr 1./sqrt(9.81)
-#define We 0.013736
+#define We 13.736
 //#define We 1.*1.*1./0.037
+
+#define rho_ratio rhoOil/muWater
 
 u.t[top] = dirichlet(1.0);
 u.n[top] = dirichlet(0.0);
@@ -37,11 +41,13 @@ int main () {
   // Set up fluids, doing this in the init event doesn't work.
 
   // Fluid 1 is water 
-  rho1 = rhoWater;
+//  rho1 = rhoWater;
+  rho1 = 1.0;
   mu1 = muWater;
 
   // Fluid 2 is sunflower oil
-  rho2 = rhoOil;
+//  rho2 = rhoOil;
+  rho2 = rho_ratio;
   mu2 = muOil;
 
   // Surface tension coefficient
@@ -78,7 +84,7 @@ event init(t = 0) {
 //  adapt_wavelet ({f, u}, (double []){1e-2, 1e-2, 1e-2}, MAX_LEVEL);
 //}
 
-event profiles (t = 0; t+=1.0; t<=50) // RC restricted the output a little, don't overdo it at first!
+event profiles (t = 0; t+=1.0; t<=10000) // RC restricted the output a little, don't overdo it at first!
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)
