@@ -7272,3 +7272,210 @@ WARNING: convergence for pf not reached after 200 iterations
   res: 174588 sum: -7.22679e+06 nrelax: 100
 WARNING: convergence for p not reached after 200 iterations
   res: 178993 sum: 8.52151e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 312305 sum: -7.82527e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 196801 sum: -5.44003e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 205385 sum: -7.96523e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 125637 sum: -7.33303e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 273306 sum: -8.14384e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 131145 sum: 3.86251e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 313286 sum: -8.18957e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 155903 sum: -1.91176e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 327445 sum: -7.68748e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 168283 sum: -1.04869e-08 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 316288 sum: -6.77842e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 168594 sum: 6.46435e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 285546 sum: -5.91723e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 160598 sum: -6.21071e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 247797 sum: -5.24048e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 150715 sum: -1.57343e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 244770 sum: -4.56391e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 133334 sum: 9.26548e-10 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 301760 sum: -5.10804e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 141645 sum: 3.43948e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 113956 sum: -5.72395e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 96190.8 sum: -2.36145e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 119111 sum: -7.03051e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 50939.4 sum: -7.55483e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 111990 sum: -7.93711e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 44485.5 sum: 5.94048e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 177783 sum: -7.13906e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 36525.7 sum: -1.29992e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 194355 sum: -4.81292e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 60728.8 sum: 4.54449e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 170171 sum: -1.95186e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 56013.2 sum: 6.29342e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 124593 sum: 403726 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 1.07191e+06 sum: 6.56414e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 179052 sum: 3.99971e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 1.22158e+06 sum: 3.69999e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 1.07271e+06 sum: 4.81413e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 801385 sum: -2.31876e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 824318 sum: 1.92926e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 21376.8 sum: 1.95624e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 210933 sum: -2.88034e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 380777 sum: 2.09127e-10 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 88856.1 sum: -8.40802e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 89920.1 sum: 6.84616e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 81296.1 sum: -1.35773e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 11128.7 sum: -3.71017e-10 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 100094 sum: -1.62908e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 12279.3 sum: -5.88329e-11 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 2.40637e+06 sum: -1.71884e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 55129.7 sum: -7.39112e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 1.56186e+06 sum: -1.71632e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 105368 sum: 1.01676e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 890022 sum: -1.6792e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 154001 sum: 7.14857e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 942378 sum: -1.6192e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 149606 sum: 6.05809e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 706240 sum: -1.51858e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 88965.2 sum: -7.19217e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 1.02908e+06 sum: -1.39084e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 7108.96 sum: -5.98993e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 673449 sum: -1.26992e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 86758.5 sum: -9.29379e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 247065 sum: -1.15617e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 165770 sum: -1.82825e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 308492 sum: -1.14954e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 193648 sum: -8.4832e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 310745 sum: -1.14651e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 354083 sum: -7.66238e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 484302 sum: -1.03433e+07 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 217894 sum: -1.22691e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 585414 sum: -9.23851e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 185058 sum: 1.03767e-08 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 958459 sum: -8.2783e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 171464 sum: 5.65933e-10 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 887331 sum: -7.70126e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 145015 sum: -2.37065e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 819343 sum: -7.12987e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 113354 sum: 2.03897e-10 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 993189 sum: -6.36746e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 74498.6 sum: -1.03997e-08 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 1.09916e+06 sum: -5.59315e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 36483.6 sum: -5.04826e-10 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 1.23353e+06 sum: -4.80919e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 6927.91 sum: -5.40416e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 1.10695e+06 sum: -4.07883e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 7841.35 sum: -4.72625e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 1.09865e+06 sum: -3.48911e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 11702.3 sum: 1.75328e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 48598.8 sum: -2.95883e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 13894.9 sum: -1.75791e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 100117 sum: -2.47722e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 16414.1 sum: 3.10993e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 59013 sum: -2.01382e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 17883.6 sum: 4.11976e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 102047 sum: -1.55351e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 18390.9 sum: 1.4348e-09 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 2.27697e+11 sum: -1.16057e+06 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 5.07396e+18 sum: 0.880311 nrelax: 100
+WARNING: convergence for pf not reached after 200 iterations
+  res: 3.39922e+29 sum: 3.51264e+30 nrelax: 100
+WARNING: convergence for u.x not reached after 200 iterations
+  res: 0.00486503 sum: 1.32787e+16 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 1.03644e+29 sum: -3.8396e+17 nrelax: 100
+WARNING: convergence for u.x not reached after 200 iterations
+  res: 0.0121542 sum: -2.01575e+16 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 3.37195e+28 sum: 2.9037e+15 nrelax: 100
+multicouette: /gpfs/runtime/opt/basilisk/1.0/src/grid/events.h:245: dtnext: Assertion `n < 2147483647' failed.

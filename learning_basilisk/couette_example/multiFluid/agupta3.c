@@ -3,24 +3,25 @@
 #include "tension.h"
 #include "view.h"
 
-#define MAX_LEVEL 7
+#define MAX_LEVEL 8
 
 #define beta 0.3 // Location of the fluid interface
 
 // Fluid 1 is water at 25°C
 #define rhoWater 0.9970
-#define muWater 0.8937
+#define muWater 0.008937
 // Source: retrieved 7/9/20 from
 // https://en.wikipedia.org/wiki/Water_(data_page)#Liquid_physical_properties
 
 // Fluid 2 is sunflower oil at 25°C
 #define rhoOil 0.9188
-#define muOil 49.14
+#define muOil 0.4914
 // Source: retrieved 7/9/20 from
 // https://en.wikipedia.org/wiki/Sunflower_oil#Physical_properties
 
 #define Fr 1./sqrt(9.81)
-#define We 1.*1.*1./0.037
+#define We 27.027
+//#define We 1.*1.*1./0.037
 
 u.t[top] = dirichlet(1.0);
 u.n[top] = dirichlet(0.0);
@@ -77,7 +78,7 @@ event init(t = 0) {
 //  adapt_wavelet ({f, u}, (double []){1e-2, 1e-2, 1e-2}, MAX_LEVEL);
 //}
 
-event profiles (t = 0; t+=1.0; t<=1000) // RC restricted the output a little, don't overdo it at first!
+event profiles (t = 0; t+=1.0; t<=50) // RC restricted the output a little, don't overdo it at first!
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)
