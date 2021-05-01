@@ -1,4 +1,0 @@
-qcc -autolink -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o agupta4/agupta4 agupta4.c -lm
-[agupta4.tst]
-agupta4: /gpfs/runtime/opt/basilisk/1.0/src/grid/events.h:245: dtnext: Assertion `n < 2147483647' failed.
-make: *** [agupta4.tst] Error 1
