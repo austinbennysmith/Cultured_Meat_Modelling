@@ -1,4 +1,0 @@
-[multicouette.tst]
-/gpfs/runtime/opt/basilisk/1.0/src/runtest: line 82: gdb.log: Not a directory
-cp: failed to access ‘fail’: Not a directory
-touch: cannot touch ‘pass’: Not a directory
