@@ -1,2 +1,0 @@
-4bbc0cb90872a70f4b47ef4e99a765ca  couette_multi.c
-43bed9ae41ad7b3a13c9ad2d76d1dd0e  couette_multi.s

@@ -1,2 +1,0 @@
-2a81939bfc8dc991b5afd03dcf29d7ae  multicouette.c
-5c905eeda4f0783aae3bad69ec7171ef  multicouette.s
