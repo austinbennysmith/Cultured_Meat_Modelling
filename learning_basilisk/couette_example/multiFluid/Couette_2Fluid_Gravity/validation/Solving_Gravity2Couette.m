@@ -31,7 +31,7 @@ S = solve(conds, [a1 b1 a2 b2]);
 % hold on 
 % plot(Y, U2)
 
-Y = linspace(-0.5, 0.5, 101); % from -0.5 to 0.5
+Y = linspace(-0.5, 0.49, 100); % from -0.5 to 0.5
 A1 = (293058234952252489*(Y+0.5))/217974221964732006400 + 885218852610103719069/435948443929464012800; % shift
 A2 = 295072950870034573023/4359484439294640128000 - (293058234952252489*(Y+0.5))/54493555491183001600;
 B1 = 0;
@@ -41,7 +41,13 @@ U2 = (-(rho2*g)/mu2)*(Y+0.5).^2+A2.*(Y+0.5)+B2;
 plot(Y, U1, 'o', "Linewidth", 2)
 hold on 
 plot(Y, U2, 'o', "Linewidth", 2)
+hold on
 xlabel('y', 'Fontsize', 20)
 ylabel('x velocity', 'Fontsize', 20)
 title('Two-phase couette flow with gravity', 'Fontsize', 30)
-legend('Analytical U1 solution', 'Analytical U2 solution')
+
+numerical = dlmread('xprof_ALL.txt');
+endprof = numerical(end-99:end, :)
+plot(endprof(:, 2), endprof(:, 3))
+
+legend('Analytical U1 solution', 'Analytical U2 solution', 'numerical')
