@@ -65,6 +65,9 @@ event init(t = 0) {
     u.x[] = 0.;
     u.y[] = 0.;
   }
+
+  mask (y > 0.5 ? top : none);
+  mask (y < -0.5 ? bottom : none);
   
   // No-slip boundary conditions.
   u.t[top] = dirichlet(1.);

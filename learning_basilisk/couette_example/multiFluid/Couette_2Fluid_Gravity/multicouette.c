@@ -7,7 +7,7 @@
 
 FILE *fp1 ;
 
-#define LEVEL 7 // RC was 4, needs to be bigger to capture the setup
+#define LEVEL 8 // RC was 4, needs to be bigger to capture the setup
 
 // Dimensional quantities:
 #define rhoWater 1.0
@@ -68,6 +68,14 @@ int main() {
   fclose(fp_stats);
 }
 
+event acceleration (i++)
+{
+  face vector av = a;
+  foreach_face(y)
+    av.y[] -= sq(refVelocity)/(refLength*sq(Fr));
+}
+
+
 event init(t = 0) {
  
   // initially velocity is 0 everywhere
@@ -89,20 +97,12 @@ event init(t = 0) {
 }
 
 // RC How would you add gravity?
-event acceleration (i++) {
-  face vector av = a;
-  foreach_face(y)
-    av.y[] -= sq(refVelocity)/(refLength*sq(Fr));
-    //av.y[] -= (refVelocity*refVelocity)./(refLength*Fr*Fr);
-    //av.y[] -= 1/(Fr*Fr);
-//    av.y[] -= 1/Fr;
-}
 
-event end (t = 1000) { // RC restricted to 400
+event end (t = 100) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
 }
 
-event profiles (t = 0; t+=1.0; t<=1000) // RC restricted the output a little, don't overdo it at first!
+event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)

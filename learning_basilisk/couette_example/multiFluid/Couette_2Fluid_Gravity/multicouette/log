@@ -1,0 +1,16 @@
+WARNING: convergence for pf not reached after 200 iterations
+  res: 4.41339e+09 sum: 572.387 nrelax: 100
+WARNING: convergence for p not reached after 200 iterations
+  res: 1.79473e+22 sum: -0.0667801 nrelax: 100
+WARNING: CFL must be <= 0.5 for VOF (cfl - 0.5 = 1.28882e+21)
+WARNING: CFL must be <= 0.5 for VOF (cfl - 0.5 = 8.28105e+20)
+WARNING: convergence for pf not reached after 200 iterations
+  res: 1.2741e+37 sum: 4.44751e+40 nrelax: 100
+WARNING: convergence for u.x not reached after 200 iterations
+  res: 6.82596e+117 sum: 1.17358e+97 nrelax: 36
+WARNING: convergence for p not reached after 200 iterations
+  res: 7.50008e+110 sum: -3.36431e+103 nrelax: 100
+WARNING: CFL must be <= 0.5 for VOF (cfl - 0.5 = 2.13618e+117)
+WARNING: CFL must be <= 0.5 for VOF (cfl - 0.5 = 2.08739e+117)
+WARNING: convergence for pf not reached after 200 iterations
+  res: 4.19843e+229 sum: 1.20553e+233 nrelax: 100
