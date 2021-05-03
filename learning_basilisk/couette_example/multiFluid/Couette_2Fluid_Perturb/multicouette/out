@@ -1,0 +1,3 @@
+i = 1000012 t = 10000
+
+# Quadtree, 1000012 steps, 14319.3 CPU, 1.433e+04 real, 1.43e+05 points.step/s, 25 var
