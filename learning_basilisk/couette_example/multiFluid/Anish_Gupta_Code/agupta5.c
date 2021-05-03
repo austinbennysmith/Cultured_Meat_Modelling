@@ -82,7 +82,7 @@ event init(t = 0) {
   mask (y > 0.5 ? top : none);
   mask (y < -0.5 ? bottom : none);
 
-  fraction (f, y-beta);
+  fraction (f, beta-y);
   
   u.t[top] = dirichlet(1.);
   u.t[bottom] = dirichlet(0.);  
@@ -93,7 +93,7 @@ event init(t = 0) {
 //  adapt_wavelet ({f, u}, (double []){1e-2, 1e-2, 1e-2}, MAX_LEVEL);
 //}
 
-event profiles (t = 0; t+=1.0; t<=1000) // RC restricted the output a little, don't overdo it at first!
+event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)

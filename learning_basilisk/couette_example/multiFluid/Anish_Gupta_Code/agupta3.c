@@ -56,12 +56,12 @@ int main () {
   run();
 }
 
-//event acceleration (i++)
-//{
-//  face vector av = a;
-//  foreach_face(y)
-//    av.y[] -= 1./sq(Fr);
-//}
+event acceleration (i++)
+{
+  face vector av = a;
+  foreach_face(y)
+    av.y[] -= 9.8;
+}
 
 event init(t = 0) {
   // Initially velocity is 0 everywhere.
@@ -85,7 +85,7 @@ event init(t = 0) {
 //  adapt_wavelet ({f, u}, (double []){1e-2, 1e-2, 1e-2}, MAX_LEVEL);
 //}
 
-event profiles (t = 0; t+=1.0; t<=10000) // RC restricted the output a little, don't overdo it at first!
+event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)

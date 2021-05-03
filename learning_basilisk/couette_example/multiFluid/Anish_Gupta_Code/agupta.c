@@ -3,6 +3,8 @@
 #include "tension.h"
 #include "view.h"
 
+vector h[];
+
 #define MAX_LEVEL 7
 #define TIME_STEP 1./25 // Timestep for movie and log file.
 #define MAX_TIME 10.0 // Time to stop at.
@@ -39,7 +41,7 @@ int main () {
 
   // Surface tension coefficient
   f.sigma = 1./We;
-
+  f.height = h;
   run();
 }
 
@@ -75,6 +77,22 @@ event init(t = 0) {
 
 }
 
+event vof (i++, first);
+
+event amplitude (t += 1) {
+  scalar pos[];
+  position (f, pos, {0,1});
+  double max = statsf(pos).max;
+  char name[80];
+  sprintf (name, "wave-%d", N);
+  static FILE * fp = fopen (name, "w");
+  fprintf (fp, "%g %g\n", t, max);
+  fflush (fp);
+  //se += sq(max - prosperetti[ne][1]); ne++;
+}
+
+
+
 event adapt (i++) {
   // error thresholds for            f     u.x   u.y
   adapt_wavelet ({f, u}, (double []){1e-2, 1e-2, 1e-2}, MAX_LEVEL);
@@ -90,5 +108,9 @@ event profiles (t = 0; t+=1.0; t<=1000) // RC restricted the output a little, do
   fp = fopen("yprof", "a");
   for (double x = -4; x <= 4; x += 0.01)
     fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 0));
+  fclose (fp);
+
+  fp = fopen('heights', "a");
+  fprintf(fp, "%g %g\n", t, statsf(h).max);
   fclose (fp);
 }
