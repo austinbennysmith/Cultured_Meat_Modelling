@@ -12,13 +12,13 @@ FILE *fp1 ;
 // Dimensional quantities:
 #define rhoWater 1.0
 #define rhoOil 0.917
-#define muWater 0.001 // approximatley the viscosity of water
-#define muOil 0.03 // approximateley the viscosity of oil
+#define muWater 1.0 // approximatley the viscosity of water
+#define muOil 30.0 // approximateley the viscosity of oil
 
 #define sig 0.0728  //surface tension of water
 
-#define refLength 0.01  // height of the domain
-#define refVelocity 0.01  // velocity of the top plate
+#define refLength 1.0  // height of the domain
+#define refVelocity 1.0  // velocity of the top plate
 
 // Dimensionless quantities:
 #define rho_ratio rhoOil/muWater
@@ -26,7 +26,6 @@ FILE *fp1 ;
 #define Re rhoWater*refVelocity*refLength/muWater  // Reynolds number
 #define We rhoWater*pow(refVelocity,2)*refLength/sig // Weber number
 #define Fr refVelocity/(sqrt(9.8)*refLength) // Froude number
-
 
 // RC
 FILE * fp_stats;
@@ -71,8 +70,8 @@ int main() {
 event acceleration (i++)
 {
   face vector av = a;
-  foreach_face(x)
-    av.x[] -= 9.8;
+  foreach_face(y)
+    av.y[] -= 9.8;
 }
 
 
@@ -98,11 +97,11 @@ event init(t = 0) {
 
 // RC How would you add gravity?
 
-event end (t = 100) { // RC restricted to 400
+event end (t = 1000) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
 }
 
-event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
+event profiles (t = 0; t+=1.0; t<=1000) // RC restricted the output a little, don't overdo it at first!
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)

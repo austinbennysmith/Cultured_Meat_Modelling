@@ -54,7 +54,7 @@ event init(t = 0) {
   // positive -> fluid 1
   // negative -> fluid 2 
   // bottom beta% is oil.
-  fraction (f, beta-y);
+  fraction (f, beta-y+.025*sin((pi/4)*x));
 
   // Initially velocity is 0 everywhere.
   foreach () {

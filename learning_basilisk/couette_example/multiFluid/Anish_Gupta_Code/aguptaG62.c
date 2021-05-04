@@ -8,13 +8,13 @@
 
 // Fluid 1 is water at 25°C
 #define rhoWater 1.0
-#define muWater 0.8937
+#define muWater 10
 #define rhoOil 0.917
-#define muOil 49.14
+#define muOil 300
 
 
-#define Fr 1./sqrt(9.81)
-#define We 1.*1.*1./0.037
+//#define Fr 1./sqrt(9.81)
+#define We 13.73626
 
 u.t[top] = dirichlet(1.0);
 u.n[top] = dirichlet(0.0);

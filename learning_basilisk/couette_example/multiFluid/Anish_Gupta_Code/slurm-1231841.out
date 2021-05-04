@@ -1,0 +1,13 @@
+qcc -autolink -O2 -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o aguptaG62/aguptaG62 aguptaG62.c  -lm
+In file included from /usr/include/stdint.h:25:0,
+                 from /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:9,
+                 from aguptaG62-cpp.c:6:
+/usr/include/features.h:330:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+ #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+    ^
+aguptaG62.c: In function ‘main’:
+aguptaG62.c:36:30: error: exponent has no digits
+   f.sigma = 1./We;
+                              ^
+make: *** [aguptaG62.s] Error 1
+make: *** [aguptaG62.s] Error 1

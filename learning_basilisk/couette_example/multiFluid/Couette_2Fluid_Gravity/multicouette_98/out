@@ -1,3 +1,3 @@
-i = 184322 t = 100
+i = 430009 t = 1000
 
-# Quadtree, 184322 steps, 2246.11 CPU, 2246 real, 1.68e+05 points.step/s, 25 var
+# Quadtree, 430009 steps, 4172.86 CPU, 4174 real, 2.11e+05 points.step/s, 25 var
