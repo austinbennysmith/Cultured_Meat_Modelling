@@ -64,3 +64,4 @@ i: 6224 t: 62 dt: 0.00967832 #Cells: 2048 Wall clock time (s): 1311.69 CPU time 
 i: 6325 t: 63 dt: 0.00990099 #Cells: 2048 Wall clock time (s): 1351.7 CPU time (s): 1351.59 
 i: 6426 t: 64 dt: 0.00990099 #Cells: 2048 Wall clock time (s): 1558.91 CPU time (s): 1558.81 
 i: 6560 t: 65 dt: 0.00610828 #Cells: 2048 Wall clock time (s): 1962.94 CPU time (s): 1962.84 
+i: 6694 t: 66 dt: 0.00548035 #Cells: 2048 Wall clock time (s): 2396.57 CPU time (s): 2396.46 
