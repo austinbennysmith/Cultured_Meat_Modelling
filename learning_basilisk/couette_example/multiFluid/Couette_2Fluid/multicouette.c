@@ -10,8 +10,8 @@ FILE *fp1 ;
 #define LEVEL 7 // RC was 4, needs to be bigger to capture the setup
 
 // Dimensional quantities:
-#define rhoWater 2.0
-#define rhoOil 0.917*2
+#define rhoWater 10.0
+#define rhoOil 9.0
 #define muWater 0.001 // approximatley the viscosity of water
 #define muOil 0.03 // approximateley the viscosity of oil
 
