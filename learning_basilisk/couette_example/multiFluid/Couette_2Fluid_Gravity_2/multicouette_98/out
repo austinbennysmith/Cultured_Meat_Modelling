@@ -1,0 +1,7 @@
+i = 430009 t = 1000
+
+<<<<<<< HEAD
+# Quadtree, 430009 steps, 4209.32 CPU, 4211 real, 2.09e+05 points.step/s, 25 var
+=======
+# Quadtree, 430009 steps, 4172.86 CPU, 4174 real, 2.11e+05 points.step/s, 25 var
+>>>>>>> 6b1a0847f0100c8e0a5f764ec7d5be8ae1a5997b
