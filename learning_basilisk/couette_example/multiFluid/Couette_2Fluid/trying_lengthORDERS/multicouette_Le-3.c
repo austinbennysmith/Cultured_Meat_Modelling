@@ -21,7 +21,7 @@ FILE *fp1 ;
 #define refVelocity 0.01  // velocity of the top plate
 
 // Dimensionless quantities:
-#define rho_ratio rhoOil/muWater
+#define rho_ratio rhoOil/rhoWater
 #define mu_ratio muOil/muWater
 #define Re rhoWater*refVelocity*refLength/muWater  // Reynolds number
 #define We rhoWater*pow(refVelocity,2)*refLength/sig
