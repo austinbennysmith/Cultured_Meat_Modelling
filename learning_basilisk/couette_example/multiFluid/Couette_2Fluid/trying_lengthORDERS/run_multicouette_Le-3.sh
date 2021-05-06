@@ -1,0 +1,6 @@
+#!/bin/bash
+#SBATCH -n 12
+#SBATCH --mem=64G
+#SBATCH -t 24:00:00
+rm -rf multicouette_Le-3 multicouette_Le-3.tst
+make multicouette_Le-3.tst
