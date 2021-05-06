@@ -1,0 +1,3 @@
+i = 10011 t = 100
+
+# Quadtree, 10011 steps, 150.78 CPU, 150.9 real, 1.36e+05 points.step/s, 25 var

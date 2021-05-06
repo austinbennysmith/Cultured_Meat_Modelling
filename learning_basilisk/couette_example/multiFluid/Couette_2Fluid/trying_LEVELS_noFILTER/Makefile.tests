@@ -1,0 +1,16 @@
+# Automatically generated using 'make Makefile.tests'
+# DO NOT EDIT, edit 'Makefile' instead
+ALLTESTS = \
+	multicouette_LEVEL10.c \
+	multicouette_LEVEL7.c \
+	multicouette_LEVEL8.c \
+	multicouette_LEVEL9.c \
+
+plots: \
+
+TESTS = \
+
+SPECIAL_TESTS = \
+
+ALLPAGES = \
+
