@@ -6,6 +6,10 @@
 #include "tension.h"
 
 FILE *fp1 ;
+<<<<<<< HEAD
+//FILE * fp_interface;
+=======
+>>>>>>> 6b1a0847f0100c8e0a5f764ec7d5be8ae1a5997b
 
 #define LEVEL 7 // RC was 4, needs to be bigger to capture the setup
 
@@ -60,7 +64,17 @@ int main() {
   NITERMIN = 1; // default 1
   NITERMAX = 200; // default 100
   TOLERANCE = 1e-4; // default 1e-3
+<<<<<<< HEAD
+  // Pointers to files
+  //{
+    //char name[200];
+    //sprintf(name, "loginterface.dat");
+    //fp_interface = fopen(name, "w");
+  //}
+  //fclose(fp_interface);
+=======
 
+>>>>>>> 6b1a0847f0100c8e0a5f764ec7d5be8ae1a5997b
   run();
 
   // RC
@@ -89,11 +103,19 @@ event init(t = 0) {
 
 // RC How would you add gravity?
 
+<<<<<<< HEAD
+event end (t = 100) { // RC restricted to 400
+  printf ("i = %d t = %g\n", i, t);
+}
+
+event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
+=======
 event end (t = 1000) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
 }
 
 event profiles (t = 0; t+=1.0; t<=1000) // RC restricted the output a little, don't overdo it at first!
+>>>>>>> 6b1a0847f0100c8e0a5f764ec7d5be8ae1a5997b
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)
@@ -102,11 +124,35 @@ event profiles (t = 0; t+=1.0; t<=1000) // RC restricted the output a little, do
   
   fp = fopen("yprof", "a");
   for (double x = -4; x <= 4; x += 0.01)
+<<<<<<< HEAD
+    fprintf (fp, "%g %g %g %g\n", t, x, interpolate (u.y, x, 0), interpolate (f, x, 0));
+=======
     fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 0));
+>>>>>>> 6b1a0847f0100c8e0a5f764ec7d5be8ae1a5997b
   fclose (fp);
 }
 
 
+<<<<<<< HEAD
+event saveInterfaces (t += 1.0) {
+    char nameInterfaces1[200];
+    sprintf(nameInterfaces1,"interfacesLiquid-%0.1f.dat",t);
+    FILE * fp1 = fopen(nameInterfaces1, "w");
+    output_facets (f, fp1);	
+    fclose(fp1);
+}
+
+
+//event loginterface (t += 1.0) {
+    //scalar posX[],posY[];
+    //position (f, posX, {1,0}); // (1,0) indicates the unit vector in the x-direction
+    //position (f, posY, {0,1}); // (0,1) indicates the unit vector in the y-direction
+    //fprintf(fp_interface, "%i %g %1.4f %1.4f %1.4f %1.4f %1.4f \n", i, t, statsf(f).sum, statsf(posX).min, statsf(posX).max, statsf(posY).min, statsf(posY).max);
+    //fflush(fp_interface);
+//}
+
+=======
+>>>>>>> 6b1a0847f0100c8e0a5f764ec7d5be8ae1a5997b
 // RC added this for profiling
 event logstats (t += 1.0) {
 
