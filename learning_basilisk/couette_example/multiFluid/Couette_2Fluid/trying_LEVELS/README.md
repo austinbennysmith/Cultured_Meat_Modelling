@@ -1,0 +1,1 @@
+### Results from running the 2-fluid Couette simulation at different refinement LEVELs: as the LEVEL is increased, the steady state solution approaches a corner at the interface, as expected. See images below:
