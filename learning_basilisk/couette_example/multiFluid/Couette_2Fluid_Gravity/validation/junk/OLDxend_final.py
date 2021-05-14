@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
-#FILE = raw_input("File name?")
-FILE = input("File name?")
+FILE = raw_input("File name?")
 xprof = np.genfromtxt(FILE, delimiter=" ")
 print(xprof.shape)
+#xprof = xprof[:4000, :]
 endArray = xprof[-100:, :]
 horiz = []
 for i in range(len(endArray[:, 2])):
