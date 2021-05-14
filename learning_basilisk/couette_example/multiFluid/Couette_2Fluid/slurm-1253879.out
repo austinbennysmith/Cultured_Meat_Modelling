@@ -1,3 +1,0 @@
-updating Makefile.deps
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o multicouette/multicouette multicouette.c -lm
-[multicouette.tst]

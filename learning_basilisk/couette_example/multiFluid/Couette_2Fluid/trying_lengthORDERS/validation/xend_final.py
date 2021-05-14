@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-FILE = raw_input("File name?")
+#FILE = raw_input("File name?")
+FILE = input("File name?")
 xprof = np.genfromtxt(FILE, delimiter=" ")
 print(xprof.shape)
 endArray = xprof[-100:, :]

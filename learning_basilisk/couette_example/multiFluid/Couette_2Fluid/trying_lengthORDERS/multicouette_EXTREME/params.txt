@@ -1,0 +1,13 @@
+rho1: 1 
+rho2: 0.917 
+mu1: 0.1 
+mu2: 3 
+sigma: 7.28e-06 
+refLength: 1e-11 
+refVelocity: 1e+06 
+Reynolds Number: 10 
+Weber Number: 137363 
+mu_ratio: 30 
+mu1 correct: 10 
+mu2 correct: 3 
+sigma correct: 7.28e-06 

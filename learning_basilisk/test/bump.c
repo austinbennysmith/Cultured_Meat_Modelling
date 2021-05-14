@@ -35,3 +35,4 @@ int main() {
   init_grid (1 << LEVEL);
   run();
 }
+

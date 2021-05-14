@@ -1,2 +1,0 @@
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o multicouette_Le-2/multicouette_Le-2 multicouette_Le-2.c -lm
-[multicouette_Le-2.tst]

@@ -7,25 +7,26 @@
 
 FILE *fp1 ;
 
-#define LEVEL 7 // RC was 4, needs to be bigger to capture the setup
+#define LEVEL 8 // RC was 4, needs to be bigger to capture the setup
 
 // Dimensional quantities:
-#define rhoWater 10.0
-#define rhoOil 9.0
+#define rhoWater 1000.0
+#define rhoOil 917.0
 #define muWater 0.001 // approximatley the viscosity of water
 #define muOil 0.03 // approximateley the viscosity of oil
 
 #define sig 0.0728  //surface tension of water
 
-#define refLength 0.01  // height of the domain
-#define refVelocity 0.01  // velocity of the top plate
+#define refLength 0.00001  // height of the domain
+#define refVelocity 10.0  // velocity of the top plate
 
 // Dimensionless quantities:
-#define rho_ratio rhoOil/rhoWater
-#define mu_ratio muOil/muWater
-#define Re rhoWater*refVelocity*refLength/muWater  // Reynolds number
-#define We rhoWater*pow(refVelocity,2)*refLength/sig
+#define rho_ratio (rhoOil/rhoWater)
+#define mu_ratio (muOil/muWater)
+#define Re (rhoWater*refVelocity*refLength/muWater)  // Reynolds number
+#define We (rhoWater*pow(refVelocity,2)*refLength/sig)
 
+FILE *fp_params;
 
 // RC
 FILE * fp_stats;
@@ -52,14 +53,34 @@ int main() {
   // I rescale the system so that water has unit density, and the oil properties are just defined in terms of water
   rho1 = 1.0; // water density
   rho2 = rho_ratio; // oil density
-  mu1 = 1./Re; // water dynamic viscosity
+  mu1 = 1/Re; // water dynamic viscosity
   mu2 = mu_ratio*mu1; // oil dynamic viscosity
-  f.sigma=1./We;
+  f.sigma=1/We; // change this later
 
   DT = 1.0e-2; // RC
   NITERMIN = 1; // default 1
   NITERMAX = 200; // default 100
   TOLERANCE = 1e-4; // default 1e-3
+
+  char params[200];
+  sprintf(params, "params.txt");
+  fp_params=fopen(params, "w");
+  {
+    char params[200];
+	sprintf(params, "params.txt");
+	fp_params=fopen(params, "w");
+  }
+
+  fprintf(fp_params, "rho1: %g \n", rho1);
+  fprintf(fp_params, "rho2: %g \n", rho2);
+  fprintf(fp_params, "mu1: %g \n", mu1);
+  fprintf(fp_params, "mu2: %g \n", mu2);
+  fprintf(fp_params, "sigma: %g \n", f.sigma);
+  fprintf(fp_params, "refLength: %g \n", refLength);
+  fprintf(fp_params, "refVelocity: %g \n", refVelocity);
+  fprintf(fp_params, "Reynolds Number: %g \n", Re);
+  fprintf(fp_params, "Weber Number: %g \n", We);
+  fclose(fp_params);
 
   run();
 
