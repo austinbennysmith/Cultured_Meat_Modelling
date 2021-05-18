@@ -1,0 +1,11 @@
+rho1: 1 
+rho2: 0.917 
+mu1: 0.0001 
+mu2: 0.003 
+sigma: 0.0728 
+refLength: 0.1 
+refVelocity: 0.1 
+Reynolds Number: 10000 
+Weber Number: 13.7363 
+Froude Number: 0.101015 
+Dimensionless gravity: 98 

@@ -4,6 +4,7 @@
 #include "navier-stokes/centered.h"
 #include "two-phase.h"
 #include "tension.h"
+#include "view.h"
 
 FILE *fp1 ;
 
@@ -60,7 +61,7 @@ int main() {
   DT = 1.0e-2; // RC
   NITERMIN = 1; // default 1
   NITERMAX = 200; // default 100
-  TOLERANCE = 1e-4; // default 1e-3
+  TOLERANCE = 1e-3; // default 1e-3
 
   char params[200];
   sprintf(params, "params.txt");
@@ -162,3 +163,53 @@ event gfsview (t += 10.0) { // RC
     output_gfs(fp_gfs);
     fclose(fp_gfs);
 }
+
+event images (t+=1)
+{
+	// output_ppm (u.x, linear=true, file="image.png");
+	output_ppm (u.x, linear=true, file="vid.mp4");
+	// output_ppm(f, linear=true, file="vid.mp4");
+}
+
+event interface (t+=1)
+{
+	char name_interface[100];
+	sprintf(name_interface, "interface_%g.dat", t);
+
+	FILE * fp2 = fopen(name_interface, "w");
+	output_facets (f, fp2);
+}
+
+event xmovie (t+=0.01)
+{
+	clear();
+	squares("u.x", spread=-1, linear=true, map=cool_warm);
+	draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+    // cells();
+	save ("xmovie.mp4");
+}
+
+event ymovie (t+=0.01)
+{
+	clear();
+	squares("u.y", spread=-1, linear=true, map=cool_warm);
+	draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+    // cells();
+	save ("ymovie.mp4");
+}
+// event movie (t+=1.0; t<=10)
+// {c
+// 	view (tx=0.0, ty=0.0);
+// 	clear();
+// 	squares("u.x", spread=-1, linear=true, map=cool_warm);
+// 	draw_vof ("f", fc={0.5, 0.5, 0.5}, lw=1);
+// 	save("animation.mp4");
+// }
+
+// event image (t=1)
+// {
+// 	clear();
+// 	draw_vof ("f");
+// 	box();
+// 	save ("image.ppm");
+// }

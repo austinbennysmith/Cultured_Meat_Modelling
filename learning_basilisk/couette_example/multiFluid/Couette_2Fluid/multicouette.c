@@ -4,6 +4,11 @@
 #include "navier-stokes/centered.h"
 #include "two-phase.h"
 #include "tension.h"
+#include "view.h"
+
+// #include "utils.h"
+// #include "input.h"
+#include "output.h"
 
 FILE *fp1 ;
 
@@ -145,4 +150,17 @@ event gfsview (t += 10.0) { // RC
     FILE* fp_gfs = fopen (name_gfs, "w");
     output_gfs(fp_gfs);
     fclose(fp_gfs);
+}
+
+// event images (t+=1)
+// {
+// 	// output_ppm (u.x, linear=true, file="image.png");
+// 	output_ppm (u.x, linear=true, file="vid.mp4")
+// }
+event image (t=5)
+{
+	clear();
+	draw_vof ("f", lc = {0.5,0.5,0.5}, lw=2);
+	box();
+	save ("image.ppm");
 }
