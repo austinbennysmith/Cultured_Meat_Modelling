@@ -4,6 +4,7 @@
 #include "navier-stokes/centered.h"
 #include "two-phase.h"
 #include "tension.h"
+#include "view.h"
 
 FILE *fp1 ;
 
@@ -28,8 +29,9 @@ FILE *fp1 ;
 
 FILE *fp_params;
 
-// RC
 FILE * fp_stats;
+
+FILE * fp_interface;
 
 u.t[top] = dirichlet(1.0);
 u.n[top] = dirichlet(0.0);
@@ -82,9 +84,14 @@ int main() {
   fprintf(fp_params, "Weber Number: %g \n", We);
   fclose(fp_params);
 
+  {
+  	char intName[200];
+  	sprintf(intName, "loginterface.dat");
+  	fp_interface = fopen(intName, "w");
+  }
   run();
 
-  // RC
+  fclose(fp_interface);
   fclose(fp_stats);
 }
 
@@ -145,4 +152,39 @@ event gfsview (t += 10.0) { // RC
     FILE* fp_gfs = fopen (name_gfs, "w");
     output_gfs(fp_gfs);
     fclose(fp_gfs);
+}
+
+// event xmovie (t+=0.01)
+// {
+// 	clear();
+// 	squares("u.x", spread=-1, linear=true, map=cool_warm);
+// 	draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+//     // cells();
+// 	save ("xmovie.mp4");
+// }
+
+// event ymovie (t+=0.01)
+// {
+// 	clear();
+// 	squares("u.y", spread=-1, linear=true, map=cool_warm);
+// 	draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+//     // cells();
+// 	save ("ymovie.mp4");
+// }
+
+event interface (t+=1)
+{
+	char name_interface[100];
+	sprintf(name_interface, "interface_%g.dat", t);
+
+	FILE * fp2 = fopen(name_interface, "w");
+	output_facets (f, fp2);
+}
+
+event loginterface (t += 1.0) {    
+    scalar posX[],posY[];
+    position (f, posX, {1, 0});
+    position (f, posY, {0,1});
+    fprintf(fp_interface, "%i %g %1.4f %1.4f %1.4f %1.4f %1.4f\n", i, t, statsf(f).sum, statsf(posX).min, statsf(posX).max, statsf(posY).min, statsf(posY).max);
+    fflush(fp_interface);
 }

@@ -6,10 +6,6 @@
 #include "tension.h"
 #include "view.h"
 
-// #include "utils.h"
-// #include "input.h"
-#include "output.h"
-
 FILE *fp1 ;
 
 #define LEVEL 8 // RC was 4, needs to be bigger to capture the setup
@@ -35,6 +31,8 @@ FILE *fp_params;
 
 // RC
 FILE * fp_stats;
+
+FILE * fp_interface;
 
 u.t[top] = dirichlet(1.0);
 u.n[top] = dirichlet(0.0);
@@ -87,9 +85,14 @@ int main() {
   fprintf(fp_params, "Weber Number: %g \n", We);
   fclose(fp_params);
 
+  {
+    char intName[200];
+    sprintf(intName, "loginterface.dat");
+    fp_interface = fopen(intName, "w");
+  }
   run();
 
-  // RC
+  fclose(fp_interface);
   fclose(fp_stats);
 }
 
@@ -152,15 +155,19 @@ event gfsview (t += 10.0) { // RC
     fclose(fp_gfs);
 }
 
-// event images (t+=1)
-// {
-// 	// output_ppm (u.x, linear=true, file="image.png");
-// 	output_ppm (u.x, linear=true, file="vid.mp4")
-// }
-event image (t=5)
+event interface (t+=1)
 {
-	clear();
-	draw_vof ("f", lc = {0.5,0.5,0.5}, lw=2);
-	box();
-	save ("image.ppm");
+  char name_interface[100];
+  sprintf(name_interface, "interface_%g.dat", t);
+
+  FILE * fp2 = fopen(name_interface, "w");
+  output_facets (f, fp2);
+}
+
+event loginterface (t += 1.0) {    
+    scalar posX[],posY[];
+    position (f, posX, {1, 0});
+    position (f, posY, {0,1});
+    fprintf(fp_interface, "%i %g %1.4f %1.4f %1.4f %1.4f %1.4f\n", i, t, statsf(f).sum, statsf(posX).min, statsf(posX).max, statsf(posY).min, statsf(posY).max);
+    fflush(fp_interface);
 }
