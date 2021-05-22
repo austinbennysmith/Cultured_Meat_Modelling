@@ -40,6 +40,15 @@ u.n[top] = dirichlet(0.0);
 u.t[bottom] = dirichlet(0.0);
 u.n[bottom] = dirichlet(0.0);
 
+// scalar s1[];
+
+// void draw_frame(char * fname)
+// {
+// 	cells();
+// 	squares("s1");
+// 	save("fname.png");
+// }
+
 int main() {
   L0 = 8.;
   origin(-L0/2., -0.5);
@@ -116,25 +125,14 @@ event init(t = 0) {
 
 }
 
-// RC How would you add gravity?
+// event adapt (i++)
+// {
+//   adapt_wavelet({u, f}, (double[]){1e-2, 1e-2, 1e-2}, LEVEL);
+// }
 
 event end (t = 100) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
 }
-
-event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
-{
-  FILE * fp = fopen("xprof", "a");
-  for (double y = -0.5; y <= 0.5; y += 0.01)
-    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 0, y));
-  fclose (fp);
-  
-  fp = fopen("yprof", "a");
-  for (double x = -4; x <= 4; x += 0.01)
-    fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 0));
-  fclose (fp);
-}
-
 
 // RC added this for profiling
 event logstats (t += 1.0) {
@@ -155,6 +153,51 @@ event gfsview (t += 10.0) { // RC
     fclose(fp_gfs);
 }
 
+event xmovie (t+=0.1, t<=10)
+{
+ clear();
+ squares("u.x", spread=-1, linear=true, map=cool_warm);
+ draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+ // cells();
+ save ("xmovie.mp4");
+}
+
+event ymovie (t+=0.1, t<=10)
+{
+ clear();
+ squares("u.y", spread=-1, linear=true, map=cool_warm);
+ draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+ // cells(); // Movie is black when this line is included
+ save ("ymovie.mp4");
+}
+
+event shearmovie (t+=0.1, t<=10)
+{
+  scalar shear[];
+  foreach()
+  	shear[] = (mu(f[]))*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  // foreach()
+  //   if (y<0.3)
+  //   {
+  //     shear[] = (mu1)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  //   }
+  // foreach()
+  //   if (y>=0.3)
+  //   {
+  //     shear[] = (mu2)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  //   }
+  // foreach()
+  // shear[] = (u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  boundary ({shear});
+  clear();
+  squares("shear", spread=1, linear=true, map=cool_warm);
+  // draw_vof("f", lc = {1.0,1.0,1.0}, lw=2);
+  save("shearMovie.mp4");
+  FILE * fp_shear = fopen("shear", "w");
+  output_field ({shear}, fp_shear, linear=true);
+  fclose(fp_shear);
+}
+
 event interface (t+=1)
 {
   char name_interface[100];
@@ -170,4 +213,43 @@ event loginterface (t += 1.0) {
     position (f, posY, {0,1});
     fprintf(fp_interface, "%i %g %1.4f %1.4f %1.4f %1.4f %1.4f\n", i, t, statsf(f).sum, statsf(posX).min, statsf(posX).max, statsf(posY).min, statsf(posY).max);
     fflush(fp_interface);
+}
+
+event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
+{
+  FILE * fp = fopen("xprof", "a");
+  for (double y = -0.5; y <= 0.5; y += 0.01)
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 0, y));
+  fclose (fp);
+  
+  fp = fopen("yprof", "a");
+  for (double x = -4; x <= 4; x += 0.01)
+    fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 0));
+  fclose (fp);
+  
+  // scalar shear[];
+  // foreach()
+  //   if (y<0.3)
+  //   {
+  //     shear[] = mu1.*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  //   }
+  // foreach()
+  //   if (y>=0.3)
+  //   {
+  //     shear[] = mu2.*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  //   }
+  // // fp=fopen("shearprof", "a");
+  // // for (double y = -0.5; y <= 0.5; y += 0.01)
+  // //   for (double x = -4; x <= 4; x += 0.01)
+  // //     fprintf(fp, "%g ", shear);
+  // //   fprintf(fp, "\n");
+  // fp=fopen("Xshearprof", "a");
+  // for (double y = -0.5; y <= 0.5; y += 0.01)
+  //   fprintf (fp, "%g %g %g\n", t, y, shear);
+  // fclose (fp);
+
+  // fp=fopen("Yshearprof", "a");
+  // for (double x = -4; x <= 4; x += 0.01)
+  //   fprintf (fp, "%g %g %g\n", t, x, shear);
+  // fclose (fp);
 }

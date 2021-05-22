@@ -9,7 +9,7 @@ print(logstats)
 # 		np.delete(logstats, col, 1) # Deleting the column with string-type elements
 
 logstats = logstats[:, ~np.all(np.isnan(logstats), axis=0)]
-speedup = logstats[:, -1]/logstats[:, -2]
+speedup = logstats[:, -1]/logstats[:, -2] # speedup as CPU time divided by wall clock time
 plt.plot(speedup)
 plt.title("Ratio of CPU time to Wall Clock time")
 plt.xlabel("Simulation time") # Clearer way to label?

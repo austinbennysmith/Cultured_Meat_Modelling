@@ -30,8 +30,8 @@ for i in unique:
 	Ydiff = np.linalg.norm(Ythreads4Now-Ythreads1Now)
 	YdiffArr.append(Ydiff)
 
-plt.plot(XdiffArr, label="u.x norm")
-plt.plot(YdiffArr, label="u.y norm")
+plt.plot(XdiffArr, label="u.x 4 vs 1 threads")
+plt.plot(YdiffArr, label="u.y 4 vs 1 threads")
 plt.title("1 vs 4 Threads L2 Velocity Norms")
 plt.xlabel("Time")
 plt.ylabel("L2 Norm")
