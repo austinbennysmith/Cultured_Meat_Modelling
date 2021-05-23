@@ -125,7 +125,10 @@ event init(t = 0) {
 
 }
 
-// RC How would you add gravity?
+// event adapt (i++)
+// {
+//   adapt_wavelet({u, f}, (double[]){1e-2, 1e-2, 1e-2}, LEVEL);
+// }
 
 event end (t = 100) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
