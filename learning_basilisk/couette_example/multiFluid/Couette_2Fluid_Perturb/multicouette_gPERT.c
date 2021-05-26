@@ -125,10 +125,14 @@ event init(t = 0) {
 
 }
 
-// event adapt (i++)
-// {
-//   adapt_wavelet({u, f}, (double[]){1e-2, 1e-2, 1e-2}, LEVEL);
-// }
+event adapt (i++)
+{
+  adapt_wavelet({u, f}, (double[]){1e-2, 1e-2, 1e-2}, LEVEL);
+  // u.x - 10^02
+  //f - 10^-3
+  //Take minLEVEL=4, maxLEVEL=9
+  //compare this to uniform LEVEL=9 without adaptivity
+}
 
 event end (t = 100) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);

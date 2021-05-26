@@ -1,0 +1,1 @@
+### In this folder, I compare code with and without adaptivity. The code with AMR will do the adaptation based on u.x and f, and will take arguments minlevel=4, maxlevel=9. The code without adaptivity will have LEVEL=9. Output will be moved into the validation folder, where I will also put Python scripts for postprocessing.

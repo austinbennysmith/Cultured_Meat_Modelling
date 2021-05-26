@@ -1,4 +1,4 @@
-### Line of code to slow down simulation video: mencoder -speed 0.1 -o output.mp4 -ovc lavc RT.mp4
+### Line of code to change speed of simulation video: mencoder -speed 0.1 -o output.mp4 -ovc lavc RT.mp4
 
 ### Line of code to crop video: ffmpeg -i shearMovie9.mp4 -vf "crop=in_w-115:in_h-525" -c:a copy shearMovie9CROP.mp4
 

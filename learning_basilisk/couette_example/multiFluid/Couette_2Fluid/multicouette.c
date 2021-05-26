@@ -125,9 +125,14 @@ event init(t = 0) {
 
 }
 
-event adapt (i++)
+// event adapt (i++)
+// {
+//   adapt_wavelet({u, f}, (double[]){1e-2, 1e-2, 1e-2}, LEVEL);
+// }
+event adapt(i++)
 {
-  adapt_wavelet({u, f}, (double[]){1e-2, 1e-2, 1e-2}, LEVEL);
+	adapt_wavelet({u.x, u.y}, (double[]){3e-2, 3e-2}, 9, 4);
+	unrefine(x>2)
 }
 
 event end (t = 100) { // RC restricted to 400
@@ -144,7 +149,7 @@ event logstats (t += 1.0) {
     fflush(fp_stats);
 }
 
-event gfsview (t += 10.0) { // RC
+event gfsview (t += 1.0) { // RC
     char name_gfs[200];
     sprintf(name_gfs,"Slice-%0.1f.gfs",t);
 
@@ -153,23 +158,23 @@ event gfsview (t += 10.0) { // RC
     fclose(fp_gfs);
 }
 
-event xmovie (t+=0.1, t<=10)
-{
- clear();
- squares("u.x", spread=-1, linear=true, map=cool_warm);
- draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
- // cells();
- save ("xmovie.mp4");
-}
+// event xmovie (t+=0.1, t<=10)
+// {
+//  clear();
+//  squares("u.x", spread=-1, linear=true, map=cool_warm);
+//  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+//  // cells();
+//  save ("xmovie.mp4");
+// }
 
-event ymovie (t+=0.1, t<=10)
-{
- clear();
- squares("u.y", spread=-1, linear=true, map=cool_warm);
- draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
- // cells(); // Movie is black when this line is included
- save ("ymovie.mp4");
-}
+// event ymovie (t+=0.1, t<=10)
+// {
+//  clear();
+//  squares("u.y", spread=-1, linear=true, map=cool_warm);
+//  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+//  // cells(); // Movie is black when this line is included
+//  save ("ymovie.mp4");
+// }
 
 event shearmovie (t+=0.1, t<=10)
 {
