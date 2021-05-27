@@ -1,8 +1,8 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 
-logstats1 = np.genfromtxt('2Couette_4Threads_noAd/logstats.dat', delimiter=' ', comments=None)
-logstats4 = np.genfromtxt('2Couette_4ThreadsAd/logstats.dat', delimiter=' ', comments=None)
+logstats1 = np.genfromtxt('without_Adaptivity/logstats.dat', delimiter=' ', comments=None)
+logstats4 = np.genfromtxt('with_Adaptivity/logstats.dat', delimiter=' ', comments=None)
 # logstats1 = np.genfromtxt('2Couette_1Thread/logstats.dat', delimiter=' ', comments=None)
 # logstats4 = np.genfromtxt('2Couette_4Threads/logstats.dat', delimiter=' ', comments=None)
 logstats1 = logstats1[:, ~np.all(np.isnan(logstats1), axis=0)]

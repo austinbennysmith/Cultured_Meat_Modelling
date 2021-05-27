@@ -131,8 +131,34 @@ event init(t = 0) {
 // }
 event adapt(i++)
 {
-	adapt_wavelet({u.x, u.y}, (double[]){3e-2, 3e-2}, 9, 4);
-	unrefine(x>2)
+	// Order matters for the following (in which the regions called by refine() and unrefine() overlap. If they don't overlap, you can at least switch refine() and unrefine(), idk about other rearrangements.)
+	// unrefine(y<0.1);
+	// refine(y<0.1&&level<9);
+	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, (LEVEL+2), (LEVEL-3));
+  
+  // refine(y>0.4&&x>1.0&&level<=8);
+  unrefine(y>0.1);
+  refine(y>0.1&&level<9);
+  adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
+
+	// Order doesn't matter for the following:
+	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
+	// refine(y<-0.45 && level<8);
+
+	// Order doesn't matter for the following:
+	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
+	// unrefine(y<0.1);
+
+	// Order doesn't matter for the following:
+	// The following two lines manually set the refinement level to be higher near the interface (y=0.3):
+	// refine(y<0.35 && y>0.25 && level<9);
+	// unrefine(y<0.25 && y>0.35);
+
+	// The following line is how I probably want to actually do the AMR for this code:
+	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
+	
+	// The following line does just u. If you don't put (scalar *) in front of it, an error is thrown since u is a vector but Basilisk expects a scalar
+	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
 }
 
 event end (t = 100) { // RC restricted to 400
@@ -158,14 +184,15 @@ event gfsview (t += 1.0) { // RC
     fclose(fp_gfs);
 }
 
-// event xmovie (t+=0.1, t<=10)
-// {
-//  clear();
-//  squares("u.x", spread=-1, linear=true, map=cool_warm);
-//  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
-//  // cells();
-//  save ("xmovie.mp4");
-// }
+event xmovie (t+=0.1, t<=10)
+{
+ clear();
+ // cells(lc={0.5,0.5,0.5}, lw=0.5);
+ squares("u.x", spread=-1, linear=true, map=cool_warm);
+ draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+ // cells();
+ save ("xmovie.mp4");
+}
 
 // event ymovie (t+=0.1, t<=10)
 // {
