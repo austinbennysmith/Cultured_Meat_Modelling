@@ -1,0 +1,3 @@
+i = 1600 t = 400
+
+# Quadtree, 1600 steps, 10.5505 CPU, 11.83 real, 4.33e+03 points.step/s, 16 var

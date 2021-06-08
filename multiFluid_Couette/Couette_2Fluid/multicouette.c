@@ -158,10 +158,15 @@ event adapt(i++)
 	// unrefine(y<0.25 && y>0.35);
 
 	// The following line is how I probably want to actually do the AMR for this code:
-	adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
+	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
 	
 	// The following line does just u. If you don't put (scalar *) in front of it, an error is thrown since u is a vector but Basilisk expects a scalar
 	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
+
+	// Test Radu suggested:
+	refine(y>0.45&&level<=8);
+	adapt_wavelet((scalar *){f}, (double[]){1e-6}, 8, 4);
+	unrefine(y>0.45&&x>3.0&&level<=8);
 }
 
 event end (t = 100) { // RC restricted to 400

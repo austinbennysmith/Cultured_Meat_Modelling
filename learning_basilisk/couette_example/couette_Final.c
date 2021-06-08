@@ -1,4 +1,5 @@
 #include "navier-stokes/centered.h"
+#include "view.h"
 // RC #include "embed.h"
 
 FILE *fp1 ;
@@ -91,3 +92,12 @@ event logstats (t += 1.0) {
     fflush(fp_stats);
 }
 
+event xmovie (t+=1.0, t<=5.0)
+{
+ clear();
+ // cells(lc={0.5,0.5,0.5}, lw=0.5);
+ // draw_vof ("cs", "fs", filled=-1, fc = {1.0,1.0,1.0}, lw=2);
+ squares("u.x", spread=-1, linear=true, map=cool_warm);
+ // cells();
+ save ("xmovie.mp4");
+}

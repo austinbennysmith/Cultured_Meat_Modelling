@@ -1,6 +1,0 @@
-In file included from /usr/include/stdint.h:25:0,
-                 from /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:9,
-                 from couette_Final-cpp.c:6:
-/usr/include/features.h:330:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
- #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
-    ^
