@@ -19,17 +19,10 @@ eta = y*np.sqrt(U/(v*x))
 u = DATA[:, 2]
 fprime = u/U
 
-etaMask = np.logical_and(eta[:]<=205, eta[:]>=100)
-eta2 = (eta[etaMask]-110)/10
-fprime2 = fprime[etaMask]
-
-# plt.plot(eta, fprime)
-# plt.plot(eta[:round(0.25*len(eta))], fprime[:round(0.25*len(eta))])
-plt.plot(eta2, fprime2, label='Numerical results')
+plt.plot(eta, fprime)
 
 plt.plot(SOL[:, 0], SOL[:, 1], label="Similarity solution")
 plt.xlabel('eta = y(U/u x)^(1/2)')
 plt.ylabel("f'(eta) = u/U")
 plt.legend()
-plt.title("Blasius Boundary Layer")
 plt.show()
