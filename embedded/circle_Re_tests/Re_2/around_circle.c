@@ -7,15 +7,14 @@
 #define rhoWater 1000.0 //kg m^-3
 #define muWater 0.001
 
-// #define refLength 0.0001
-// #define refVelocity 0.0001
+#define refLength 0.1 // Radius of cylinder
+#define refVelocity 1e-3
 
-#define Re 1e2  // Reynolds number
+#define Re (rhoWater*refVelocity*refLength/muWater)  // Reynolds number
 
-FILE *fp_params;
+FILE * fp_params;
 
 FILE * fp_stats;
-
 
 // u.n[embed] = dirichlet(0.);
 // u.t[embed] = dirichlet(1.);
@@ -28,10 +27,10 @@ FILE * fp_stats;
 
 
 // Top & bottom Free-Slip condition (Neumann boundary condition du/dx=0, du/dy=0)
-u.n[top] = dirichlet(0.0);
+u.n[top] = neumann(0.0);
 u.t[top] = neumann(0.0);
 
-u.n[bottom] = dirichlet(0.0);
+u.n[bottom] = neumann(0.0);
 u.t[bottom] = neumann(0.0);
 
 // Left inflow
@@ -119,7 +118,7 @@ event properties(i++)
 	boundary((scalar *){muv});
 }
 
-event end (t = 1000) { // RC restricted to 400
+event end (t = 100) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
 }
 
@@ -159,4 +158,17 @@ event ymovie (t+=0.1)
  squares("u.y", spread=-1, linear=true, map=cool_warm);
  // cells();
  save ("ymovie.mp4");
+}
+
+event vortmovie (t+=0.1) 
+{
+	scalar omega[];
+	vorticity(u, omega);
+
+	view (fov=2.7, tx=-.5, ty=-0.06, width=2200, height=300);
+	clear();
+	squares("omega", spread=-1.0, linear=true, map=cool_warm);
+	// draw_vof("fs",fc = {0.0,0.0,0.0}, lw=1); 
+	// draw_vof("f", lc = {0.0,0.0,0.0}, lw=1); // For some reason Basilisk throws an error if you don't put spaces between 'lc='
+	save("Vorticity.mp4");
 }

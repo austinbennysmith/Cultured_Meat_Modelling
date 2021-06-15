@@ -7,15 +7,14 @@
 #define rhoWater 1000.0 //kg m^-3
 #define muWater 0.001
 
-// #define refLength 0.0001
-// #define refVelocity 0.0001
+#define refLength 0.1 // Radius of cylinder
+#define refVelocity 1e-1
 
-#define Re 1e4  // Reynolds number
+#define Re (rhoWater*refVelocity*refLength/muWater)  // Reynolds number
 
-FILE *fp_params;
+FILE * fp_params;
 
 FILE * fp_stats;
-
 
 // u.n[embed] = dirichlet(0.);
 // u.t[embed] = dirichlet(1.);
@@ -159,4 +158,17 @@ event ymovie (t+=0.1)
  squares("u.y", spread=-1, linear=true, map=cool_warm);
  // cells();
  save ("ymovie.mp4");
+}
+
+event vortmovie (t+=0.1) 
+{
+	scalar omega[];
+	vorticity(u, omega);
+
+	view (fov=2.7, tx=-.5, ty=-0.06, width=2200, height=300);
+	clear();
+	squares("omega", spread=-1.0, linear=true, map=cool_warm);
+	// draw_vof("fs",fc = {0.0,0.0,0.0}, lw=1); 
+	// draw_vof("f", lc = {0.0,0.0,0.0}, lw=1); // For some reason Basilisk throws an error if you don't put spaces between 'lc='
+	save("Vorticity.mp4");
 }

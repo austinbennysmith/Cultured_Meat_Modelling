@@ -1,28 +1,15 @@
 sh /home/benny/basilisk/src/tests.sh
 updating Makefile.tests
 updating Makefile.deps
-/home/benny/basilisk/src/qcc -MD -o flat_plate.s.d flat_plate.c
+/home/benny/basilisk/src/qcc -MD -o around_circle.s.d around_circle.c
 updating Makefile.deps
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o flat_plate/flat_plate flat_plate.c -lm
-[flat_plate.tst]
-sh /home/benny/basilisk/src/tests.sh
-updating Makefile.tests
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o around_circle/around_circle around_circle.c -lm
+[around_circle.tst]
+/home/benny/basilisk/src/runtest: 120: cd: can't cd to ..
+circle_run_simulations.sh: 8: cd: can't cd to Re_-4
+make: *** No rule to make target 'around_circle.tst'.  Stop.
+circle_run_simulations.sh: 8: cd: can't cd to Re_-3
+/home/benny/basilisk/src/qcc -MD -o around_circle.s.d around_circle.c
 updating Makefile.deps
-/home/benny/basilisk/src/qcc -MD -o flat_plate.s.d flat_plate.c
-updating Makefile.deps
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o flat_plate/flat_plate flat_plate.c -lm
-[flat_plate.tst]
-sh /home/benny/basilisk/src/tests.sh
-updating Makefile.tests
-updating Makefile.deps
-/home/benny/basilisk/src/qcc -MD -o flat_plate.s.d flat_plate.c
-updating Makefile.deps
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o flat_plate/flat_plate flat_plate.c -lm
-[flat_plate.tst]
-sh /home/benny/basilisk/src/tests.sh
-updating Makefile.tests
-updating Makefile.deps
-/home/benny/basilisk/src/qcc -MD -o flat_plate.s.d flat_plate.c
-updating Makefile.deps
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o flat_plate/flat_plate flat_plate.c -lm
-[flat_plate.tst]
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o around_circle/around_circle around_circle.c -lm
+[around_circle.tst]

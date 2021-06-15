@@ -10,7 +10,7 @@
 // #define refLength 0.1
 // #define refVelocity 0.1
 
-#define Re 5e5  // Reynolds number
+#define Re 1e3  // Reynolds number
 
 FILE * fp_params;
 
@@ -46,7 +46,7 @@ u.t[embed] = dirichlet(0.0);
 face vector muv[];
 
 int main() {
-	L0=50.0;
+	L0=10.0;
 	init_grid(1<<LEVEL);
 	mu=muv;
 
@@ -82,6 +82,10 @@ event init(t=0) {
 		   union ((x - (0.75*L0)) - (0.5*L0), -(x - (0.75*L0)) - (0.5*L0)),
 		   union ((y - (2.0)) - 0.1, -(y - (2.0)) - 0.1)
 		   );
+		// phi[] = union (
+		//    union ((x - (0.5*L0)) - (0.5*L0), -(x - (0.5*L0)) - (0.5*L0)),
+		//    union ((y - (2.0)) - 0.1, -(y - (2.0)) - 0.1)
+		//    );
 	boundary({phi});
 	fractions(phi, cs, fs);
 }
@@ -117,6 +121,63 @@ event gfsview (t += 1.0) { // RC
     FILE* fp_gfs = fopen (name_gfs, "w");
     output_gfs(fp_gfs);
     fclose(fp_gfs);
+}
+
+event profiles (t = 0; t+=1.0; t<=100)
+{
+  FILE * fp = fopen("xprof", "a");
+  for (double y = 0.0; y <= 4.0; y += 0.01)
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 9.99, y));
+  fclose (fp);
+  
+  fp = fopen("yprof", "a");
+  for (double x = 0; x <= 10; x += 0.01)
+    fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 0));
+  fclose (fp);
+}
+
+double uxdiffs[201];
+double BoundLayer[1001];
+int my_int;
+float my_float;
+double min;
+double ycoord;
+int ytemp;
+event blayer (t+=1.0) {
+	FILE * fp = fopen("blayer", "a");
+	FILE * fp2 = fopen("temp", "a");
+	FILE * fp3 = fopen("tempy", "a");
+	for (double x=2.5; x<= 10; x += 0.01) {
+		for (double y=2.0; y<=4.0; y+=0.01) {
+			my_float = 100.0*(y-2.0);
+			my_int = (int)my_float;
+			// uxdiffs[my_int] = interpolate(u.y, x, y);
+			uxdiffs[my_int] = fabs(0.99-interpolate(u.y, x, y));
+		}
+		min=uxdiffs[0];
+		ycoord=0.0;
+		ytemp=0;
+		for (int i=0; i<201; i++) {
+			if (min>uxdiffs[i]) {
+				min=uxdiffs[i];
+				ytemp=i;
+				ycoord=(double)ytemp;
+				ycoord=(0.01*ycoord)+2.0;
+			}
+		}
+		fprintf(fp2, "%g %g %g\n", t, x, min);
+		fprintf(fp3, "%g %g %g\n", t, x, ycoord);
+	}
+	fclose (fp2);
+	fclose(fp3);
+
+			// uxvals[(int)y*100] = yq*100;
+			// printf("%lf\n", &uxvals[(int)y*100]);
+    		// fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 0, y));
+	for (int loop=0; loop<201; loop++)
+		fprintf(fp, "%g %g\n", t, uxdiffs[loop]);
+	// fprintf(fp, "%g\n", uxvals[9]);
+  	fclose (fp);
 }
 
 // event xmovie (t+=0.1)

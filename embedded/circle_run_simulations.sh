@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd Re_tests
+cd circle_Re_tests
 
-for i in 0 1 2 3 4
+for i in -5 -4 -3 -2 -1
 
 do
 	cd Re_$i
