@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 SOL = np.genfromtxt("graph.txt", delimiter=" ")
 
-DATA = np.genfromtxt("xprof", delimiter=" ")
-tend = 400
+DATA = np.genfromtxt("xprofABOVE", delimiter=" ")
+tend = 72
 mask = DATA[:, 0]==tend
 DATA = DATA[mask, :]
 x = 2.7
@@ -19,10 +19,13 @@ eta = y*np.sqrt(U/(v*x))
 u = DATA[:, 2]
 fprime = u/U
 
-plt.plot(eta, fprime)
+etaMask=eta[:]<100
+eta = eta[etaMask]/10
+fprime = fprime[etaMask]
+plt.scatter(eta, fprime)
 
 plt.plot(SOL[:, 0], SOL[:, 1], label="Similarity solution")
-plt.xlabel('eta = y(U/u x)^(1/2)')
+plt.xlabel('eta = y(U/v x)^(1/2)')
 plt.ylabel("f'(eta) = u/U")
 plt.legend()
 plt.show()

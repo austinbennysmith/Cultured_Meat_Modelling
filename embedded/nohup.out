@@ -13,3 +13,38 @@ circle_run_simulations.sh: 8: cd: can't cd to Re_-3
 updating Makefile.deps
 qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o around_circle/around_circle around_circle.c -lm
 [around_circle.tst]
+sh /home/benny/basilisk/src/tests.sh
+updating Makefile.tests
+updating Makefile.deps
+/home/benny/basilisk/src/qcc -MD -o around_circle.s.d around_circle.c
+updating Makefile.deps
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o around_circle/around_circle around_circle.c -lm
+[around_circle.tst]
+sh /home/benny/basilisk/src/tests.sh
+updating Makefile.tests
+updating Makefile.deps
+/home/benny/basilisk/src/qcc -MD -o around_circle.s.d around_circle.c
+updating Makefile.deps
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o around_circle/around_circle around_circle.c -lm
+[around_circle.tst]
+sh /home/benny/basilisk/src/tests.sh
+updating Makefile.tests
+updating Makefile.deps
+/home/benny/basilisk/src/qcc -MD -o around_circle.s.d around_circle.c
+updating Makefile.deps
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o around_circle/around_circle around_circle.c -lm
+[around_circle.tst]
+sh /home/benny/basilisk/src/tests.sh
+updating Makefile.tests
+updating Makefile.deps
+/home/benny/basilisk/src/qcc -MD -o around_circle.s.d around_circle.c
+updating Makefile.deps
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o around_circle/around_circle around_circle.c -lm
+[around_circle.tst]
+sh /home/benny/basilisk/src/tests.sh
+updating Makefile.tests
+updating Makefile.deps
+/home/benny/basilisk/src/qcc -MD -o around_circle.s.d around_circle.c
+updating Makefile.deps
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o around_circle/around_circle around_circle.c -lm
+[around_circle.tst]

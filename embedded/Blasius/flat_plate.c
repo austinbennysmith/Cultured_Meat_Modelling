@@ -80,7 +80,7 @@ event init(t=0) {
 
 		phi[] = union (
 		   union ((x - (0.75*L0)) - (0.5*L0), -(x - (0.75*L0)) - (0.5*L0)),
-		   union ((y - (2.0)) - 0.1, -(y - (2.0)) - 0.1)
+		   union ((y - (2.0)) - 0.01, -(y - (2.0)) - 0.01)
 		   );
 		// phi[] = union (
 		//    union ((x - (0.5*L0)) - (0.5*L0), -(x - (0.5*L0)) - (0.5*L0)),
@@ -91,7 +91,7 @@ event init(t=0) {
 }
 
 event adapt (i++) {
-	adapt_wavelet ((scalar *){cs, u.x, u.y}, (double[]){1e-3, 1e-2, 1e-2}, 9, 4)
+	adapt_wavelet ((scalar *){cs, u.x, u.y}, (double[]){1e-3, 1e-2, 1e-2}, 12, 4)
 }
 
 event properties(i++)
@@ -101,7 +101,7 @@ event properties(i++)
 	boundary((scalar *){muv});
 }
 
-event end (t = 400) { // RC restricted to 400
+event end (t = 2000) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
 }
 
@@ -123,12 +123,18 @@ event gfsview (t += 1.0) { // RC
     fclose(fp_gfs);
 }
 
-event profiles (t = 0; t+=1.0; t<=400)
+event profiles (t = 0; t+=1.0)
 {
-  FILE * fp = fopen("xprof", "a");
+  FILE * fp = fopen("xprofABOVE", "a");
   for (double y = 2.0; y <= 4.0; y += 0.01)
     fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 2.7, y));
   fclose (fp);
+
+  fp = fopen("xprofBELOW", "a");
+  for (double y = 0.0; y <= 2.0; y += 0.01)
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 2.7, y));
+  fclose (fp);
+
   
   fp = fopen("yprof", "a");
   for (double x = 0; x <= 10; x += 0.01)

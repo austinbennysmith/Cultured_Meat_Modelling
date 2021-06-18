@@ -5,7 +5,7 @@ FILE = 'tempy'
 FILE2 = 'tempy2'
 tempy = np.genfromtxt(FILE, delimiter=" ")
 tempy2 = np.genfromtxt(FILE2, delimiter=" ")
-t=400
+t=67
 mask = tempy[:, 0]==t # for example
 mask2 = tempy2[:, 0]==t
 platerange=np.linspace(2.5, 10, 5)

@@ -17,7 +17,7 @@ int main() {
   L0 = 10.;
   X0 = -L0/2;
   // N = 100;
-  // CFL = 0.01;
+  // CFL = -4.0;
   // DT = (L0/N)*(L0/N)/2 ;
 // #define EPS 0.1 
   
@@ -51,6 +51,7 @@ event printdata (t += 1.0; t < 1000.0) {
   fprintf (stdout, "\n\n");
 }
 
+double cDelta;
 event integration (i++) {
   // double dt = DT;
   scalar dT[],q[];
@@ -65,10 +66,10 @@ event integration (i++) {
     // q[]=-(T[0,0] - T[-1,0])/Delta;
 
  	// My ACTUAL advection-diffusion scheme:
-  	q[] = -(T[0,0]-T[-1,0])/Delta + U*(T[0,0]+T[-1,0])/2.0;
+  	q[] = -(T[0,0]-T[-1,0])/Delta + U*((T[0,0]+T[-1,0])/2.0 - ((T[0,0]-T[-1,0])/2));
 
   	// Advection alone:
-  	// q[] = U*(T[0,0]+T[-1,0])/2.0;
+  	// q[] = U*((T[0,0]+T[-1,0])/2.0 - ((T[0,0]-T[-1,0])/2));
 
   	//Diffusion alone:
   	// q[] = -(T[0,0]-T[-1,0])/Delta;

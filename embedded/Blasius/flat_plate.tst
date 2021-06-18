@@ -1,2 +1,0 @@
-27d69c3d874b21a61514087c5c54fc4c  flat_plate.c
-c3282385fa74332a9b06972b32e9bd77  flat_plate.s

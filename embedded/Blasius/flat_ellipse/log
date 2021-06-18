@@ -1,0 +1,6 @@
+/home/benny/basilisk/src/poisson.h:308:error: [Thread debugging using libthread_db enabled]
+/home/benny/basilisk/src/poisson.h:308:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+/home/benny/basilisk/src/poisson.h:308:error: [New Thread 0x7ffff452d700 (LWP 25366)]
+/home/benny/basilisk/src/poisson.h:308:error: [New Thread 0x7ffff3d2c700 (LWP 25367)]
+/home/benny/basilisk/src/poisson.h:308:error: [New Thread 0x7ffff352b700 (LWP 25368)]
+/home/benny/basilisk/src/poisson.h:308:error: Thread 1 "flat_ellipse" received signal SIGINT, Interrupt.
