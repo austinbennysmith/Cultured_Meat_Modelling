@@ -1,0 +1,6 @@
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o advection_diffusion2D/advection_diffusion2D advection_diffusion2D.c -lm
+[advection_diffusion2D.tst]
+main/format_unpack.c:5295:error: [Thread debugging using libthread_db enabled]
+main/format_unpack.c:5295:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+main/format_unpack.c:5295:error: Program received signal SIGTERM, Terminated.
+make: *** [/home/benny/basilisk/src/Makefile.defs:45: advection_diffusion2D.tst] Error 1

@@ -1,0 +1,3 @@
+main/format_unpack.c:5295:error: [Thread debugging using libthread_db enabled]
+main/format_unpack.c:5295:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+main/format_unpack.c:5295:error: Program received signal SIGTERM, Terminated.
