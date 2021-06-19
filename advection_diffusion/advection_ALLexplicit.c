@@ -61,7 +61,7 @@ event integration (i++) {
     // Stable for |U*(dt/Delta)|<=1
     // Order-4 dissipative
     // I do see some dispersion as well
-    // dT[] = -(U/(2*Delta))*(T[1,0] - T[-1,0]) + ((sq(U)*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]);
+    dT[] = -(U/(2*Delta))*(T[1,0] - T[-1,0]) + ((sq(U)*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]);
 
     // Forward time backward space:
     // Stable for 0<=U*(dt/Delta)<=1
@@ -71,7 +71,7 @@ event integration (i++) {
     // Forward time centered space
     // Unstable no matter what
     // Not dissipative no matter what
-    dT[] = -U*(T[1,0]-T[-1,0])/(2*Delta);
+    // dT[] = -U*(T[1,0]-T[-1,0])/(2*Delta);
   }
   foreach()
     T[] += dt*dT[];

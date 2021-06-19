@@ -10,7 +10,7 @@ domainSize = len(myarray[mask, :])
 
 # fig, axarr = plt.subplots(nrows=2, ncols=5, figsize=(40, 40))
 # axlist = axarr.flatten()
-for i in range(0, int(myarray.shape[0]/domainSize), 10): # If doing fig, ax, either reorganize somehow or subtract 1 from the second argument
+for i in range(0, int(myarray.shape[0]/domainSize), 100): # If doing fig, ax, either reorganize somehow or subtract 1 from the second argument
 	# interf=interf[interf[:, 0].argsort()] # When doing parallel processing, the output gets jumbled. This line sorts the output file so that the x values are in order, which makes the plots look correct.
 	myarrayNOW = myarray[i*domainSize:(i+1)*domainSize, :]
 	# print(interf)
@@ -25,6 +25,6 @@ for i in range(0, int(myarray.shape[0]/domainSize), 10): # If doing fig, ax, eit
 	plt.legend()
 	plt.xlabel("x")
 	plt.ylabel("T")
-	if i==100:
-		break
+	# if i==100:
+	# 	break
 plt.show()

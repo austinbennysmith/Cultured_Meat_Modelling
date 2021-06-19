@@ -51,12 +51,11 @@ event printdata (t += 1.0; t < 1000.0) {
   fprintf (stdout, "\n\n");
 }
 
-double cDelta;
 event integration (i++) {
   // double dt = DT;
   scalar dT[],q[];
   dt = 0.01;
-  foreach()
+  foreach() {
   	// Helpful sentence from a paper (at https://www.researchgate.net/profile/Wim-Desmet/publication/251548727_Finite_Volume_Convective_Flux_Reconstruction_Using_High-Order_Skew-Symmetric-Like_Schemes/links/02e7e52f1183f86850000000/Finite-Volume-Convective-Flux-Reconstruction-Using-High-Order-Skew-Symmetric-Like-Schemes.pdf):
   	// "in the absence of sources and sinks, the rate of change in time of the sum of the conserved variable phi in a volume V equals the sum of the flux on the surface S of the volume"
   	// To get the flux q[], I want to estimate the rate of change of T (aka, get T'). To do that, I need to do a 2nd-order centered estimate for T'.
@@ -65,8 +64,11 @@ event integration (i++) {
     // q[]=(T[0,0] - T[-1,0])/(Delta)- U*(T[1, 0]+T[-1, 0])/2.;
     // q[]=-(T[0,0] - T[-1,0])/Delta;
 
- 	// My ACTUAL advection-diffusion scheme:
-  	q[] = -(T[0,0]-T[-1,0])/Delta + U*((T[0,0]+T[-1,0])/2.0 - ((T[0,0]-T[-1,0])/2));
+  // My ACTUAL advection-diffusion scheme (FINITE VOLUMES):
+    q[] = (T[-1,0]-T[0,0])/Delta - U*(T[0,0]+T[-1,0])/2.0 - ((sq(U)*dt)/(2.0*Delta))*(T[0,0]-T[-1,0]);
+
+ 	// OLD advection-diffusion scheme:
+  	// q[] = -(T[0,0]-T[-1,0])/Delta - U*((T[0,0]+T[-1,0])/2.0 - ((T[0,0]-T[-1,0])/2));
 
   	// Advection alone:
   	// q[] = U*((T[0,0]+T[-1,0])/2.0 - ((T[0,0]-T[-1,0])/2));
@@ -75,9 +77,14 @@ event integration (i++) {
   	// q[] = -(T[0,0]-T[-1,0])/Delta;
 
   // q[]=U*(T[0, 0]+T[-1, 0])/2.;
+  }
   boundary ({q});
-  foreach()
+  foreach() {
     dT[] = ( q[0,0]  - q[1,0] )/Delta;
+    // Alternative method (FINITE DIFFERENCES):
+    // dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta)) + (U/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(U)*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]);
+    // dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta))+(U/(2*Delta))*(T[1,0] - T[-1,0]) + ((sq(U)*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]);
+  }
   foreach()
     T[] += dt*dT[];
   boundary ({T});

@@ -81,9 +81,13 @@ event integration (i++) {
   // //   // q[]=(T[0,0] - T[-1,0])/(Delta)- U*(T[1, 0]+T[-1, 0])/2.;
   // //   // q[]=-(T[0,0] - T[-1,0])/Delta;
 
- 	// // // My ACTUAL advection-diffusion scheme:
-  	qh[] = -(T[0,0]-T[-1,0])/Delta + U*((T[0,0]+T[-1,0])/2.0 - ((T[0,0]-T[-1,0])/2));
-    qv[] = -(T[0,1]-T[0,-1])/Delta;
+    // My ACTUAL advection-diffusion scheme:
+    qh[] = (T[-1,0]-T[0,0])/Delta - U*(T[0,0]+T[-1,0])/2.0 - ((sq(U)*dt)/(2.0*Delta))*(T[0,0]-T[-1,0]);
+    qv[] = (T[0,-1]-T[0,0])/Delta;
+
+ 	// // // My OLD advection-diffusion scheme:
+  	// qh[] = -(T[0,0]-T[-1,0])/Delta + U*((T[0,0]+T[-1,0])/2.0 - ((T[0,0]-T[-1,0])/2));
+   //  qv[] = -(T[0,1]-T[0,-1])/Delta;
 
   // // 	// // Advection alone:
   	// qh[] = U*((T[0,0]+T[-1,0])/2.0 - ((T[0,0]-T[-1,0])/2));
@@ -107,7 +111,7 @@ event integration (i++) {
   boundary ({T});
 }
 
-event profiles (t = 0; t+=1.0; t<=100000)
+event profiles (t = 0; t+=1.0; t<=1000)
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -L0/2; y <= L0/2; y += 0.01)
@@ -120,7 +124,7 @@ event profiles (t = 0; t+=1.0; t<=100000)
   fclose (fp);
 }
 
-event Tmovie (t+=10.0, t<100000.0)
+event Tmovie (t+=10.0, t<1000.0)
 {
  clear();
  // cells(lc={0.5,0.5,0.5}, lw=0.5);
