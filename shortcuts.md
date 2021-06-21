@@ -7,3 +7,6 @@
 ### isosurface ("l2", -0.01, color = "vyz", min = -1, max = 1, linear = true, map = cool_warm); or http://basilisk.fr/src/output.h#output_ppm 
 
 ### Command to find all files in subdirectory above 100MB (so that those files can be removed before pushing to Github): find . -type f -size +100M
+
+### Command to copy a file into all subdirectories: 
+for d in */; do cp water.txt "$d"; done
