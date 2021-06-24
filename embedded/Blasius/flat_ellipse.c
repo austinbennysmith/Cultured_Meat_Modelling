@@ -76,7 +76,7 @@ event init(t=0) {
 	
 	vertex scalar phi[];
 	foreach_vertex()
-		phi[]=0.0009*(x-7.5)*(x-7.5)+(y-2.0)*(y-2.0)-sq(0.1);
+		phi[]=0.0008*(x-7.5)*(x-7.5)+10*(y-2.0)*(y-2.0)-sq(0.1);
 	boundary({phi});
 	fractions(phi, cs, fs);
 }
@@ -118,7 +118,7 @@ event profiles (t = 0; t+=1.0)
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = 0.0; y <= 2.0; y += 0.01)
-    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 2.7, y));
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 7.0, y));
   fclose (fp);
   
   fp = fopen("yprof", "a");

@@ -1,0 +1,1 @@
+movie0.mp4 is the one with pure Lax-Friedrichs. The numbers on the other ones correspond to the temporal spacing with which Lax-Friedrichs was applied in the composite Lax-Friedrichs/Lax-Wendroff scheme.

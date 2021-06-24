@@ -8,8 +8,8 @@ scalar T[];
 
 FILE * fp_params;
 
-double mydt = 0.01;
-// double mydt = 1.0;
+const double mydt = 1e-2;
+const double MAXTIME = 10.0/mydt; // I want to run the simulation for 10 whole time steps, that is 10*dt if dt=1. Since dt!=1, I must define a MAXTIME which will be used in the printdata event to tell the code when to stop
 float U = 2.0;
 
 // See: http://basilisk.fr/sandbox/M1EMN/BASIC/heat.c
@@ -17,6 +17,7 @@ int main() {
   periodic(right);
   L0 = 10.;
   X0 = -L0/2;
+  N = 64e0;
   // N = 100;
   // CFL = -4.0;
   // DT = (L0/N)*(L0/N)/2 ;
@@ -32,6 +33,9 @@ int main() {
   fprintf(fp_params, "|a*dt/dx|= %g \n", fabs(U*mydt/(L0/N)));
   fprintf(fp_params, "Diffusion Stability Condition: b*mu<=0.5, where b=diffusion coefficient (=1 here) and mu=dt/dx^2, where dx=L0/N \n");
   fprintf(fp_params, "b*mu=mu= %g \n", mydt/(sq(L0/N)));
+  fprintf(fp_params, "dt = %g \n", mydt);
+  fprintf(fp_params, "dx = %g \n", L0/N);
+  fprintf(fp_params, "N = %d \n", N);
   fclose(fp_params);
 
   run();
@@ -47,9 +51,9 @@ event init (t = 0) {
   boundary ({T});
 }
 
-event printdata (t += 1.0; t < 1000.0) {
+event printdata (t += 1.0; t < MAXTIME) {
   foreach()
-    fprintf (stdout, "%g %g %g\n", x, T[], t);
+    fprintf (stdout, "%g %g %g %g\n", x, T[], t, t*mydt);
   fprintf (stdout, "\n\n");
 }
 
@@ -76,7 +80,7 @@ event integration (i++) {
   foreach() {
     dT[] = ( q[0,0]  - q[1,0] )/Delta;
   //   // Alternative method for advection-diffusion (FINITE DIFFERENCES, forward time, centered space for diffusion, Lax-Wendroff for advection):
-    dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta)) + (U/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(U)*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]);
+    // dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta)) + (U/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(U)*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]);
 
   //   // Lax-Wendroff Advection:
   //   // dT[] = (U/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(U)*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]);

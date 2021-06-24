@@ -3,8 +3,9 @@ import matplotlib.pyplot as plt
 
 SOL = np.genfromtxt("graph.txt", delimiter=" ")
 
-DATA = np.genfromtxt("xprofOTHER", delimiter=" ")
-tend = 100
+FILE = input("FILE?")
+DATA = np.genfromtxt(FILE, delimiter=" ")
+tend = max(DATA[:, 0])
 mask = DATA[:, 0]==tend
 DATA = DATA[mask, :]
 x = 2.7

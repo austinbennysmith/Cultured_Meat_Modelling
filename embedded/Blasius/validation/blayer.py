@@ -1,11 +1,11 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 
-FILE = 'tempy'
-FILE2 = 'tempy2'
+FILE = input("FILE1?")
+FILE2 = input("FILE2?")
 tempy = np.genfromtxt(FILE, delimiter=" ")
 tempy2 = np.genfromtxt(FILE2, delimiter=" ")
-t=67
+t=max(tempy[:, 0])
 mask = tempy[:, 0]==t # for example
 mask2 = tempy2[:, 0]==t
 platerange=np.linspace(2.5, 10, 5)

@@ -1,0 +1,33 @@
+import numpy as np 
+import matplotlib.pyplot as plt 
+
+SOL = np.genfromtxt("graph.txt", delimiter=" ")
+
+FILE = input("FILE?")
+DATA = np.genfromtxt(FILE, delimiter=" ")
+tend = max(DATA[:, 0])
+mask = DATA[:, 0]==tend
+DATA = DATA[mask, :]
+# np.flip(DATA, axis=0)
+x = 7.0
+U = 1.0
+mu = 0.001 # Water viscosity
+rho = 1000.0 # Water density
+v = mu/rho # Kinematic viscosity
+y = 2.0-DATA[:, 1]
+print("Y shape", y.shape)
+print(y)
+eta = y*np.sqrt(U/(v*x))
+u = DATA[:, 2]
+fprime = u/U
+
+etaMask=eta[:]<100
+eta = eta[etaMask]/10
+fprime = fprime[etaMask]
+plt.scatter(eta, fprime, label="Numerical data")
+
+plt.plot(SOL[:, 0], SOL[:, 1], label="Similarity solution")
+plt.xlabel('eta = y(U/u x)^(1/2)')
+plt.ylabel("f'(eta) = u/U")
+plt.legend()
+plt.show()

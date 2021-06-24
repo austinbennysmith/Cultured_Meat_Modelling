@@ -1,2 +1,0 @@
-9c00eaadec3fd1ef329d2a5ae8c6cde8  advection_diffusion.c
-39047cb7cb16f3d8d12058ed4688f3c2  advection_diffusion.s
