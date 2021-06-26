@@ -8,10 +8,10 @@ scalar T[];
 
 FILE * fp_params;
 
-const double mydt = 0.1e-2;
+const double mydt = 1e-2;
 const double MAXTIME = 10.0/mydt; // I want to run the simulation for 10 whole time steps, that is 10*dt if dt=1. Since dt!=1, I must define a MAXTIME which will be used in the printdata event to tell the code when to stop
 float U = 2.0;
-double b = 10.0; // Diffusion coefficient
+double b = 1.0; // Diffusion coefficient
 
 // See: http://basilisk.fr/sandbox/M1EMN/BASIC/heat.c
 int main() {
@@ -34,6 +34,7 @@ int main() {
   fprintf(fp_params, "|a*dt/dx|= %g \n", fabs(U*mydt/(L0/N)));
   fprintf(fp_params, "Diffusion Stability Condition: b*mu<=0.5, where b=diffusion coefficient (=1 here) and mu=dt/dx^2, where dx=L0/N \n");
   fprintf(fp_params, "b*mu=mu= %g \n", b*(mydt/(sq(L0/N))));
+  fprintf(fp_params, "b= %g \n", b);
   fprintf(fp_params, "dt = %g \n", mydt);
   fprintf(fp_params, "dx = %g \n", L0/N);
   fprintf(fp_params, "N = %d \n", N);
