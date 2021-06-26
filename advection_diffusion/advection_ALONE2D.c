@@ -6,8 +6,8 @@ scalar T[];
 FILE * fp_params;
 
 double dt;
-const double mydt = 0.25e-2;
-const double MAXTIME = (10.0/mydt); // I want to run the simulation for 10 whole time steps, that is 10*dt if dt=1. Since dt!=1, I must define a MAXTIME which will be used in the printdata event to tell the code when to stop
+const double mydt = 0.0625e-2;
+const double MAXTIME = (100.0/mydt); // I want to run the simulation for 10 whole time steps, that is 10*dt if dt=1. Since dt!=1, I must define a MAXTIME which will be used in the printdata event to tell the code when to stop
 float U = 2.0;
 
 // See: http://basilisk.fr/sandbox/M1EMN/BASIC/heat.c
@@ -17,7 +17,7 @@ int main() {
   periodic(top);
   L0 = 10.;
   X0 = Y0 = -L0/2;
-  N=512e0;
+  N=2048e0;
   
   {
   char params[200];
@@ -37,7 +37,7 @@ int main() {
 
 event init (t = 0) {
   foreach()
-  	T[] = exp(-2*(x*x+y*y));
+  	T[] = exp(-4*(x*x+y*y));
   boundary ({T});
 }
 
@@ -70,19 +70,28 @@ event integration (i++) {
   boundary ({T});
 }
 
-event profiles (t = 0; t+=1.0; t<=MAXTIME)
+event profiles (t = 0; t+=10.0; t<=MAXTIME)
 {
-  if ((t*mydt) == floor(t*mydt)) {
-    FILE * fp = fopen("xprof", "a");
-    for (double y = -L0/2; y <= L0/2; y += 0.01)
-      fprintf (fp, "%g %g %g\n", t, y, interpolate (T, 0, y));
-    fclose (fp);
+  // if ((t*mydt) == floor(t*mydt)) {
+  //   FILE * fp = fopen("xprof", "a");
+  //   for (double y = -L0/2; y <= L0/2; y += 0.01)
+  //     fprintf (fp, "%g %g %g\n", t, y, interpolate (T, 0, y));
+  //   fclose (fp);
     
-    fp = fopen("yprof", "a");
-    for (double x = -L0/2; x <= L0/2; x += 0.01)
-      fprintf (fp, "%g %g %g\n", t, x, interpolate (T, x, 0));
-    fclose (fp);
-  }
+  //   fp = fopen("yprof", "a");
+  //   for (double x = -L0/2; x <= L0/2; x += 0.01)
+  //     fprintf (fp, "%g %g %g\n", t, x, interpolate (T, x, 0));
+  //   fclose (fp);
+  // }
+  FILE * fp = fopen("xprof", "a");
+  for (double y = -L0/2; y <= L0/2; y += 0.01)
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (T, 0, y));
+  fclose (fp);
+  
+  fp = fopen("yprof", "a");
+  for (double x = -L0/2; x <= L0/2; x += 0.01)
+    fprintf (fp, "%g %g %g\n", t, x, interpolate (T, x, 0));
+  fclose (fp);
 }
 
 event Tmovie (t+=10.0, t<MAXTIME*mydt) // For some reason, view.h counts time correctly (rather than counting each dt as 1), while other parts of Basilisk don't. That's why I put t<MAXTIME*mydt (so just the number that I divided by dt in the definition of MAXTMIE, aka the actual number of time steps) here but t<MAXTIME elsewhere in the code.
@@ -95,7 +104,7 @@ event Tmovie (t+=10.0, t<MAXTIME*mydt) // For some reason, view.h counts time co
  save ("Tmovie.mp4");
 }
 
-event gfsview (t += 1.0) {
+event gfsview (t += 1000.0) {
     char name_gfs[200];
     sprintf(name_gfs,"Slice-%0.1f.gfs",t);
 

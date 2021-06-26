@@ -1,0 +1,6 @@
+tnl/t_vb_render.c:311:error: [Thread debugging using libthread_db enabled]
+tnl/t_vb_render.c:311:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+tnl/t_vb_render.c:311:error: [New Thread 0x7ffff136d700 (LWP 141544)]
+tnl/t_vb_render.c:311:error: [New Thread 0x7ffff0b6c700 (LWP 141545)]
+tnl/t_vb_render.c:311:error: [New Thread 0x7ffff036b700 (LWP 141546)]
+tnl/t_vb_render.c:311:error: Thread 1 "advection_ALONE" received signal SIGTERM, Terminated.
