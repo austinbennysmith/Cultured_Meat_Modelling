@@ -112,8 +112,8 @@ event acceleration (i++)
   face vector av = a;
   foreach_face(y) {
     // av.y[] = (1/sq(Fr))*sin(t);
-    av.y[] -= sq(1/Fr)*cos(0.1*t);
-    av.x[] -= sq(1/Fr)*sin(0.1*t);
+    av.y[] -= 0.5*sq(1/Fr)*cos(0.1*t);
+    av.x[] -= 0.5*sq(1/Fr)*sin(0.1*t);
     // av.x[] -= (1/sq(Fr))*cos(t);
   }
 }
@@ -140,7 +140,7 @@ event init(t = 0) {
 
 event adapt (i++)
 {
-  adapt_wavelet((scalar *){u.x, u.y, f}, (double[]){1e-2, 1e-2, 1e-3}, 9, 4);
+  adapt_wavelet((scalar *){u.x, u.y, f}, (double[]){1e-2, 1e-2, 1e-3}, 10, 4);
 }
 
 event end (t = tend) { // RC restricted to 400
@@ -222,3 +222,17 @@ event loginterface (t += 1.0) {
     fprintf(fp_interface, "%i %g %1.4f %1.4f %1.4f %1.4f %1.4f\n", i, t, statsf(f).sum, statsf(posX).min, statsf(posX).max, statsf(posY).min, statsf(posY).max);
     fflush(fp_interface);
 }
+
+// Movie code from elsewhere that is helpful for zooming in and stuff:
+// event vortmovie (t+=0.1) 
+// {
+//   scalar omega[];
+//   vorticity(u, omega);
+
+//   view (fov=2.7, tx=-.5, ty=-0.06, width=2200, height=300);
+//   clear();
+//   squares("omega", spread=-1.0, linear=true, map=cool_warm);
+//   // draw_vof("fs",fc = {0.0,0.0,0.0}, lw=1); 
+//   // draw_vof("f", lc = {0.0,0.0,0.0}, lw=1); // For some reason Basilisk throws an error if you don't put spaces between 'lc='
+//   save("Vorticity.mp4");
+// }

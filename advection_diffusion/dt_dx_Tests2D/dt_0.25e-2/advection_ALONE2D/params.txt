@@ -1,5 +1,0 @@
-Advection Stability Condition: |U*dt/dx|<=1, where dx=L0/N 
-|a*dt/dx|= 0.256 
-dt = 0.0025 
-dx = 0.0195312 
-N = 512 

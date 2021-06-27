@@ -1,2 +1,0 @@
-f56310e7efcbbc00eb0a09b1dcb072c5  advection_ALONE.c
-35335524fba2bd6c1bba4feaead7a6a5  advection_ALONE.s
