@@ -52,7 +52,7 @@ event init (t = 0) {
 }
 
 event printdata (t += 1.0; t < MAXTIME) {
-  if ((t*mydt) == floor(t*mydt)) { // I only print output on whole number times so that there's not too much data for Python to handle efficiently in postprocessing.
+  if ((t*mydt) == floor(t*mydt)*10) { // I only print output on whole number times so that there's not too much data for Python to handle efficiently in postprocessing.
     foreach()
       fprintf (stdout, "%g %g %g %g\n", x, T[], t, t*mydt);
     fprintf (stdout, "\n\n");
