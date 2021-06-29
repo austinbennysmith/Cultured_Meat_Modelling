@@ -28,7 +28,7 @@ FILE *fp1 ;
 #define We (rhoWater*pow(refVelocity,2)*refLength/sig) // Weber number
 #define Fr (refVelocity/(sqrt(9.8*refLength))) // Froude number
 
-const double tend = 100.0;
+const double tend = 1000.0;
 
 FILE * fp_params;
 
@@ -111,10 +111,8 @@ event acceleration (i++)
 {
   face vector av = a;
   foreach_face(y) {
-    // av.y[] = (1/sq(Fr))*sin(t);
-    av.y[] -= 0.5*sq(1/Fr)*cos(0.1*t);
-    av.x[] -= 0.5*sq(1/Fr)*sin(0.1*t);
-    // av.x[] -= (1/sq(Fr))*cos(t);
+    av.y[] -= 0.25*sq(1/Fr)*cos(0.1*t);
+    av.x[] -= 0.25*sq(1/Fr)*sin(0.1*t);
   }
 }
 
@@ -182,6 +180,7 @@ event gfsview (t += 10.0) { // RC
 
 event xmovie (t+=1.0, t<=tend)
 {
+ view (fov=3, width=2600, height=400);
  clear();
  squares("u.x", min=0.0, max=1.5, linear=true, map=cool_warm);
  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
@@ -191,6 +190,7 @@ event xmovie (t+=1.0, t<=tend)
 
 event ymovie (t+=1.0, t<=tend)
 {
+ view (fov=3, width=2600, height=400);
  clear();
  squares("u.y", min=0.0, max=1.5, linear=true, map=cool_warm);
  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
@@ -198,13 +198,17 @@ event ymovie (t+=1.0, t<=tend)
  save ("ymovie.mp4");
 }
 
-event amovie (t+=1.0, t<=tend)
-{
-  clear();
-  squares("a.y", spread=-1, linear=true, map=cool_warm);
-  draw_vof("f", lc = {1.0,1.0,1.0}, lw=2);
-  save("amove.mp4");
-}
+// event vortmovie (t+=1.0, t<=tend)
+// {
+//   scalar omega[];
+//   vorticity(u, omega);
+
+//   view (fov=3, width=2600, height=400);
+//   clear();
+//   squares("omega", spread=-1.0, linear=true, map=cool_warm);
+//   draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+//   save("Vorticity.mp4");
+// }
 
 event interface (t+=1)
 {
@@ -222,17 +226,3 @@ event loginterface (t += 1.0) {
     fprintf(fp_interface, "%i %g %1.4f %1.4f %1.4f %1.4f %1.4f\n", i, t, statsf(f).sum, statsf(posX).min, statsf(posX).max, statsf(posY).min, statsf(posY).max);
     fflush(fp_interface);
 }
-
-// Movie code from elsewhere that is helpful for zooming in and stuff:
-// event vortmovie (t+=0.1) 
-// {
-//   scalar omega[];
-//   vorticity(u, omega);
-
-//   view (fov=2.7, tx=-.5, ty=-0.06, width=2200, height=300);
-//   clear();
-//   squares("omega", spread=-1.0, linear=true, map=cool_warm);
-//   // draw_vof("fs",fc = {0.0,0.0,0.0}, lw=1); 
-//   // draw_vof("f", lc = {0.0,0.0,0.0}, lw=1); // For some reason Basilisk throws an error if you don't put spaces between 'lc='
-//   save("Vorticity.mp4");
-// }

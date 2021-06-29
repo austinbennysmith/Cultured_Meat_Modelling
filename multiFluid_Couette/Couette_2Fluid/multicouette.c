@@ -135,6 +135,9 @@ event adapt(i++)
 	// unrefine(y<0.1);
 	// refine(y<0.1&&level<9);
 	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, (LEVEL+2), (LEVEL-3));
+
+  // Going fast to get video editing working:
+  adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 7, 4);
   
 	// // refine(y>0.4&&x>1.0&&level<=8);
 	// unrefine(y<0.1);
@@ -164,9 +167,9 @@ event adapt(i++)
 	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
 
 	// Test Radu suggested:
-	refine(y>0.45&&level<=8);
-	adapt_wavelet((scalar *){f}, (double[]){1e-6}, 8, 4);
-	unrefine(y>0.45&&x>3.0&&level<=8);
+	// refine(y>0.45&&level<=8);
+	// adapt_wavelet((scalar *){f}, (double[]){1e-6}, 8, 4);
+	// unrefine(y>0.45&&x>3.0&&level<=8);
 }
 
 event end (t = 100) { // RC restricted to 400
@@ -183,24 +186,24 @@ event logstats (t += 1.0) {
     fflush(fp_stats);
 }
 
-event gfsview (t += 1.0) { // RC
-    char name_gfs[200];
-    sprintf(name_gfs,"Slice-%0.1f.gfs",t);
+// event gfsview (t += 1.0) { // RC
+//     char name_gfs[200];
+//     sprintf(name_gfs,"Slice-%0.1f.gfs",t);
 
-    FILE* fp_gfs = fopen (name_gfs, "w");
-    output_gfs(fp_gfs);
-    fclose(fp_gfs);
-}
+//     FILE* fp_gfs = fopen (name_gfs, "w");
+//     output_gfs(fp_gfs);
+//     fclose(fp_gfs);
+// }
 
-event xmovie (t+=0.1, t<=10)
-{
- clear();
- // cells(lc={0.5,0.5,0.5}, lw=0.5);
- squares("u.x", spread=-1, linear=true, map=cool_warm);
- draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
- // cells();
- save ("xmovie.mp4");
-}
+// event xmovie (t+=0.1, t<=10)
+// {
+//  clear();
+//  // cells(lc={0.5,0.5,0.5}, lw=0.5);
+//  squares("u.x", spread=-1, linear=true, map=cool_warm);
+//  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+//  // cells();
+//  save ("xmovie.mp4");
+// }
 
 // event ymovie (t+=0.1, t<=10)
 // {
@@ -211,32 +214,32 @@ event xmovie (t+=0.1, t<=10)
 //  save ("ymovie.mp4");
 // }
 
-event shearmovie (t+=0.1, t<=10)
-{
-  scalar shear[];
-  foreach()
-  	shear[] = (mu(f[]))*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-  // foreach()
-  //   if (y<0.3)
-  //   {
-  //     shear[] = (mu1)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-  //   }
-  // foreach()
-  //   if (y>=0.3)
-  //   {
-  //     shear[] = (mu2)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-  //   }
-  // foreach()
-  // shear[] = (u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-  boundary ({shear});
-  clear();
-  squares("shear", spread=1, linear=true, map=cool_warm);
-  // draw_vof("f", lc = {1.0,1.0,1.0}, lw=2);
-  save("shearMovie.mp4");
-  FILE * fp_shear = fopen("shear", "w");
-  output_field ({shear}, fp_shear, linear=true);
-  fclose(fp_shear);
-}
+// event shearmovie (t+=0.1, t<=10)
+// {
+//   scalar shear[];
+//   foreach()
+//   	shear[] = (mu(f[]))*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+//   // foreach()
+//   //   if (y<0.3)
+//   //   {
+//   //     shear[] = (mu1)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+//   //   }
+//   // foreach()
+//   //   if (y>=0.3)
+//   //   {
+//   //     shear[] = (mu2)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+//   //   }
+//   // foreach()
+//   // shear[] = (u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+//   boundary ({shear});
+//   clear();
+//   squares("shear", spread=1, linear=true, map=cool_warm);
+//   // draw_vof("f", lc = {1.0,1.0,1.0}, lw=2);
+//   save("shearMovie.mp4");
+//   FILE * fp_shear = fopen("shear", "w");
+//   output_field ({shear}, fp_shear, linear=true);
+//   fclose(fp_shear);
+// }
 
 event interface (t+=1)
 {
@@ -292,4 +295,17 @@ event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don
   // for (double x = -4; x <= 4; x += 0.01)
   //   fprintf (fp, "%g %g %g\n", t, x, shear);
   // fclose (fp);
+}
+
+event vortmovie (t+=1.0)
+{
+  scalar omega[];
+  vorticity(u, omega);
+
+  view (fov=3, width=2600, height=400);
+  clear();
+  squares("omega", spread=-1.0, linear=true, map=cool_warm);
+  // draw_vof("fs",fc = {0.0,0.0,0.0}, lw=1); 
+  // draw_vof("f", lc = {0.0,0.0,0.0}, lw=1); // For some reason Basilisk throws an error if you don't put spaces between 'lc='
+  save("Vorticity.mp4");
 }

@@ -9,7 +9,7 @@ scalar T[];
 FILE * fp_params;
 
 const double mydt = 1e-3;
-const double MAXTIME = 1000.0/mydt; // I want to run the simulation for 10 whole time steps, that is 10*dt if dt=1. Since dt!=1, I must define a MAXTIME which will be used in the printdata event to tell the code when to stop
+const double MAXTIME = 10000.0/mydt; // I want to run the simulation for 10 whole time steps, that is 10*dt if dt=1. Since dt!=1, I must define a MAXTIME which will be used in the printdata event to tell the code when to stop
 float U = 2.0;
 
 // See: http://basilisk.fr/sandbox/M1EMN/BASIC/heat.c

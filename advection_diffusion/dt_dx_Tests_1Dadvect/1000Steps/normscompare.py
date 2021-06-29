@@ -23,6 +23,7 @@ mask = myarray[:, 3] == 0
 domainSize = len(myarray[mask, :])
 
 alltimes = np.unique(myarray[:, 3])
+alltimes = alltimes[::10]
 
 # I want to plot the stuff at 3 points: 1/3 of the duration through, 2/3, and the last time
 point0 = alltimes[0]
