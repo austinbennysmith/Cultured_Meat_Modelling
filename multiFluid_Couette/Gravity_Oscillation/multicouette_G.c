@@ -182,7 +182,7 @@ event xmovie (t+=1.0, t<=tend)
 {
  view (fov=3, width=2600, height=400);
  clear();
- squares("u.x", min=0.0, max=1.5, linear=true, map=cool_warm);
+ squares("u.x", spread=-1, linear=true, map=cool_warm);
  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
     // cells();
  save ("xmovie.mp4");
@@ -192,7 +192,7 @@ event ymovie (t+=1.0, t<=tend)
 {
  view (fov=3, width=2600, height=400);
  clear();
- squares("u.y", min=0.0, max=1.5, linear=true, map=cool_warm);
+ squares("u.y", spread=-1, linear=true, map=cool_warm);
  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
     // cells();
  save ("ymovie.mp4");

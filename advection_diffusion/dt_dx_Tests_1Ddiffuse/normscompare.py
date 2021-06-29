@@ -12,20 +12,20 @@ def Bintegrand(x, n):
 	return (1/5)*np.exp(-np.square(x))*np.sin((n*np.pi*x)/5)
 
 FILE1 = "dt_-2/diffusion_ALONE/out"
-FILE2 = "dt_-3/diffusion_ALONE/out"
-FILE3 = "dt_-4/diffusion_ALONE/out"
+FILE2 = "dt_-4/diffusion_ALONE/out"
+FILE3 = "dt_-6/diffusion_ALONE/out"
 
-CHOICE = int(input("Type 2 for dt=1e-2, 3 for 1e-3, or 4 for 1e-4"))
+CHOICE = int(input("Type 2 for dt=1e-2, 3 for 1e-4, or 4 for 1e-6"))
 
 if CHOICE == 2:
 	myarray = np.genfromtxt(FILE1, delimiter=' ')
 	dtstr="1e-2"
 elif CHOICE == 3:
 	myarray = np.genfromtxt(FILE2, delimiter=' ')
-	dtstr="1e-3"
+	dtstr="1e-4"
 elif CHOICE == 4:
 	myarray = np.genfromtxt(FILE3, delimiter=' ')
-	dtstr="1e-4"
+	dtstr="1e-6"
 
 
 mask = myarray[:, 3] == 0
@@ -79,4 +79,5 @@ plt.plot(alltimes, allDiffs, label="dt="+dtstr)
 plt.title("Heat Equation Analytical vs Numerical L2 Norm")
 plt.xlabel("Time")
 plt.ylabel("L2 Norm")
+plt.legend()
 plt.show()

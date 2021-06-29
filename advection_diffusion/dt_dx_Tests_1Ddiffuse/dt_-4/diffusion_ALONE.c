@@ -8,7 +8,7 @@ scalar T[];
 
 FILE * fp_params;
 
-const double mydt = 1e-6;
+const double mydt = 1e-4;
 const double MAXTIME = 10.0/mydt; // I want to run the simulation for 10 whole time steps, that is 10*dt if dt=1. Since dt!=1, I must define a MAXTIME which will be used in the printdata event to tell the code when to stop
 float U = 2.0;
 double b = 1.0; // Diffusion coefficient
@@ -18,7 +18,7 @@ int main() {
   periodic(right);
   L0 = 10.;
   X0 = -L0/2;
-  N = 64e2;
+  N = 64e1;
   // N = 100;
   // CFL = -4.0;
   // DT = (L0/N)*(L0/N)/2 ;
