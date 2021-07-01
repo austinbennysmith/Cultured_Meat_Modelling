@@ -1,2 +1,0 @@
-f247c821e2460ceb9a483722722a5ab8  flat_ellipse.c
-22574a5a8e116b2ee26c79c76c61f12e  flat_ellipse.s

@@ -1,2 +1,0 @@
-f39cf40af5ad65bb7384dd200ac29b86  around_circle.c
-9dc25e7a76eecb0015f35f56f6fca393  around_circle.s

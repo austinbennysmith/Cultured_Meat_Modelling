@@ -12,6 +12,8 @@
 
 #define Re 1e3  // Reynolds number
 
+const float tend = 100.0;
+
 FILE * fp_params;
 
 FILE * fp_stats;
@@ -91,7 +93,7 @@ event init(t=0) {
 }
 
 event adapt (i++) {
-	adapt_wavelet ((scalar *){cs, u.x, u.y}, (double[]){1e-3, 1e-2, 1e-2}, 12, 4)
+	adapt_wavelet ((scalar *){cs, u.x, u.y}, (double[]){1e-3, 1e-2, 1e-2}, 9, 4)
 }
 
 event properties(i++)
@@ -101,7 +103,7 @@ event properties(i++)
 	boundary((scalar *){muv});
 }
 
-event end (t = 2000) { // RC restricted to 400
+event end (t = tend) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
 }
 
@@ -125,9 +127,24 @@ event gfsview (t += 1.0) { // RC
 
 event profiles (t = 0; t+=1.0)
 {
-  FILE * fp = fopen("xprofABOVE", "a");
+  FILE * fp = fopen("xprofABOVE2_7", "a");
   for (double y = 2.0; y <= 4.0; y += 0.01)
     fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 2.7, y));
+  fclose (fp);
+
+  fp = fopen("xprofABOVE3_5", "a");
+  for (double y = 2.0; y <= 4.0; y += 0.01)
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 3.5, y));
+  fclose (fp);
+
+  fp = fopen("xprofABOVE5_0", "a");
+  for (double y = 2.0; y <= 4.0; y += 0.01)
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 5.0, y));
+  fclose (fp);
+
+  fp = fopen("xprofABOVE6_0", "a");
+  for (double y = 2.0; y <= 6.0; y += 0.01)
+    fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 6.0, y));
   fclose (fp);
 
   fp = fopen("xprofBELOW", "a");

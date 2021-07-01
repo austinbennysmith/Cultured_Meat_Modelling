@@ -1,2 +1,14 @@
 [flat_plate.tst]
 make: *** [/home/benny/basilisk/src/Makefile.defs:45: flat_plate.tst] Error 1
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o flat_plate/flat_plate flat_plate.c -lm
+[flat_plate.tst]
+make: *** [/home/benny/basilisk/src/Makefile.defs:45: flat_plate.tst] Error 1
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o flat_plate/flat_plate flat_plate.c -lm
+[flat_plate.tst]
+/home/benny/basilisk/src/embed-tree.h:271:error: [Thread debugging using libthread_db enabled]
+/home/benny/basilisk/src/embed-tree.h:271:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+/home/benny/basilisk/src/embed-tree.h:271:error: [New Thread 0x7ffff4540700 (LWP 4762)]
+/home/benny/basilisk/src/embed-tree.h:271:error: [New Thread 0x7ffff3d3f700 (LWP 4763)]
+/home/benny/basilisk/src/embed-tree.h:271:error: [New Thread 0x7ffff353e700 (LWP 4764)]
+/home/benny/basilisk/src/embed-tree.h:271:error: Thread 1 "flat_plate" received signal SIGTERM, Terminated.
+make: *** [/home/benny/basilisk/src/Makefile.defs:45: flat_plate.tst] Error 1

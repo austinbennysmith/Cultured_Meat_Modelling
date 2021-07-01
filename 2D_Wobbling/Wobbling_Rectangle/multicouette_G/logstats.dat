@@ -1,0 +1,13 @@
+i: 0 t: 0 dt: 0.000317999 #Cells: 8192 Wall clock time (s): 0 CPU time (s): 0.063533 
+i: 111 t: 1 dt: 0.00991948 #Cells: 227 Wall clock time (s): 1.51955 CPU time (s): 2.90684 
+i: 1470 t: 2 dt: 0.000404614 #Cells: 752 Wall clock time (s): 11.5754 CPU time (s): 40.7314 
+i: 3567 t: 3 dt: 0.000446958 #Cells: 4844 Wall clock time (s): 35.1054 CPU time (s): 131.956 
+i: 5804 t: 4 dt: 0.000447027 #Cells: 10976 Wall clock time (s): 76.4004 CPU time (s): 294.097 
+i: 8041 t: 5 dt: 0.000447027 #Cells: 15740 Wall clock time (s): 142.691 CPU time (s): 555.772 
+i: 10278 t: 6 dt: 0.000447027 #Cells: 17642 Wall clock time (s): 220.307 CPU time (s): 860.717 
+i: 12515 t: 7 dt: 0.000447027 #Cells: 19490 Wall clock time (s): 311.115 CPU time (s): 1220.13 
+i: 14752 t: 8 dt: 0.000447027 #Cells: 21683 Wall clock time (s): 402.515 CPU time (s): 1581.99 
+i: 16989 t: 9 dt: 0.000447027 #Cells: 22007 Wall clock time (s): 521.077 CPU time (s): 2050.4 
+i: 19226 t: 10 dt: 0.000447027 #Cells: 24665 Wall clock time (s): 627.135 CPU time (s): 2470.75 
+i: 21463 t: 11 dt: 0.000447027 #Cells: 27884 Wall clock time (s): 745.332 CPU time (s): 2937.53 
+i: 23700 t: 12 dt: 0.000447027 #Cells: 32558 Wall clock time (s): 899.721 CPU time (s): 3551.05 
