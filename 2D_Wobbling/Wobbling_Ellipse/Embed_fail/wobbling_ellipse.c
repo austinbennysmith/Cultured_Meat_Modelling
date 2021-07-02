@@ -1,16 +1,12 @@
 #define FILTERED //RC
 #define mu(f)  (1./(clamp(f,0,1)*(1./mu1 - 1./mu2) + 1./mu2)) //RC
 
-// #include "embed.h"
+#include "embed.h"
 #include "navier-stokes/centered.h"
 #include "two-phase.h"
 #include "tension.h"
 #include "view.h"
 // #include "contact.h"
-
-// vector h[];
-// h.t[right] = contact_angle(90.);
-// h.t[left] = contact_angle(90.);
 
 FILE *fp1 ;
 
@@ -56,13 +52,8 @@ u.t[right] = dirichlet(0.0);
 u.n[right] = dirichlet(0.0);
 
 // No slip on the cylinder
-// u.n[embed] = dirichlet(0.0);
-// u.t[embed] = dirichlet(0.0);
-
-bid ellipse;
-
-u.t[ellipse] = dirichlet(0.0);
-// u.n[ellipse] = dirichlet(0.0);
+u.n[embed] = dirichlet(0.0);
+u.t[embed] = dirichlet(0.0);
 
 int main() {
   L0 = 8.0;
@@ -70,7 +61,7 @@ int main() {
   // periodic(right);
   init_grid (1 << LEVEL);
 
-  //
+  // RC
   {
     char name[200];
     sprintf(name, "logstats.dat");
@@ -143,21 +134,20 @@ event init(t = 0) {
   // mask (y > 1.0 ? top : none);
   // mask (y < 0.0 ? bottom : none);
 
-  // vertex scalar phi[];
-  // foreach_vertex() {
-  //   phi[]=-sq(1.0)+0.001*(x-4.0)*(x-4.0)+(y-6.0)*(y-6.0);
-  // }
-  // boundary({phi});
-  // fractions(phi, cs, fs);
-  mask ((sq(x - 4.0) + sq(y - 4.0) < sq(1.0) ? ellipse : none));
-
-  fraction (f, 4.0-y);
+  vertex scalar phi[];
+  foreach_vertex() {
+    phi[]=-sq(1.0)+0.001*(x-4.0)*(x-4.0)+(y-6.0)*(y-6.0);
+  }
+  boundary({phi});
+  fractions(phi, cs, fs);
+  
+  fraction (f, 6.0-y);
 
 }
 
 event adapt (i++)
 {
-  adapt_wavelet((scalar *){u.x, u.y, f}, (double[]){1e-2, 1e-2, 1e-3}, 10, 4);
+  adapt_wavelet((scalar *){u.x, u.y, f}, (double[]){1e-2, 1e-2, 1e-3}, 9, 4);
 }
 
 event end (t = tend) { 
@@ -168,15 +158,17 @@ event end (t = tend) {
 // {
 //   FILE * fp = fopen("xprof", "a");
 //   for (double y = -0.5; y <= 0.5; y += 0.01)
-//     fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 4.0, y));
+//     fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 0, y));
 //   fclose (fp);
   
 //   fp = fopen("yprof", "a");
 //   for (double x = -4; x <= 4; x += 0.01)
-//     fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 4.0));
+//     fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 0));
 //   fclose (fp);
 // }
 
+
+// RC added this for profiling
 event logstats (t += 1.0) {
 
     timing s = timer_timing (perf.gt, i, perf.tnc, NULL);
@@ -195,15 +187,15 @@ event gfsview (t += 1.0) {
     fclose(fp_gfs);
 }
 
-// event xmovie (t+=1.0, t<=tend/10.0)
-// {
-//  view (fov=20.0, tx = -0.5, ty=-0.5, width=800, height=500);
-//  clear();
-//  squares("u.x", spread=-1, linear=true, map=cool_warm);
-//  draw_vof ("cs", lc = {1.0,1.0,1.0}, lw=2);
-//     // cells();
-//  save ("xmovie.mp4");
-// }
+event xmovie (t+=1.0, t<=tend/10.0)
+{
+ view (fov=20.0, tx = -0.5, ty=-0.5, width=800, height=500);
+ clear();
+ squares("u.x", spread=-1, linear=true, map=cool_warm);
+ draw_vof ("cs", lc = {1.0,1.0,1.0}, lw=2);
+    // cells();
+ save ("xmovie.mp4");
+}
 
 // event ymovie (t+=1.0, t<=tend)
 // {
@@ -236,10 +228,10 @@ event gfsview (t += 1.0) {
 //   output_facets (f, fp2);
 // }
 
-// event loginterface (t += 1.0) {    
-//     scalar posX[],posY[];
-//     position (f, posX, {1, 0});
-//     position (f, posY, {0,1});
-//     fprintf(fp_interface, "%i %g %1.4f %1.4f %1.4f %1.4f %1.4f\n", i, t, statsf(f).sum, statsf(posX).min, statsf(posX).max, statsf(posY).min, statsf(posY).max);
-//     fflush(fp_interface);
-// }
+event loginterface (t += 1.0) {    
+    scalar posX[],posY[];
+    position (f, posX, {1, 0});
+    position (f, posY, {0,1});
+    fprintf(fp_interface, "%i %g %1.4f %1.4f %1.4f %1.4f %1.4f\n", i, t, statsf(f).sum, statsf(posX).min, statsf(posX).max, statsf(posY).min, statsf(posY).max);
+    fflush(fp_interface);
+}

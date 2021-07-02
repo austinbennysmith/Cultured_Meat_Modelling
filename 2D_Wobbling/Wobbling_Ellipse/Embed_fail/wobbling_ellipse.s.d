@@ -1,31 +1,9 @@
-# Automatically generated using 'make Makefile.tests'
-# DO NOT EDIT, edit 'Makefile' instead
-ALLTESTS = \
-	wobbling_ellipse.c \
-
-plots: \
-
-TESTS = \
-
-SPECIAL_TESTS = \
-
-ALLPAGES = \
-
 wobbling_ellipse.s:	\
+	/home/benny/basilisk/src/embed.h \
 	/home/benny/basilisk/src/navier-stokes/centered.h \
 	/home/benny/basilisk/src/two-phase.h \
 	/home/benny/basilisk/src/tension.h \
 	/home/benny/basilisk/src/view.h \
-	/home/benny/basilisk/src/contact.h \
-	/home/benny/basilisk/src/fractions.h \
-	/home/benny/basilisk/src/curvature.h \
-	/home/benny/basilisk/src/heights.h \
-	/home/benny/basilisk/src/parabola.h \
-	/home/benny/basilisk/src/utils.h \
-	/home/benny/basilisk/src/output.h \
-	/home/benny/basilisk/src/geometry.h \
-	/home/benny/basilisk/src/myc2d.h \
-	/home/benny/basilisk/src/myc.h \
 	/home/benny/basilisk/src/utils.h \
 	/home/benny/basilisk/src/input.h \
 	/home/benny/basilisk/src/vertexbuffer.h \
@@ -36,9 +14,16 @@ wobbling_ellipse.s:	\
 	/home/benny/basilisk/src/gl/font.h \
 	/home/benny/basilisk/src/draw_json.h \
 	/home/benny/basilisk/src/gl/og_font.h \
+	/home/benny/basilisk/src/geometry.h \
+	/home/benny/basilisk/src/myc2d.h \
+	/home/benny/basilisk/src/myc.h \
 	/home/benny/basilisk/src/utils.h \
+	/home/benny/basilisk/src/output.h \
 	/home/benny/basilisk/src/iforce.h \
 	/home/benny/basilisk/src/curvature.h \
+	/home/benny/basilisk/src/heights.h \
+	/home/benny/basilisk/src/parabola.h \
+	/home/benny/basilisk/src/utils.h \
 	/home/benny/basilisk/src/vof.h \
 	/home/benny/basilisk/src/fractions.h \
 	/home/benny/basilisk/src/run.h \
@@ -49,6 +34,8 @@ wobbling_ellipse.s:	\
 	/home/benny/basilisk/src/poisson.h \
 	/home/benny/basilisk/src/poisson.h \
 	/home/benny/basilisk/src/utils.h \
+	/home/benny/basilisk/src/fractions.h \
+	/home/benny/basilisk/src/embed-tree.h \
 	/home/benny/basilisk/src/grid/quadtree.h \
 	/home/benny/basilisk/src/grid/tree.h \
 	/home/benny/basilisk/src/grid/mempool.h \

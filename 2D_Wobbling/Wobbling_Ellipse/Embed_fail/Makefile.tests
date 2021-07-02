@@ -1,6 +1,7 @@
 # Automatically generated using 'make Makefile.tests'
 # DO NOT EDIT, edit 'Makefile' instead
 ALLTESTS = \
+	around_circle.c \
 	wobbling_ellipse.c \
 
 plots: \
