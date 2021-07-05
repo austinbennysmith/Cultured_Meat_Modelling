@@ -1,7 +1,0 @@
-couette.c: In function ‘main’:
-couette.c:41:9: warning: unused variable ‘rho1’ [-Wunused-variable]
-   float rho1 = rhoWater ;
-         ^
-couette.c:40:9: warning: unused variable ‘mu1’ [-Wunused-variable]
-   float mu1 = muWater ; // drop
-         ^
