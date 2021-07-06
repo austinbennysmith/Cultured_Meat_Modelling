@@ -1,0 +1,4 @@
+multicouette.c: In function ‘circle_flow’:
+multicouette.c:132:9: warning: unused variable ‘vc’ [-Wunused-variable]
+  132 |   coord vc = {0.,0.};
+      |         ^~

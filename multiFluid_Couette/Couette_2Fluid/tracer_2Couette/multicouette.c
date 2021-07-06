@@ -46,7 +46,7 @@ u.n[bottom] = dirichlet(0.0);
 
 // T[top] = neumann(0.0);
 // T[bottom] = neumann(0.0);
-T[left] = dirichlet(y < 0);
+// T[left] = dirichlet(y < 0);
 // T[right] = neumann(0.0);
 // T[left] = neumann(0.0);
 
@@ -129,8 +129,8 @@ event init(t = 0) {
   
   fraction (f, 0.3-y);
 
-  // fraction (T, 0.1-sq(x)-sq(y));
-  // boundary({T});
+  fraction (T, (0.1-sq(x)-sq(y)));
+  boundary({T});
   // boundary conditions
   u.t[top] = dirichlet(1.);
   u.t[bottom] = dirichlet(0.);
@@ -183,35 +183,35 @@ event adapt(i++)
 	// unrefine(y>0.45&&x>3.0&&level<=8);
 }
 
-// event integration (i++) {
-//   // double dt = DT;
-//   scalar dT[],qh[],qv[];
-//   // scalar dT[];
-//   dt = dtnext (dt);
-//   foreach() {
-//     // diffusion scheme:
-//     qh[] = (T[-1,0]-T[0,0])/Delta;
-//     qv[] = (T[0,-1]-T[0,0])/Delta;
+event integration (i++) {
+  // double dt = DT;
+  scalar dT[],qh[],qv[];
+  // scalar dT[];
+  dt = dtnext (dt);
+  foreach() {
+    // diffusion scheme:
+    // qh[] = (T[-1,0]-T[0,0])/Delta;
+    // qv[] = (T[0,-1]-T[0,0])/Delta;
 
-//     // advection scheme:
-//     // qh[] = - u.x[]*(T[0,0]+T[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(T[0,0]-T[-1,0]);
-//     // qv[] = - u.y[]*(T[0,0]+T[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(T[0,0]-T[-1,0]);
+    // advection scheme:
+    qh[] = - u.x[]*(T[0,0]+T[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(T[0,0]-T[-1,0]);
+    qv[] = - u.y[]*(T[0,0]+T[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(T[0,0]-T[-1,0]);
 
-//   }
-//   boundary ({qh});
-//   boundary({qv});
-//   foreach() {
-//     dT[] = ( qh[0,0]  - qh[1,0] )/Delta + ( qv[0,0]  - qv[0,1] )/Delta;
+  }
+  boundary ({qh});
+  boundary({qv});
+  foreach() {
+    dT[] = ( qh[0,0]  - qh[1,0] )/Delta + ( qv[0,0]  - qv[0,1] )/Delta;
 
-//     //   // Alternative method for advection-diffusion (FINITE DIFFERENCES, forward time, centered space for diffusion, Lax-Wendroff for advection):
-//     // dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta)) + (u.x[]/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(u.x[])*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]) + (T[0,1]-2*T[0,0]+T[0,-1])/(sq(Delta)) + (u.y[]/(2*Delta))*(T[0,1]-T[0,-1]) + ((sq(u.y[])*dt)/(2*sq(Delta)))*(T[0,1]-2*T[0,0]+T[0,-1]);
-//   }
+    //   // Alternative method for advection-diffusion (FINITE DIFFERENCES, forward time, centered space for diffusion, Lax-Wendroff for advection):
+    // dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta)) + (u.x[]/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(u.x[])*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]) + (T[0,1]-2*T[0,0]+T[0,-1])/(sq(Delta)) + (u.y[]/(2*Delta))*(T[0,1]-T[0,-1]) + ((sq(u.y[])*dt)/(2*sq(Delta)))*(T[0,1]-2*T[0,0]+T[0,-1]);
+  }
 
-//   // THESE ARE THE TWO LINES THAT CAUSE IT TO INITIALIZE WEIRDLY
-//   foreach()
-//     T[] += dt*dT[];
-//   boundary ({T});
-// }
+  // THESE ARE THE TWO LINES THAT CAUSE IT TO INITIALIZE WEIRDLY
+  foreach()
+    T[] += dt*dT[];
+  boundary ({T});
+}
 
 event end (t = 100) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);

@@ -1,0 +1,5 @@
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o wobbly/wobbly wobbly.c -lm
+[wobbly.tst]
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o wobbly/wobbly wobbly.c -lm
+[wobbly.tst]
+/home/benny/basilisk/src/runtest: 120: cd: can't cd to ..

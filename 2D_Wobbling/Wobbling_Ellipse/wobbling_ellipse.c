@@ -149,7 +149,7 @@ event init(t = 0) {
   // }
   // boundary({phi});
   // fractions(phi, cs, fs);
-  mask ((sq(x - 4.0) + sq(y - 4.0) < sq(1.0) ? ellipse : none));
+  mask ((sq(x - 4.0) + sq(y - 4.0) > sq(1.0) ? ellipse : none));
 
   fraction (f, 4.0-y);
 
@@ -157,7 +157,7 @@ event init(t = 0) {
 
 event adapt (i++)
 {
-  adapt_wavelet((scalar *){u.x, u.y, f}, (double[]){1e-2, 1e-2, 1e-3}, 10, 4);
+  adapt_wavelet((scalar *){u.x, u.y, f}, (double[]){1e-2, 1e-2, 1e-3}, 11, 4);
 }
 
 event end (t = tend) { 
@@ -195,25 +195,25 @@ event gfsview (t += 1.0) {
     fclose(fp_gfs);
 }
 
-// event xmovie (t+=1.0, t<=tend/10.0)
-// {
-//  view (fov=20.0, tx = -0.5, ty=-0.5, width=800, height=500);
-//  clear();
-//  squares("u.x", spread=-1, linear=true, map=cool_warm);
-//  draw_vof ("cs", lc = {1.0,1.0,1.0}, lw=2);
-//     // cells();
-//  save ("xmovie.mp4");
-// }
+event xmovie (t+=1.0, t<=tend/10.0)
+{
+ view (fov=20.0, tx = -0.5, ty=-0.5, width=800, height=500);
+ clear();
+ squares("u.x", spread=-1, linear=true, map=cool_warm);
+ draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+    // cells();
+ save ("xmovie.mp4");
+}
 
-// event ymovie (t+=1.0, t<=tend)
-// {
-//  view (fov=3, width=2600, height=400);
-//  clear();
-//  squares("u.y", spread=-1, linear=true, map=cool_warm);
-//  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
-//     // cells();
-//  save ("ymovie.mp4");
-// }
+event ymovie (t+=1.0, t<=tend)
+{
+ view (fov=3, width=2600, height=400);
+ clear();
+ squares("u.y", spread=-1, linear=true, map=cool_warm);
+ draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
+    // cells();
+ save ("ymovie.mp4");
+}
 
 // event vortmovie (t+=1.0, t<=tend)
 // {
