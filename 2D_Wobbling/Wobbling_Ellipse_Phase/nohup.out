@@ -3,3 +3,10 @@ qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o 
 qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o wobbly/wobbly wobbly.c -lm
 [wobbly.tst]
 /home/benny/basilisk/src/runtest: 120: cd: can't cd to ..
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o wobbly/wobbly wobbly.c -lm
+[wobbly.tst]
+/home/benny/basilisk/src/runtest: 73: cannot open gdb.log: No such file
+cp: cannot stat 'log': No such file or directory
+touch: cannot touch 'pass': No such file or directory
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o wobbly/wobbly wobbly.c -lm
+[wobbly.tst]

@@ -5,10 +5,10 @@
 #include "two-phase.h"
 #include "tension.h"
 #include "view.h"
-#include "tracer.h"
+// #include "tracer.h"
 
-scalar T[];
-scalar * tracers = {T};
+scalar TT[];
+// scalar * tracers = {T};
 
 FILE *fp1 ;
 
@@ -129,8 +129,8 @@ event init(t = 0) {
   
   fraction (f, 0.3-y);
 
-  fraction (T, (0.1-sq(x)-sq(y)));
-  boundary({T});
+  fraction (TT, (0.1-sq(x)-sq(y)));
+  boundary({TT});
   // boundary conditions
   u.t[top] = dirichlet(1.);
   u.t[bottom] = dirichlet(0.);
@@ -148,7 +148,7 @@ event adapt(i++)
 	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, (LEVEL+2), (LEVEL-3));
 
   // Going fast to get video editing working:
-  adapt_wavelet((scalar *){f, u.x, u.y, T}, (double[]){1e-6, 1e-2, 1e-2, 1e-3}, 9, 4);
+  adapt_wavelet((scalar *){f, u.x, u.y, TT}, (double[]){1e-6, 1e-2, 1e-2, 1e-3}, 9, 4);
   
 	// // refine(y>0.4&&x>1.0&&level<=8);
 	// unrefine(y<0.1);
@@ -190,12 +190,12 @@ event integration (i++) {
   dt = dtnext (dt);
   foreach() {
     // diffusion scheme:
-    // qh[] = (T[-1,0]-T[0,0])/Delta;
-    // qv[] = (T[0,-1]-T[0,0])/Delta;
+    // qh[] = (TT[-1,0]-TT[0,0])/Delta;
+    // qv[] = (TT[0,-1]-TT[0,0])/Delta;
 
     // advection scheme:
-    qh[] = - u.x[]*(T[0,0]+T[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(T[0,0]-T[-1,0]);
-    qv[] = - u.y[]*(T[0,0]+T[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(T[0,0]-T[-1,0]);
+    qh[] = - u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
+    qv[] = - u.y[]*(TT[0,0]+TT[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
 
   }
   boundary ({qh});
@@ -209,8 +209,8 @@ event integration (i++) {
 
   // THESE ARE THE TWO LINES THAT CAUSE IT TO INITIALIZE WEIRDLY
   foreach()
-    T[] += dt*dT[];
-  boundary ({T});
+    TT[] += dt*dT[];
+  boundary ({TT});
 }
 
 event end (t = 100) { // RC restricted to 400
@@ -261,7 +261,7 @@ event tracemovie (t+=1.0)
  view (fov=3, width=2600, height=400);
  clear();
  // cells(lc={0.5,0.5,0.5}, lw=0.5);
- squares("T", spread=-1, linear=true, map=cool_warm);
+ squares("TT", spread=-1, linear=true, map=cool_warm);
  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
  // cells();
  save ("tracemovie.mp4");

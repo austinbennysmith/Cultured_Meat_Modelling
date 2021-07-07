@@ -3,8 +3,6 @@ multicouette.s:	\
 	/home/benny/basilisk/src/two-phase.h \
 	/home/benny/basilisk/src/tension.h \
 	/home/benny/basilisk/src/view.h \
-	/home/benny/basilisk/src/tracer.h \
-	/home/benny/basilisk/src/bcg.h \
 	/home/benny/basilisk/src/utils.h \
 	/home/benny/basilisk/src/input.h \
 	/home/benny/basilisk/src/vertexbuffer.h \

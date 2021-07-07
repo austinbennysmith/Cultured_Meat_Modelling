@@ -150,10 +150,13 @@ event init(t = 0) {
 
 event circle_flow (i++) {
   fraction (circle, (0.01*sq(x) + sq(y) - sq(0.3)));
-  // foreach()
-  //   foreach_dimension()
+  // foreach() {
+  //   foreach_dimension() {
   //     u.x[] = (1. - circle[])*u.x[];
-  boundary ((scalar *){u});
+  //     u.y[] = (1. - circle[])*u.y[];
+  //   }
+  // }
+  // boundary ((scalar *){u});
 }
 
 // event adapt (i++)
