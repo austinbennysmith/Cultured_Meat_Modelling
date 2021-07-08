@@ -192,7 +192,7 @@ event integration (i++) {
   foreach() {
     // advection-diffusion:
     qh[] = (TT[-1,0]-TT[0,0])/Delta - u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
-    qv[] = (TT[0,-1]-TT[0,0])/Delta;
+    qv[] = (TT[0,-1]-TT[0,0])/Delta - u.y[]*(TT[0,0]+TT[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);;
 
     // diffusion scheme:
     // qh[] = (TT[-1,0]-TT[0,0])/Delta;
