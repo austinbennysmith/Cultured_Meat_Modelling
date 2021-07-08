@@ -1,0 +1,5 @@
+wobbly.c: In function ‘adapt_0’:
+wobbly.c:168:93: error: ‘LEVEL’ undeclared (first use in this function)
+  168 |   adapt_wavelet({u, f}, (double[]){1e-2, 1e-2, 1e-2}, LEVEL);
+      |                                                                                             ^    
+wobbly.c:168:93: note: each undeclared identifier is reported only once for each function it appears in

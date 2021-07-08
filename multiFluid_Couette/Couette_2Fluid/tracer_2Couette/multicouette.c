@@ -5,6 +5,7 @@
 #include "two-phase.h"
 #include "tension.h"
 #include "view.h"
+// #include "vof.h"
 // #include "tracer.h"
 
 scalar TT[];
@@ -132,76 +133,80 @@ event init(t = 0) {
   fraction (TT, (0.1-sq(x)-sq(y)));
   boundary({TT});
   // boundary conditions
-  u.t[top] = dirichlet(1.);
-  u.t[bottom] = dirichlet(0.);
+  // u.t[top] = dirichlet(1.);
+  // u.t[bottom] = dirichlet(0.);
 }
 
 // event adapt (i++)
 // {
 //   adapt_wavelet({u, f}, (double[]){1e-2, 1e-2, 1e-2}, LEVEL);
 // }
-event adapt(i++)
-{
-	// Order matters for the following (in which the regions called by refine() and unrefine() overlap. If they don't overlap, you can at least switch refine() and unrefine(), idk about other rearrangements.)
-	// unrefine(y<0.1);
-	// refine(y<0.1&&level<9);
-	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, (LEVEL+2), (LEVEL-3));
+// event adapt(i++)
+// {
+// 	// Order matters for the following (in which the regions called by refine() and unrefine() overlap. If they don't overlap, you can at least switch refine() and unrefine(), idk about other rearrangements.)
+// 	// unrefine(y<0.1);
+// 	// refine(y<0.1&&level<9);
+// 	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, (LEVEL+2), (LEVEL-3));
 
-  // Going fast to get video editing working:
-  adapt_wavelet((scalar *){f, u.x, u.y, TT}, (double[]){1e-6, 1e-2, 1e-2, 1e-3}, 9, 4);
+//   // Going fast to get video editing working:
+//   adapt_wavelet((scalar *){f, u.x, u.y, TT}, (double[]){1e-6, 1e-2, 1e-2, 1e-3}, 9, 4);
   
-	// // refine(y>0.4&&x>1.0&&level<=8);
-	// unrefine(y<0.1);
-	// refine(y<0.1&&level<9);
-	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, (LEVEL+2), (LEVEL-3));
+// 	// // refine(y>0.4&&x>1.0&&level<=8);
+// 	// unrefine(y<0.1);
+// 	// refine(y<0.1&&level<9);
+// 	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, (LEVEL+2), (LEVEL-3));
 
-	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
-	// unrefine(x>2.0);
+// 	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
+// 	// unrefine(x>2.0);
 
-	// Order doesn't matter for the following:
-	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
-	// refine(y<-0.45 && level<8);
+// 	// Order doesn't matter for the following:
+// 	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
+// 	// refine(y<-0.45 && level<8);
 
-	// Order doesn't matter for the following:
-	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
-	// unrefine(y<0.1);
+// 	// Order doesn't matter for the following:
+// 	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
+// 	// unrefine(y<0.1);
 
-	// Order doesn't matter for the following:
-	// The following two lines manually set the refinement level to be higher near the interface (y=0.3):
-	// refine(y<0.35 && y>0.25 && level<9);
-	// unrefine(y<0.25 && y>0.35);
+// 	// Order doesn't matter for the following:
+// 	// The following two lines manually set the refinement level to be higher near the interface (y=0.3):
+// 	// refine(y<0.35 && y>0.25 && level<9);
+// 	// unrefine(y<0.25 && y>0.35);
 
-	// The following line is how I probably want to actually do the AMR for this code:
-	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
+// 	// The following line is how I probably want to actually do the AMR for this code:
+// 	// adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, 8, 4);
 	
-	// The following line does just u. If you don't put (scalar *) in front of it, an error is thrown since u is a vector but Basilisk expects a scalar
-	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
+// 	// The following line does just u. If you don't put (scalar *) in front of it, an error is thrown since u is a vector but Basilisk expects a scalar
+// 	// adapt_wavelet((scalar *){u}, (double[]){3e-2, 3e-2}, 9, 4);
 
-	// Test Radu suggested:
-	// refine(y>0.45&&level<=8);
-	// adapt_wavelet((scalar *){f}, (double[]){1e-6}, 8, 4);
-	// unrefine(y>0.45&&x>3.0&&level<=8);
-}
+// 	// Test Radu suggested:
+// 	// refine(y>0.45&&level<=8);
+// 	// adapt_wavelet((scalar *){f}, (double[]){1e-6}, 8, 4);
+// 	// unrefine(y>0.45&&x>3.0&&level<=8);
+// }
 
 event integration (i++) {
   // double dt = DT;
-  scalar dT[],qh[],qv[];
+  scalar dTT[],qh[],qv[];
   // scalar dT[];
-  dt = dtnext (dt);
+  // dt = dtnext (dt);
   foreach() {
+    // advection-diffusion:
+    qh[] = (TT[-1,0]-TT[0,0])/Delta - u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
+    qv[] = (TT[0,-1]-TT[0,0])/Delta;
+
     // diffusion scheme:
     // qh[] = (TT[-1,0]-TT[0,0])/Delta;
     // qv[] = (TT[0,-1]-TT[0,0])/Delta;
 
     // advection scheme:
-    qh[] = - u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
-    qv[] = - u.y[]*(TT[0,0]+TT[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
+    // qh[] = - u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
+    // qv[] = - u.y[]*(TT[0,0]+TT[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
 
   }
   boundary ({qh});
   boundary({qv});
   foreach() {
-    dT[] = ( qh[0,0]  - qh[1,0] )/Delta + ( qv[0,0]  - qv[0,1] )/Delta;
+    dTT[] = ( qh[0,0]  - qh[1,0] )/Delta + ( qv[0,0]  - qv[0,1] )/Delta;
 
     //   // Alternative method for advection-diffusion (FINITE DIFFERENCES, forward time, centered space for diffusion, Lax-Wendroff for advection):
     // dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta)) + (u.x[]/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(u.x[])*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]) + (T[0,1]-2*T[0,0]+T[0,-1])/(sq(Delta)) + (u.y[]/(2*Delta))*(T[0,1]-T[0,-1]) + ((sq(u.y[])*dt)/(2*sq(Delta)))*(T[0,1]-2*T[0,0]+T[0,-1]);
@@ -209,7 +214,7 @@ event integration (i++) {
 
   // THESE ARE THE TWO LINES THAT CAUSE IT TO INITIALIZE WEIRDLY
   foreach()
-    TT[] += dt*dT[];
+    TT[] += dt*dTT[];
   boundary ({TT});
 }
 

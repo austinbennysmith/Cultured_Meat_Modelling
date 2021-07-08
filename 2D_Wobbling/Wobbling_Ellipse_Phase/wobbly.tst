@@ -1,2 +1,0 @@
-4cf506a4957b0fdaa59100c6243d7206  wobbly.c
-04d29c375353b13e3bcfa31c8225c0e7  wobbly.s
