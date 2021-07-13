@@ -1,0 +1,147 @@
+ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.3.0-10ubuntu2)
+  configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  WARNING: library configuration mismatch
+  avcodec     configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared --enable-version3 --disable-doc --disable-programs --enable-libaribb24 --enable-liblensfun --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libtesseract --enable-libvo_amrwbenc
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+[image2pipe @ 0x5555555dc400] Stream #0: not enough frames to estimate rate; consider increasing probesize
+Input #0, image2pipe, from 'pipe:':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: ppm, rgb24, 2600x400, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (ppm (native) -> h264 (libx264))
+[libx264 @ 0x5555555dfc80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x5555555dfc80] profile High, level 3.2
+Output #0, mpegts, to 'ymovie.mp4':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: h264 (libx264), yuv420p, 2600x400, q=-1--1, 25 fps, 90k tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+frame=    4 fps=1.9 q=18.0 size=      79kB time=00:00:00.12 bitrate=5413.9kbits/s speed=0.0556x    frame=    5 fps=1.2 q=18.0 size=      99kB time=00:00:00.16 bitrate=5047.5kbits/s speed=0.0382x    frame=    6 fps=0.9 q=18.0 size=     123kB time=00:00:00.20 bitrate=5045.6kbits/s speed=0.0313x    frame=    7 fps=0.8 q=18.0 size=     144kB time=00:00:00.24 bitrate=4931.6kbits/s speed=0.0285x    frame=    8 fps=0.8 q=18.0 size=     161kB time=00:00:00.28 bitrate=4715.9kbits/s speed=0.0267x    frame=    9 fps=0.7 q=18.0 size=     181kB time=00:00:00.32 bitrate=4643.4kbits/s speed=0.0254x    frame=   10 fps=0.7 q=18.0 size=     200kB time=00:00:00.36 bitrate=4557.8kbits/s speed=0.0246x    frame=   11 fps=0.7 q=18.0 size=     220kB time=00:00:00.40 bitrate=4508.1kbits/s speed=0.024x    frame=   12 fps=0.6 q=18.0 size=     235kB time=00:00:00.44 bitrate=4382.0kbits/s speed=0.0236x    frame=   13 fps=0.6 q=18.0 size=     255kB time=00:00:00.48 bitrate=4349.0kbits/s speed=0.0229x    frame=   14 fps=0.6 q=18.0 size=     256kB time=00:00:00.52 bitrate=4032.9kbits/s speed=0.0225x    frame=   15 fps=0.6 q=18.0 size=     256kB time=00:00:00.56 bitrate=3744.8kbits/s speed=0.0221x    frame=   16 fps=0.6 q=15.0 size=     256kB time=00:00:00.60 bitrate=3495.2kbits/s speed=0.0216x    frame=   17 fps=0.6 q=18.0 size=     256kB time=00:00:00.64 bitrate=3276.7kbits/s speed=0.0214x    frame=   18 fps=0.6 q=18.0 size=     256kB time=00:00:00.68 bitrate=3084.0kbits/s speed=0.0212x    frame=   19 fps=0.6 q=18.0 size=     256kB time=00:00:00.72 bitrate=2912.7kbits/s speed=0.0209x    frame=   20 fps=0.5 q=18.0 size=     256kB time=00:00:00.76 bitrate=2759.4kbits/s speed=0.0207x    frame=   21 fps=0.5 q=18.0 size=     256kB time=00:00:00.80 bitrate=2621.4kbits/s speed=0.0206x    frame=   22 fps=0.5 q=18.0 size=     256kB time=00:00:00.84 bitrate=2496.6kbits/s speed=0.0206x    Error while decoding stream #0:0: Invalid data found when processing input
+frame=   22 fps=0.5 q=18.0 size=     256kB time=00:00:00.84 bitrate=2496.6kbits/s speed=0.0196x    frame=   22 fps=0.5 q=18.0 Lsize=     493kB time=00:00:00.84 bitrate=4810.9kbits/s speed=0.0195x    
+video:455kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 8.418861%
+[libx264 @ 0x5555555dfc80] frame I:9     Avg QP:13.39  size: 24370
+[libx264 @ 0x5555555dfc80] frame P:13    Avg QP:13.16  size: 18969
+[libx264 @ 0x5555555dfc80] mb I  I16..4: 41.7% 47.6% 10.7%
+[libx264 @ 0x5555555dfc80] mb P  I16..4: 21.8% 20.6%  5.5%  P16..4: 15.2% 13.3%  5.4%  0.0%  0.0%    skip:18.1%
+[libx264 @ 0x5555555dfc80] 8x8 transform intra:45.7% inter:78.9%
+[libx264 @ 0x5555555dfc80] coded y,uvDC,uvAC intra: 29.0% 64.6% 43.3% inter: 13.8% 19.8% 3.2%
+[libx264 @ 0x5555555dfc80] i16 v,h,dc,p: 12% 45%  7% 35%
+[libx264 @ 0x5555555dfc80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 22% 26%  6%  5%  4%  7%  5% 10%
+[libx264 @ 0x5555555dfc80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 11% 22% 19%  5% 12%  8% 11%  5%  7%
+[libx264 @ 0x5555555dfc80] i8c dc,h,v,p: 30% 38%  5% 27%
+[libx264 @ 0x5555555dfc80] Weighted P-Frames: Y:7.7% UV:7.7%
+[libx264 @ 0x5555555dfc80] ref P L0: 18.2%  0.6% 60.8%  5.3% 11.1%  4.0%
+[libx264 @ 0x5555555dfc80] kb/s:4235.73
+Exiting normally, received signal 2.
+ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.3.0-10ubuntu2)
+  configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  WARNING: library configuration mismatch
+  avcodec     configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared --enable-version3 --disable-doc --disable-programs --enable-libaribb24 --enable-liblensfun --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libtesseract --enable-libvo_amrwbenc
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+[image2pipe @ 0x5555555dc400] Stream #0: not enough frames to estimate rate; consider increasing probesize
+Input #0, image2pipe, from 'pipe:':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: ppm, rgb24, 2600x400, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (ppm (native) -> h264 (libx264))
+[libx264 @ 0x5555555dfc80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x5555555dfc80] profile High, level 3.2
+Output #0, mpegts, to 'xmovie.mp4':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: h264 (libx264), yuv420p, 2600x400, q=-1--1, 25 fps, 90k tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+frame=    4 fps=1.8 q=13.0 size=      25kB time=00:00:00.12 bitrate=1704.4kbits/s speed=0.0549x    frame=    5 fps=1.2 q=13.0 size=      27kB time=00:00:00.16 bitrate=1391.1kbits/s speed=0.0381x    frame=    6 fps=0.9 q=12.0 size=      30kB time=00:00:00.20 bitrate=1225.7kbits/s speed=0.0313x    frame=    7 fps=0.8 q=12.0 size=      34kB time=00:00:00.24 bitrate=1153.0kbits/s speed=0.0285x    frame=    8 fps=0.8 q=12.0 size=      37kB time=00:00:00.28 bitrate=1085.0kbits/s speed=0.0267x    frame=    9 fps=0.7 q=12.0 size=      40kB time=00:00:00.32 bitrate=1029.3kbits/s speed=0.0254x    frame=   10 fps=0.7 q=12.0 size=      43kB time=00:00:00.36 bitrate= 985.9kbits/s speed=0.0246x    frame=   11 fps=0.7 q=12.0 size=      46kB time=00:00:00.40 bitrate= 940.0kbits/s speed=0.024x    frame=   12 fps=0.6 q=12.0 size=      49kB time=00:00:00.44 bitrate= 912.6kbits/s speed=0.0235x    frame=   13 fps=0.6 q=12.0 size=      52kB time=00:00:00.48 bitrate= 883.6kbits/s speed=0.023x    frame=   14 fps=0.6 q=12.0 size=      56kB time=00:00:00.52 bitrate= 879.2kbits/s speed=0.0225x    frame=   15 fps=0.6 q=12.0 size=      58kB time=00:00:00.56 bitrate= 854.0kbits/s speed=0.0221x    frame=   16 fps=0.6 q=12.0 size=      61kB time=00:00:00.60 bitrate= 834.7kbits/s speed=0.0217x    frame=   17 fps=0.6 q=12.0 size=      64kB time=00:00:00.64 bitrate= 820.1kbits/s speed=0.0214x    frame=   18 fps=0.6 q=12.0 size=      67kB time=00:00:00.68 bitrate= 802.9kbits/s speed=0.0212x    frame=   19 fps=0.6 q=12.0 size=      70kB time=00:00:00.72 bitrate= 793.8kbits/s speed=0.0209x    frame=   20 fps=0.5 q=12.0 size=      72kB time=00:00:00.76 bitrate= 779.7kbits/s speed=0.0207x    frame=   21 fps=0.5 q=12.0 size=      75kB time=00:00:00.80 bitrate= 767.0kbits/s speed=0.0206x    frame=   22 fps=0.5 q=12.0 size=      77kB time=00:00:00.84 bitrate= 752.0kbits/s speed=0.0206x    Error while decoding stream #0:0: Invalid data found when processing input
+frame=   22 fps=0.5 q=12.0 size=      77kB time=00:00:00.84 bitrate= 752.0kbits/s speed=0.0196x    frame=   22 fps=0.5 q=12.0 Lsize=      77kB time=00:00:00.84 bitrate= 752.0kbits/s speed=0.0193x    
+video:69kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 11.646848%
+[libx264 @ 0x5555555dfc80] frame I:1     Avg QP:18.96  size: 15000
+[libx264 @ 0x5555555dfc80] frame P:21    Avg QP: 9.16  size:  2653
+[libx264 @ 0x5555555dfc80] mb I  I16..4: 20.6% 71.2%  8.2%
+[libx264 @ 0x5555555dfc80] mb P  I16..4: 53.7%  5.1%  0.2%  P16..4:  4.7%  3.6%  0.8%  0.0%  0.0%    skip:31.8%
+[libx264 @ 0x5555555dfc80] 8x8 transform intra:13.3% inter:33.1%
+[libx264 @ 0x5555555dfc80] coded y,uvDC,uvAC intra: 1.7% 2.6% 1.6% inter: 3.7% 5.1% 1.4%
+[libx264 @ 0x5555555dfc80] i16 v,h,dc,p:  3% 96%  1%  0%
+[libx264 @ 0x5555555dfc80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 60%  8%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x5555555dfc80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 36% 26%  4%  8%  1%  3%  1%  3%
+[libx264 @ 0x5555555dfc80] i8c dc,h,v,p: 10% 89%  0%  0%
+[libx264 @ 0x5555555dfc80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5555555dfc80] ref P L0: 57.0%  7.9% 19.9%  9.7%  4.7%  0.8%
+[libx264 @ 0x5555555dfc80] kb/s:642.94
+Exiting normally, received signal 2.
+ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.3.0-10ubuntu2)
+  configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  WARNING: library configuration mismatch
+  avcodec     configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared --enable-version3 --disable-doc --disable-programs --enable-libaribb24 --enable-liblensfun --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libtesseract --enable-libvo_amrwbenc
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+[image2pipe @ 0x5555555dc400] Stream #0: not enough frames to estimate rate; consider increasing probesize
+Input #0, image2pipe, from 'pipe:':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: ppm, rgb24, 2600x400, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (ppm (native) -> h264 (libx264))
+[libx264 @ 0x5555555dfc80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x5555555dfc80] profile High, level 3.2
+Output #0, mpegts, to 'tracemovie.mp4':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: h264 (libx264), yuv420p, 2600x400, q=-1--1, 25 fps, 90k tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+frame=    4 fps=1.9 q=16.0 size=      40kB time=00:00:00.12 bitrate=2707.0kbits/s speed=0.0561x    frame=    5 fps=1.2 q=15.0 size=      48kB time=00:00:00.16 bitrate=2472.0kbits/s speed=0.0374x    frame=    6 fps=0.9 q=15.0 size=      57kB time=00:00:00.20 bitrate=2316.0kbits/s speed=0.0314x    frame=    7 fps=0.8 q=15.0 size=      64kB time=00:00:00.24 bitrate=2193.2kbits/s speed=0.0286x    frame=    8 fps=0.8 q=15.0 size=      71kB time=00:00:00.28 bitrate=2073.3kbits/s speed=0.0268x    frame=    9 fps=0.7 q=15.0 size=      76kB time=00:00:00.32 bitrate=1950.4kbits/s speed=0.0254x    frame=   10 fps=0.7 q=15.0 size=      81kB time=00:00:00.36 bitrate=1846.5kbits/s speed=0.0246x    frame=   11 fps=0.7 q=14.0 size=      85kB time=00:00:00.40 bitrate=1740.8kbits/s speed=0.024x    frame=   12 fps=0.6 q=14.0 size=      89kB time=00:00:00.44 bitrate=1654.4kbits/s speed=0.0235x    frame=   13 fps=0.6 q=14.0 size=      93kB time=00:00:00.48 bitrate=1579.2kbits/s speed=0.0229x    frame=   14 fps=0.6 q=15.0 size=     109kB time=00:00:00.52 bitrate=1718.0kbits/s speed=0.0225x    frame=   15 fps=0.6 q=12.0 size=     195kB time=00:00:00.56 bitrate=2854.9kbits/s speed=0.022x    frame=   16 fps=0.6 q=24.0 size=     256kB time=00:00:00.60 bitrate=3495.2kbits/s speed=0.0216x    frame=   17 fps=0.6 q=24.0 size=     256kB time=00:00:00.64 bitrate=3276.7kbits/s speed=0.0213x    frame=   18 fps=0.6 q=24.0 size=     256kB time=00:00:00.68 bitrate=3084.0kbits/s speed=0.0211x    frame=   19 fps=0.6 q=22.0 size=     256kB time=00:00:00.72 bitrate=2912.7kbits/s speed=0.0209x    frame=   20 fps=0.5 q=20.0 size=     256kB time=00:00:00.76 bitrate=2759.4kbits/s speed=0.0207x    frame=   21 fps=0.5 q=18.0 size=     512kB time=00:00:00.80 bitrate=5242.8kbits/s speed=0.0206x    Error while decoding stream #0:0: Invalid data found when processing input
+frame=   21 fps=0.5 q=18.0 size=     512kB time=00:00:00.80 bitrate=5242.8kbits/s speed=0.0196x    frame=   21 fps=0.5 q=18.0 Lsize=     518kB time=00:00:00.80 bitrate=5307.2kbits/s speed=0.0188x    
+video:479kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 8.311905%
+[libx264 @ 0x5555555dfc80] frame I:3     Avg QP:12.38  size: 62812
+[libx264 @ 0x5555555dfc80] frame P:18    Avg QP:11.32  size: 16753
+[libx264 @ 0x5555555dfc80] mb I  I16..4: 40.4% 33.8% 25.8%
+[libx264 @ 0x5555555dfc80] mb P  I16..4:  8.3%  6.6%  1.5%  P16..4: 19.9%  5.2%  5.9%  0.0%  0.0%    skip:52.7%
+[libx264 @ 0x5555555dfc80] 8x8 transform intra:37.1% inter:54.3%
+[libx264 @ 0x5555555dfc80] coded y,uvDC,uvAC intra: 35.3% 52.9% 48.1% inter: 11.2% 23.4% 15.1%
+[libx264 @ 0x5555555dfc80] i16 v,h,dc,p: 56% 17% 24%  3%
+[libx264 @ 0x5555555dfc80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 12% 10% 34% 11% 12%  4%  3%  5%  8%
+[libx264 @ 0x5555555dfc80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  8% 15% 15% 15% 25%  5%  5%  5%  8%
+[libx264 @ 0x5555555dfc80] i8c dc,h,v,p: 70% 21%  6%  3%
+[libx264 @ 0x5555555dfc80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5555555dfc80] ref P L0: 81.3%  8.8%  7.5%  1.3%  0.7%  0.4%
+[libx264 @ 0x5555555dfc80] kb/s:4666.63
+Exiting normally, received signal 2.
+swrast/s_span.c:593:error: [Thread debugging using libthread_db enabled]
+swrast/s_span.c:593:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+swrast/s_span.c:593:error: [New Thread 0x7ffff6922700 (LWP 238041)]
+swrast/s_span.c:593:error: [New Thread 0x7ffff6121700 (LWP 238042)]
+swrast/s_span.c:593:error: [New Thread 0x7ffff5920700 (LWP 238043)]
+swrast/s_span.c:593:error: Thread 1 "multicouette" received signal SIGINT, Interrupt.

@@ -186,14 +186,14 @@ event logstats (t += 1.0) {
     fflush(fp_stats);
 }
 
-// event gfsview (t += 1.0) { // RC
-//     char name_gfs[200];
-//     sprintf(name_gfs,"Slice-%0.1f.gfs",t);
+event gfsview (t += 1.0) { // RC
+    char name_gfs[200];
+    sprintf(name_gfs,"Slice-%0.1f.gfs",t);
 
-//     FILE* fp_gfs = fopen (name_gfs, "w");
-//     output_gfs(fp_gfs);
-//     fclose(fp_gfs);
-// }
+    FILE* fp_gfs = fopen (name_gfs, "w");
+    output_gfs(fp_gfs);
+    fclose(fp_gfs);
+}
 
 // event xmovie (t+=0.1, t<=10)
 // {
