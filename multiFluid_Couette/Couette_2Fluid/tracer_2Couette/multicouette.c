@@ -8,12 +8,20 @@
 // #include "vof.h"
 // #include "tracer.h"
 
+// double dt = 0.0001;
+
 scalar TT[];
 // scalar * tracers = {T};
+double b = 0.00002; // Diffusion coefficient
+double Umax = 1.0; // Top plate velocity
+
+const double tmax = 100.0;
+
+// scalar diffStability[];
 
 FILE *fp1 ;
 
-#define LEVEL 10 // RC was 4, needs to be bigger to capture the setup
+#define LEVEL 8 // RC was 4, needs to be bigger to capture the setup
 
 // Dimensional quantities:
 #define rhoWater 1000.0
@@ -31,6 +39,7 @@ FILE *fp1 ;
 #define mu_ratio (muOil/muWater)
 #define Re (rhoWater*refVelocity*refLength/muWater)  // Reynolds number
 #define We (rhoWater*pow(refVelocity,2)*refLength/sig)
+#define Pe ((refLength*refVelocity)/b)
 
 FILE *fp_params;
 
@@ -39,11 +48,25 @@ FILE * fp_stats;
 
 FILE * fp_interface;
 
-u.t[top] = dirichlet(1.0);
+u.t[top] = dirichlet(Umax);
 u.n[top] = dirichlet(0.0);
 
 u.t[bottom] = dirichlet(0.0);
 u.n[bottom] = dirichlet(0.0);
+
+// I use the following variables to determine the cell length/width
+const double ymax = 0.5; // ymin of domain (used in masking)
+const double ymin = -0.5; // ymax of domain (used in masking)
+long int sizeNow; // Total # of cells at t=0.0 (as long int)
+double sizeNowDouble; // Total # of cells at t=0.0 (as double)
+double numCellsX; // # of cells in x (long) direction
+double numCellsY; // # of cells in y (short) direction
+double DeltaX; // Length of smallest cell in x direction
+double DeltaY; // Length of smallest cell in y direction
+double ylength; // Domain length in y direction
+double xlength; // Domain length in x direction
+double Diffusion_Stability; // test for stability of the FTCS diffusion scheme
+double Advection_Stability; // test for stability of the Lax-Wendroff advection scheme
 
 // T[top] = neumann(0.0);
 // T[bottom] = neumann(0.0);
@@ -62,6 +85,7 @@ u.n[bottom] = dirichlet(0.0);
 
 int main() {
   L0 = 8.;
+  // dt = 0.0000001;
   origin(-L0/2., -0.5);
   periodic(right);
   init_grid (1 << LEVEL);
@@ -103,6 +127,13 @@ int main() {
   fprintf(fp_params, "refVelocity: %g \n", refVelocity);
   fprintf(fp_params, "Reynolds Number: %g \n", Re);
   fprintf(fp_params, "Weber Number: %g \n", We);
+  fprintf(fp_params, "Peclet Number: %g \n", Pe);
+  fprintf(fp_params, "dt: %g \n", dt);
+  fprintf(fp_params, "DT: %g \n", DT);
+  fprintf(fp_params, "L0: %g \n", L0);
+  fprintf(fp_params, "Diffusion Coefficient: b = %g \n", b);
+  // fprintf(fp_params, "DeltaMin: %g \n", (L0/))
+  // fprintf(fp_params, "N: %g \n", N);
   fclose(fp_params);
 
   {
@@ -125,12 +156,15 @@ event init(t = 0) {
   }
 
   // RC cut the top and bottom of domain
-  mask (y > 0.5 ? top : none);
-  mask (y < -0.5 ? bottom : none);
+  mask (y > ymax ? top : none);
+  mask (y < ymin ? bottom : none);
   
-  fraction (f, 0.3-y);
+  fraction (f, -y);
 
-  fraction (TT, (0.1-sq(x)-sq(y)));
+  // fraction (TT, (0.1-sq(x)-sq(y)));
+  foreach() {
+  	TT[] = exp(-(10*x*x+10*y*y));
+  }
   boundary({TT});
   // boundary conditions
   // u.t[top] = dirichlet(1.);
@@ -184,41 +218,53 @@ event init(t = 0) {
 // 	// unrefine(y>0.45&&x>3.0&&level<=8);
 // }
 
+scalar dTT[],qh[],qv[];
 event integration (i++) {
+	// Setting up scalar field to represent the stability condition for diffusion:
+	// foreach() {
+	// 	diffStability[] = b*
+	// }
+
+	foreach() {
+    // advection-diffusion:
+	    qh[] = b*(TT[-1,0]-TT[0,0])/Delta + u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
+	    qv[] = b*(TT[0,-1]-TT[0,0])/Delta + u.y[]*(TT[0,0]+TT[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);;
+
   // double dt = DT;
-  scalar dTT[],qh[],qv[];
   // scalar dT[];
   // dt = dtnext (dt);
-  foreach() {
-    // advection-diffusion:
-    qh[] = (TT[-1,0]-TT[0,0])/Delta - u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
-    qv[] = (TT[0,-1]-TT[0,0])/Delta - u.y[]*(TT[0,0]+TT[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);;
 
     // diffusion scheme:
-    // qh[] = (TT[-1,0]-TT[0,0])/Delta;
-    // qv[] = (TT[0,-1]-TT[0,0])/Delta;
+    // qh[] = b*(TT[-1,0]-TT[0,0])/Delta;
+    // qv[] = b*(TT[0,-1]-TT[0,0])/Delta;
 
     // advection scheme:
-    // qh[] = - u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
-    // qv[] = - u.y[]*(TT[0,0]+TT[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
-
-  }
-  boundary ({qh});
-  boundary({qv});
-  foreach() {
-    dTT[] = ( qh[0,0]  - qh[1,0] )/Delta + ( qv[0,0]  - qv[0,1] )/Delta;
+    // qh[] = u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
+    // qv[] = u.y[]*(TT[0,0]+TT[0,-1])/2.0 - ((sq(u.y[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
+	}
+	boundary ({qh});
+  	boundary({qv});
+  	foreach() {
+  		dTT[] = ( qh[0,0]  - qh[1,0] )/Delta + ( qv[0,0]  - qv[0,1] )/Delta;
+	  	}
+    //   // Alternative method for advection-diffusion (FINITE DIFFERENCES, forward time, centered space for diffusion, Lax-Wendroff for advection):
+    // dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta)) + (u.x[]/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(u.x[])*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]) + (T[0,1]-2*T[0,0]+T[0,-1])/(sq(Delta)) + (u.y[]/(2*Delta))*(T[0,1]-T[0,-1]) + ((sq(u.y[])*dt)/(2*sq(Delta)))*(T[0,1]-2*T[0,0]+T[0,-1]);
+  	boundary ({qh});
+  	boundary({qv});
+  	foreach() {
+    	dTT[] = ( qh[0,0]  - qh[1,0] )/Delta + ( qv[0,0]  - qv[0,1] )/Delta;
 
     //   // Alternative method for advection-diffusion (FINITE DIFFERENCES, forward time, centered space for diffusion, Lax-Wendroff for advection):
     // dT[] = (T[1,0]-2*T[0,0]+T[-1,0])/(sq(Delta)) + (u.x[]/(2*Delta))*(T[1,0]-T[-1,0]) + ((sq(u.x[])*dt)/(2*sq(Delta)))*(T[1,0]-2*T[0,0]+T[-1,0]) + (T[0,1]-2*T[0,0]+T[0,-1])/(sq(Delta)) + (u.y[]/(2*Delta))*(T[0,1]-T[0,-1]) + ((sq(u.y[])*dt)/(2*sq(Delta)))*(T[0,1]-2*T[0,0]+T[0,-1]);
-  }
+  	}
 
   // THESE ARE THE TWO LINES THAT CAUSE IT TO INITIALIZE WEIRDLY
-  foreach()
-    TT[] += dt*dTT[];
-  boundary ({TT});
+  	foreach()
+    	TT[] += DT*dTT[];
+  	boundary ({TT});
 }
 
-event end (t = 100) { // RC restricted to 400
+event end (t = tmax) { // RC restricted to 400
   printf ("i = %d t = %g\n", i, t);
 }
 
@@ -229,9 +275,52 @@ event logstats (t += 1.0) {
     // i, timestep, no of cells, real time elapsed, cpu time
     fprintf(fp_stats, "i: %i t: %g dt: %g #Cells: %ld Wall clock time (s): %g CPU time (s): %g \n", i, t, dt, grid->n, perf.t, s.cpu);
     fflush(fp_stats);
+
+    if (t<1.0) { // Could change this condition in the future but won't for now
+
+      {
+      char params[200];
+      sprintf(params, "params.txt");
+      fp_params=fopen(params, "a");
+      }
+
+      sizeNow = grid->n;
+      xlength = L0;
+      ylength = ymax-ymin;
+      sizeNowDouble = (double) sizeNow;
+      numCellsY = sqrt(sizeNow/xlength);
+      numCellsX = (sizeNow/numCellsY);
+      DeltaX = (xlength/numCellsX);
+      DeltaY = (ylength/numCellsY);
+
+      // Here I perform a stability test for the FTCS diffusion discretization.
+      // I must have Diffusion_Stability<=0.5
+      // Source: http://math.tifrbng.res.in/~praveen/notes/cm2013/heat_2d.pdf
+      Diffusion_Stability = (2*b*DT)/sq(DeltaX); // DeltaX = DeltaY so it doesn't matter which one I put here
+
+      // Here I perform a stability test for the Lax-Wendroff advection discretization.
+      // I must have Advection_Stability<=1. Stability condition is the same as in 1D.
+      // Source: http://pages.erau.edu/~snivelyj/ep711sp12/EP711_7.pdf
+      Advection_Stability = (Umax*DT)/DeltaX;
+
+      // Putting grid setup parameters in the params.txt file. I'm taking the MAXIMUM # of cells in order to get the MINIMUM cell size.
+      // I'm doing this because I want the scheme to be stable for every grid cell, so I test the stability for the smallest grid cell.
+      // If it's stable for the smallest grid cell, it's stable for all of them.
+      fprintf(fp_params, "(Max) Total #Cells: %g \n", sizeNowDouble);
+      fprintf(fp_params, "(Max) #Cells along width: %g \n", numCellsY);
+      fprintf(fp_params, "(Max) #Cells along length: %g \n", numCellsX);
+      fprintf(fp_params, "(Min) DeltaX: %g \n", DeltaX);
+      fprintf(fp_params, "(Min) DeltaY: %g \n", DeltaY);
+      fprintf(fp_params, "Diffusion Stability condition (must be <=0.5, see code for source): %g \n", Diffusion_Stability);
+      fprintf(fp_params, "Top plate velocity: %g \n", Umax);
+      fprintf(fp_params, "Advection Stability condition (must be <=1, see code for source): %g \n", Advection_Stability);
+
+      fclose(fp_params);
+    }
+
 }
 
-event gfsview (t += 1.0, t<=10) { // RC
+event gfsview (t += 10.0, t<=tmax) { // RC
     char name_gfs[200];
     sprintf(name_gfs,"Slice-%0.1f.gfs",t);
 
@@ -266,7 +355,7 @@ event tracemovie (t+=1.0)
  view (fov=3, width=2600, height=400);
  clear();
  // cells(lc={0.5,0.5,0.5}, lw=0.5);
- squares("TT", spread=-1, linear=true, map=cool_warm);
+ squares("TT", min=0.0, max=1.0, linear=true, map=cool_warm);
  draw_vof ("f", lc = {1.0,1.0,1.0}, lw=2);
  // cells();
  save ("tracemovie.mp4");
@@ -316,7 +405,7 @@ event loginterface (t += 1.0) {
     fflush(fp_interface);
 }
 
-event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
+event profiles (t = 0; t+=1.0; t<=tmax) // RC restricted the output a little, don't overdo it at first!
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -0.5; y <= 0.5; y += 0.01)

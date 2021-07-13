@@ -15,6 +15,8 @@ scalar T[];
 
 FILE * fp_params;
 
+const double tmax = 100.0;
+
 double dt;
 float U = 2.0;
 
@@ -57,15 +59,15 @@ event init (t = 0) {
   boundary ({T});
 }
 
-event printdata (t += 1.0; t < 100.0) {
+event printdata (t += 1.0; t < tmax) {
   foreach()
     fprintf (stdout, "%g %g %g %g\n", x, y, T[], t);
   fprintf (stdout, "\n\n");
 }
 
+scalar dT[],qh[],qv[];
 event integration (i++) {
   // double dt = DT;
-  scalar dT[],qh[],qv[];
   dt = 0.05;
   foreach() {
   // // 	// Helpful sentence from a paper (at https://www.researchgate.net/profile/Wim-Desmet/publication/251548727_Finite_Volume_Convective_Flux_Reconstruction_Using_High-Order_Skew-Symmetric-Like_Schemes/links/02e7e52f1183f86850000000/Finite-Volume-Convective-Flux-Reconstruction-Using-High-Order-Skew-Symmetric-Like-Schemes.pdf):
@@ -108,7 +110,7 @@ event integration (i++) {
   boundary ({T});
 }
 
-event profiles (t = 0; t+=1.0; t<=1000)
+event profiles (t = 0; t+=1.0; t<=tmax)
 {
   FILE * fp = fopen("xprof", "a");
   for (double y = -L0/2; y <= L0/2; y += 0.01)
@@ -121,12 +123,12 @@ event profiles (t = 0; t+=1.0; t<=1000)
   fclose (fp);
 }
 
-event Tmovie (t+=10.0, t<1000.0)
+event Tmovie (t+=10.0, t<tmax)
 {
  clear();
  // cells(lc={0.5,0.5,0.5}, lw=0.5);
  // draw_vof ("cs", "fs", filled=-1, fc = {1.0,1.0,1.0}, lw=2);
- squares("T", spread=-1, linear=true, map=cool_warm);
+ squares("T", min=0.0, max=0.5, linear=true, map=cool_warm);
  // cells();
  save ("Tmovie.mp4");
 }
@@ -140,3 +142,12 @@ event Tmovie (t+=10.0, t<1000.0)
 //  // cells();
 //  save ("ymovie.mp4");
 // }
+
+event gfsview (t += 1.0, t<=tmax) { // RC
+    char name_gfs[200];
+    sprintf(name_gfs,"Slice-%0.1f.gfs",t);
+
+    FILE* fp_gfs = fopen (name_gfs, "w");
+    output_gfs(fp_gfs);
+    fclose(fp_gfs);
+}
