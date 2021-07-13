@@ -10,3 +10,5 @@
 
 ### Command to copy a file into all subdirectories: 
 for d in */; do cp water.txt "$d"; done
+
+find -type f -name *log -size +500M -delete
