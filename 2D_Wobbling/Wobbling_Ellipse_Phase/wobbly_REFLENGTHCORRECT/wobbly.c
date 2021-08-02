@@ -9,8 +9,6 @@
 
 FILE *fp1 ;
 
-// const double semiminor=0.01;
-
 #define MAXLEVEL 9 // RC was 4, needs to be bigger to capture the setup
 
 // Dimensional quantities:
@@ -24,7 +22,6 @@ FILE *fp1 ;
 #define Fr 1.0 // Froude number
 
 #define refLength 0.01  // height at center of domain (so the semi-minor axis)
-// #define refLength 0.01
 #define refVelocity Fr*sqrt(9.8*refLength)  // Reference length, defined in terms of the Froude number
 
 // Dimensionless quantities:
@@ -65,7 +62,7 @@ scalar circle[];
 
 int main() {
   L0 = 8.0;
-  origin(-L0/2., -0.5);
+  origin(-L0/2., -0.5);// Change -0.5 to -L0/16??
   // periodic(right);
   init_grid (1 << MAXLEVEL);
 
@@ -140,13 +137,13 @@ event init(t = 0) {
   }
 
   // RC cut the top and bottom of domain
-  mask (y > 0.5 ? top : none);
-  mask (y < -0.5 ? bottom : none);
+  mask (y > L0/16.0 ? top : none);
+  mask (y < -L0/16.0 ? bottom : none);
   
   // mask (circle < 1.0 ? top : none);
 
-  refine(level<MAXLEVEL && 0.01*sq(x) + sq(y) < sq(0.3));
-  unrefine(level<MAXLEVEL && 0.01*sq(x) + sq(y) > sq(0.3));
+  refine(level<MAXLEVEL && 0.01*sq(x) + sq(y) < sq((3.0*L0)/80.0));
+  unrefine(level<MAXLEVEL && 0.01*sq(x) + sq(y) > sq((3.0*L0)/80.0));
   // adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, MAXLEVEL, 4);
 
   fraction (f, -y);
@@ -158,7 +155,7 @@ event init(t = 0) {
 }
 
 event circle_flow (i++) {
-  fraction (circle, (0.01*sq(x) + sq(y) - sq(0.3)));
+  fraction (circle, (0.01*sq(x) + sq(y) - sq((3.0*L0)/80.0)));
   foreach() {
     foreach_dimension() {
       u.x[] = (1. - circle[])*u.x[];
@@ -345,7 +342,7 @@ event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don
   // fclose (fp);
 }
 
-event vortmovie (t+=1.0)
+event vortmovie (t+=1.0, t<=10.0)
 {
   scalar omega[];
   vorticity(u, omega);

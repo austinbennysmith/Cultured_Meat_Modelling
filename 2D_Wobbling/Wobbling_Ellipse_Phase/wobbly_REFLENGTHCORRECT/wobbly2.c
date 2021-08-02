@@ -9,8 +9,6 @@
 
 FILE *fp1 ;
 
-const float semiminor = 0.01;
-
 #define MAXLEVEL 9 // RC was 4, needs to be bigger to capture the setup
 
 // Dimensional quantities:
@@ -21,9 +19,9 @@ const float semiminor = 0.01;
 
 #define sig 0.0728  //surface tension of water
 
-#define Fr 0.01 // Froude number
+#define Fr 1.0 // Froude number
 
-#define refLength semiminor  // height at center of domain (so the semi-minor axis)
+#define refLength 0.01  // height at center of domain (so the semi-minor axis)
 #define refVelocity Fr*sqrt(9.8*refLength)  // Reference length, defined in terms of the Froude number
 
 // Dimensionless quantities:
@@ -31,6 +29,8 @@ const float semiminor = 0.01;
 #define mu_ratio (muOil/muWater)
 #define Re (rhoWater*refVelocity*refLength/muWater)  // Reynolds number
 #define We (rhoWater*pow(refVelocity,2)*refLength/sig)
+
+const double semiminor = 0.1; // Setting the semi-minor axis length of the ellipse (ultimately should be equal to the reference length scale)
 
 FILE *fp_params;
 
@@ -51,6 +51,12 @@ u.n[left] = dirichlet(0.0);
 u.t[right] = dirichlet(0.0);
 u.n[right] = dirichlet(0.0);
 
+// I'll use ymax & ymin in the masking function.
+double ymax;
+double ymin;
+double xmax;
+double xmin;
+
 // scalar s1[];
 
 // void draw_frame(char * fname)
@@ -63,7 +69,11 @@ u.n[right] = dirichlet(0.0);
 scalar circle[];
 
 int main() {
-  L0 = 8.;
+  L0 = (80.0*semiminor)/3.0;
+  ymax = L0/16.0;
+  ymin = -L0/16.0;
+  xmax = L0/2.0;
+  xmin = -L0/2.0;
   origin(-L0/2., -0.5);
   // periodic(right);
   init_grid (1 << MAXLEVEL);
@@ -107,6 +117,7 @@ int main() {
   fprintf(fp_params, "Weber Number: %g \n", We);
   fprintf(fp_params, "Froude Number: %g \n", Fr);
   fprintf(fp_params, "Dimensionless gravity: %g \n", 1/sq(Fr));
+  fprintf(fp_params, "L0: %g \n", L0);
   fclose(fp_params);
 
   {
@@ -138,13 +149,13 @@ event init(t = 0) {
   }
 
   // RC cut the top and bottom of domain
-  mask (y > 0.5 ? top : none);
-  mask (y < -0.5 ? bottom : none);
+  mask (y > ymax ? top : none);
+  mask (y < ymin ? bottom : none);
   
   // mask (circle < 1.0 ? top : none);
 
-  refine(level<MAXLEVEL && 0.01*sq(x) + sq(y) < sq(0.3));
-  unrefine(level<MAXLEVEL && 0.01*sq(x) + sq(y) > sq(0.3));
+  refine(level<MAXLEVEL && 0.01*sq(x) + sq(y) < sq((3.0*L0)/80.0));
+  unrefine(level<MAXLEVEL && 0.01*sq(x) + sq(y) > sq((3.0*L0)/80.0));
   // adapt_wavelet((scalar *){f, u.x, u.y}, (double[]){1e-6, 1e-2, 1e-2}, MAXLEVEL, 4);
 
   fraction (f, -y);
@@ -156,7 +167,7 @@ event init(t = 0) {
 }
 
 event circle_flow (i++) {
-  fraction (circle, (0.01*sq(x) + sq(y) - sq(0.3))); // Reflength = length of semi-minor axis
+  fraction (circle, (0.01*sq(x) + sq(y) - sq((3.0*L0)/80.0))); // Reflength = length of semi-minor axis
   foreach() {
     foreach_dimension() {
       u.x[] = (1. - circle[])*u.x[];
@@ -307,12 +318,12 @@ event loginterface (t += 1.0) {
 event profiles (t = 0; t+=1.0; t<=100) // RC restricted the output a little, don't overdo it at first!
 {
   FILE * fp = fopen("xprof", "a");
-  for (double y = -0.5; y <= 0.5; y += 0.01)
+  for (double y = ymin; y <= ymax; y += 0.01)
     fprintf (fp, "%g %g %g\n", t, y, interpolate (u.x, 0, y));
   fclose (fp);
   
   fp = fopen("yprof", "a");
-  for (double x = -4; x <= 4; x += 0.01)
+  for (double x = xmin; x <= xmax; x += 0.01)
     fprintf (fp, "%g %g %g\n", t, x, interpolate (u.y, x, 0));
   fclose (fp);
   
