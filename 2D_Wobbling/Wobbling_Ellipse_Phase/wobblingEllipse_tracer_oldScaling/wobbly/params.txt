@@ -1,0 +1,19 @@
+rho1: 1 
+rho2: 0.917 
+mu1: 0.001 
+mu2: 0.03 
+sigma: 0.728 
+refLength: 0.01 
+refVelocity: 0.1 
+Reynolds Number: 1000 
+Weber Number: 1.37363 
+Froude Number: 0.319438 
+Dimensionless gravity: 9.8 
+(Max) Total #Cells: 12716 
+(Max) #Cells along width: 39.8685 
+(Max) #Cells along length: 318.948 
+(Min) DeltaX: 0.0250824 
+(Min) DeltaY: 0.0250824 
+Diffusion Stability condition (must be <=0.5, see code for source): 0.0006358 
+Top plate velocity: 1 
+Advection Stability condition (must be <=1, see code for source): 0.398685 
