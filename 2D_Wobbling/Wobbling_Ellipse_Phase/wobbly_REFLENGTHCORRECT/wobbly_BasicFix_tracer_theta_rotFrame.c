@@ -12,7 +12,7 @@ scalar TT[];
 double b = 0.00002; // Diffusion coefficient
 double Umax = 1.0; // Top plate velocity
 
-const double tmax = 100.0;
+const double tmax = 100.0; // How many time steps it will run for
 
 double thetaNOW;
 double omegaNOW;
@@ -22,6 +22,14 @@ double BB = (2.0*3.14159265)/period;
 
 const double maxDegrees = 7.0; // degrees through which the reactor rotates
 double maxRads = maxDegrees*(3.14159265/180.0);
+
+// The following doubles will be used in the acceleration event to avoid really long lines of code:
+double gravityX;
+double gravityY;
+double coriolisX;
+double coriolisY;
+double centripetalX;
+double centripetalY;
 
 FILE *fp1 ;
 
@@ -157,12 +165,20 @@ event acceleration (i++)
   omegaNOW = BB*maxRads*cos(BB*t); // Derivative of omegaNOW w/respect to t
   face vector av = a;
   // Which of the following 2 ways of doing it is better??
-  foreach_face(y) {
-    av.y[] -= (1/sqrt(2))*sq(1/Fr)*cos(thetaNOW);
-    // av.x[] -= (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW);
-  }
   foreach_face(x) {
-    av.x[] -= (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW);
+    gravityX = (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW);
+    coriolisX = -2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t);
+    centripetalX = -x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+    av.x[] = gravityX + coriolisX + centripetalX;
+    // av.x[] -= (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW) - 2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t) - x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+  }
+  foreach_face(y) {
+    gravityY = (1/sqrt(2))*sq(1/Fr)*cos(thetaNOW);
+    coriolisY = 2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t);
+    centripetalY = -sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+    av.y[] = gravityY + coriolisY + centripetalY;
+    // av.y[] -= (1/sqrt(2))*sq(1/Fr)*cos(thetaNOW) + 2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t) - sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+    // av.x[] -= (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW);
   }
 }
 
