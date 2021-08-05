@@ -12,12 +12,12 @@ scalar TT[];
 double b = 0.00002; // Diffusion coefficient
 double Umax = 1.0; // Top plate velocity
 
-const double tmax = 100.0; // How many time steps it will run for
+const double tmax = 300.0; // How many time steps it will run for
 
 double thetaNOW;
 double omegaNOW;
 
-const double period = 160.0; // how many seconds it takes to go through a complete rocking cycle
+const double period = 80.0; // how many seconds it takes to go through a complete rocking cycle
 double BB = (2.0*3.14159265)/period;
 
 const double maxDegrees = 7.0; // degrees through which the reactor rotates
@@ -375,7 +375,7 @@ event logstats (t += 1.0) {
     }
 }
 
-event gfsview (t += 1.0) { // RC
+event gfsview (t += 10.0) { // RC
     char name_gfs[200];
     sprintf(name_gfs,"Slice-%0.1f.gfs",t);
 
@@ -447,7 +447,7 @@ event tracemovie (t+=1.0)
 //   fclose(fp_shear);
 // }
 
-event interface (t+=1)
+event interface (t+=10)
 {
   char name_interface[100];
   sprintf(name_interface, "interface_%g.dat", t);
