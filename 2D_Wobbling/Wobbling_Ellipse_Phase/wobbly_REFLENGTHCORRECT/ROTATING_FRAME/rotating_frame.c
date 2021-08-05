@@ -166,18 +166,18 @@ event acceleration (i++)
   face vector av = a;
   // Which of the following 2 ways of doing it is better??
   foreach_face(x) {
-    // gravityX = (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW);
-    // coriolisX = -2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t);
-    // centripetalX = -x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
-    // av.x[] = gravityX + coriolisX + centripetalX;
-    av.x[] -= (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW) - 2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t) - x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+    gravityX = (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW);
+    coriolisX = 2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t);
+    centripetalX = x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+    av.x[] -= gravityX + coriolisX + centripetalX;
+    // av.x[] -= (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW) + 2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t) + x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
   }
   foreach_face(y) {
-    // gravityY = (1/sqrt(2))*sq(1/Fr)*cos(thetaNOW);
-    // coriolisY = 2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t);
-    // centripetalY = -sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
-    // av.y[] = gravityY + coriolisY + centripetalY;
-    av.y[] -= (1/sqrt(2))*sq(1/Fr)*cos(thetaNOW) + 2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t) - sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+    gravityY = (1/sqrt(2))*sq(1/Fr)*cos(thetaNOW);
+    coriolisY = -2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t);
+    centripetalY = sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+    av.y[] -= gravityY + coriolisY + centripetalY;
+    // av.y[] -= (1/sqrt(2))*sq(1/Fr)*cos(thetaNOW) - 2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t) + sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
     // av.x[] -= (1/sqrt(2))*sq(1/Fr)*sin(thetaNOW);
   }
 }
