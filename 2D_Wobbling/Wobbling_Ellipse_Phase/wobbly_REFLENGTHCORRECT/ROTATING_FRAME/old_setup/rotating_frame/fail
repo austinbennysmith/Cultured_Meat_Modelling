@@ -1,0 +1,6 @@
+fputc.c:37:error: [Thread debugging using libthread_db enabled]
+fputc.c:37:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+fputc.c:37:error: [New Thread 0x7ffff37f9700 (LWP 84113)]
+fputc.c:37:error: [New Thread 0x7ffff2ff8700 (LWP 84114)]
+fputc.c:37:error: [New Thread 0x7ffff27f7700 (LWP 84115)]
+fputc.c:37:error: Thread 1 "rotating_frame" received signal SIGTERM, Terminated.

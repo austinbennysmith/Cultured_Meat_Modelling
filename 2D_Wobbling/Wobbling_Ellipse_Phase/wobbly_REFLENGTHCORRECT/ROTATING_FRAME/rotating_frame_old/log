@@ -1,6 +1,0 @@
-main/format_unpack.c:5295:error: [Thread debugging using libthread_db enabled]
-main/format_unpack.c:5295:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
-main/format_unpack.c:5295:error: [New Thread 0x7ffff37f9700 (LWP 69882)]
-main/format_unpack.c:5295:error: [New Thread 0x7ffff2ff8700 (LWP 69883)]
-main/format_unpack.c:5295:error: [New Thread 0x7ffff27f7700 (LWP 69884)]
-main/format_unpack.c:5295:error: Thread 1 "rotating_frame" received signal SIGTERM, Terminated.

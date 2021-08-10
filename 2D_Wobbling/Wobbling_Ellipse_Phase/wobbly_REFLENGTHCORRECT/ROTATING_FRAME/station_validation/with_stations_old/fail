@@ -1,0 +1,6 @@
+/home/benny/basilisk/src/grid/tree-common.h:665:error: [Thread debugging using libthread_db enabled]
+/home/benny/basilisk/src/grid/tree-common.h:665:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+/home/benny/basilisk/src/grid/tree-common.h:665:error: [New Thread 0x7ffff37f9700 (LWP 103850)]
+/home/benny/basilisk/src/grid/tree-common.h:665:error: [New Thread 0x7ffff2ff8700 (LWP 103851)]
+/home/benny/basilisk/src/grid/tree-common.h:665:error: [New Thread 0x7ffff27f7700 (LWP 103852)]
+/home/benny/basilisk/src/grid/tree-common.h:665:error: Thread 1 "with_stations" received signal SIGTERM, Terminated.

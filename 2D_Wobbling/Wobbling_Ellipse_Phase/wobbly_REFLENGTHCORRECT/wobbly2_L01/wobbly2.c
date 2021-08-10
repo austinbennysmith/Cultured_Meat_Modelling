@@ -74,7 +74,7 @@ int main() {
   ymin = -L0/16.0;
   xmax = L0/2.0;
   xmin = -L0/2.0;
-  origin(-L0/2., -0.5);
+  origin(-L0/2., -0.5); // Change -0.5 to -L0/16??
   // periodic(right);
   init_grid (1 << MAXLEVEL);
 

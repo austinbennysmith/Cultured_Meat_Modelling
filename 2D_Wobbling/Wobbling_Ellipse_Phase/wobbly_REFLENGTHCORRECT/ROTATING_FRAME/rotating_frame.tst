@@ -1,2 +1,0 @@
-97d712c73475bbdbcbce5cebbe7f979a  rotating_frame.c
-0bee22a45c27bcd2a163440b6babd884  rotating_frame.s
