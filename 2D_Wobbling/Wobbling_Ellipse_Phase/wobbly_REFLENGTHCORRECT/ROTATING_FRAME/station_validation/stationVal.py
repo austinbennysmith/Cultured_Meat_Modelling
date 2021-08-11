@@ -1,8 +1,9 @@
+import numpy as np
 import matplotlib.pyplot as plt 
 from matplotlib.animation import FuncAnimation
-import numpy as np 
 
-stations = np.genfromtxt("with_stations/stations")
+# stations = np.genfromtxt("with_stations/stations")
+stations = np.genfromtxt("with_stations_Peclet/stations")
 
 uniquetimes = []
 for i in stations[:, 0]:
@@ -11,7 +12,7 @@ for i in stations[:, 0]:
 # print(uniquetimes)
 uniquetimes = np.array(uniquetimes)
 
-fig, ax = plt.subplots(figsize=(5,3))
+fig, ax = plt.subplots(figsize=(10,6))
 
 arrList = []
 xvals = np.arange(-3, 3, 0.1)
@@ -50,18 +51,19 @@ for time in uniquetimes:
 	# plt.show()
 
 finalArray = np.stack(arrList)
-# cax = ax.pcolormesh(xvals, yvals, finalArray[0, :, :], shading='auto')
-# fig.colorbar(cax)
-# def animate(i):
-# 	cax.set_array(finalArray[i, :, :].flatten())
-# anim = FuncAnimation(
-# 	fig, animate, interval=100, frames=len(uniquetimes)-1)
-# plt.draw()
-# plt.title("Tracer Values throughout Ellipse")
-# plt.xlabel("x")
-# plt.ylabel("y")
+cax = ax.pcolormesh(xvals, yvals, finalArray[0, :, :], shading='auto')
+fig.colorbar(cax)
+def animate(i):
+	cax.set_array(finalArray[i, :, :].flatten())
+anim = FuncAnimation(
+	fig, animate, interval=100, frames=len(uniquetimes)-1)
+plt.draw()
+plt.title("Tracer Values throughout Ellipse")
+plt.xlabel("x")
+plt.ylabel("y")
 # anim.save("stations.mp4")
-# plt.show()
+anim.save("stations_Peclet.mp4")
+plt.show()
 # print(finalArray.shape)
 
 sigma2 = []
@@ -104,3 +106,20 @@ for t in range(len(finalArray[:, 0, 0])):
 
 	# for line in finalArray[t, :, :]:
 	# 	print(line)
+
+fig2, ax2 = plt.subplots(nrows=1, ncols=2, figsize=(20, 10))
+ax2list = ax2.flatten()
+
+ax2list[0].plot(uniquetimes, sigma2)
+ax2list[0].set_title("Concentration Variance over Time")
+ax2list[0].set_xlabel("Time")
+ax2list[0].set_ylabel("Cocnentration Variance")
+
+ax2list[1].plot(uniquetimes, chi)
+ax2list[1].set_title("Mixing State χ over Time")
+ax2list[1].set_xlabel("Time")
+ax2list[1].set_ylabel("Mixing State χ")
+
+# plt.savefig("var_chi.png")
+plt.savefig("var_chi_Peclet.png")
+plt.show()

@@ -10,7 +10,6 @@
 scalar TT[];
 // scalar * tracers = {T};
 double b = 0.00002; // Diffusion coefficient
-double Umax = 1.0; // Top plate velocity
 
 const double tmax = 300.0; // How many time steps it will run for
 
@@ -357,11 +356,11 @@ event logstats (t += 1.0) {
       // Source: http://math.tifrbng.res.in/~praveen/notes/cm2013/heat_2d.pdf
       Diffusion_Stability = (2*b*DT)/sq(DeltaX); // DeltaX = DeltaY so it doesn't matter which one I put here
 
-      // Here I perform a stability test for the Lax-Wendroff advection discretization.
+      // Here I should perform a stability test for the Lax-Wendroff advection discretization.
+      // I haven't actually set it up yet, but it should involve a scalar field for the entire domain.
       // I must have Advection_Stability<=1. Stability condition is the same as in 1D.
       // Source: http://pages.erau.edu/~snivelyj/ep711sp12/EP711_7.pdf
-      Advection_Stability = (Umax*DT)/DeltaX;
-
+      
       // Putting grid setup parameters in the params.txt file. I'm taking the MAXIMUM # of cells in order to get the MINIMUM cell size.
       // I'm doing this because I want the scheme to be stable for every grid cell, so I test the stability for the smallest grid cell.
       // If it's stable for the smallest grid cell, it's stable for all of them.
@@ -371,8 +370,7 @@ event logstats (t += 1.0) {
       fprintf(fp_params, "(Min) DeltaX: %g \n", DeltaX);
       fprintf(fp_params, "(Min) DeltaY: %g \n", DeltaY);
       fprintf(fp_params, "Diffusion Stability condition (must be <=0.5, see code for source): %g \n", Diffusion_Stability);
-      fprintf(fp_params, "Top plate velocity: %g \n", Umax);
-      fprintf(fp_params, "Advection Stability condition (must be <=1, see code for source): %g \n", Advection_Stability);
+      // fprintf(fp_params, "Advection Stability condition (must be <=1, see code for source): %g \n", Advection_Stability);
 
       fclose(fp_params);
     }
