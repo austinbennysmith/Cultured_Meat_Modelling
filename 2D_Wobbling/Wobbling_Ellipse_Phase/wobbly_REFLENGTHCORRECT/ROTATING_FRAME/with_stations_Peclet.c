@@ -12,7 +12,7 @@ scalar TT[];
 double b = 2.01e-9; // Diffusion coefficient of O2 in Water (m^2/s):
 // https://www.engineeringtoolbox.com/diffusion-coefficients-d_1404.html
 
-const double tmax = 300.0; // How many time steps it will run for
+const double tmax = 5000.0; // How many time steps it will run for
 
 double thetaNOW;
 double omegaNOW;
