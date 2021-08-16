@@ -16,5 +16,3 @@ L0: 8
 (Min) DeltaX: 0.0141217 
 (Min) DeltaY: 0.042365 
 Diffusion Stability condition (must be <=0.5, see code for source): 0.0020058 
-Top plate velocity: 1 
-Advection Stability condition (must be <=1, see code for source): 0.708131 

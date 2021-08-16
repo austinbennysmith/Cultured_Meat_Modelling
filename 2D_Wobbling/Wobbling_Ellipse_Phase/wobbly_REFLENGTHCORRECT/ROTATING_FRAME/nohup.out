@@ -1,13 +1,2 @@
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_Peclet/with_stations_Peclet with_stations_Peclet.c -lm
-[with_stations_Peclet.tst]
-utils.c:37:error: [Thread debugging using libthread_db enabled]
-utils.c:37:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
-utils.c:37:error: [New Thread 0x7ffff37f9700 (LWP 122775)]
-utils.c:37:error: [New Thread 0x7ffff2ff8700 (LWP 122776)]
-utils.c:37:error: [New Thread 0x7ffff27f7700 (LWP 122777)]
-utils.c:37:error: Thread 1 "with_stations_P" received signal SIGTERM, Terminated.
-make: *** [/home/benny/basilisk/src/Makefile.defs:45: with_stations_Peclet.tst] Error 1
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_Peclet/with_stations_Peclet with_stations_Peclet.c -lm
-[with_stations_Peclet.tst]
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_Peclet/with_stations_Peclet with_stations_Peclet.c -lm
-[with_stations_Peclet.tst]
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations/with_stations with_stations.c -lm
+[with_stations.tst]

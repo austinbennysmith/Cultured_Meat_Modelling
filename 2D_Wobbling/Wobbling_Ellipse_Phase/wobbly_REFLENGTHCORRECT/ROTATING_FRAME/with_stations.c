@@ -11,7 +11,7 @@ scalar TT[];
 // scalar * tracers = {T};
 double b = 0.00002; // Diffusion coefficient
 
-const double tmax = 300.0; // How many time steps it will run for
+const double tmax = 1000.0; // How many time steps it will run for
 
 double thetaNOW;
 double omegaNOW;
@@ -208,7 +208,8 @@ event init(t = 0) {
   // foreach() {
   //   TT[] = exp(-(10*x*x+10*y*y));
   // }
-  fraction (TT, -(sq(x) + sq(y) - sq(0.25)));
+  // fraction (TT, -(sq(x) + sq(y) - sq(0.25)));
+  fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
   boundary({TT});
 
   // boundary conditions
@@ -421,32 +422,34 @@ event tracemovie (t+=1.0)
  save ("tracemovie.mp4");
 }
 
-// event shearmovie (t+=0.1, t<=10)
-// {
-//   scalar shear[];
-//   foreach()
-//   	shear[] = (mu(f[]))*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-//   // foreach()
-//   //   if (y<0.3)
-//   //   {
-//   //     shear[] = (mu1)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-//   //   }
-//   // foreach()
-//   //   if (y>=0.3)
-//   //   {
-//   //     shear[] = (mu2)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-//   //   }
-//   // foreach()
-//   // shear[] = (u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-//   boundary ({shear});
-//   clear();
-//   squares("shear", spread=1, linear=true, map=cool_warm);
-//   // draw_vof("f", lc = {1.0,1.0,1.0}, lw=2);
-//   save("shearMovie.mp4");
-//   FILE * fp_shear = fopen("shear", "w");
-//   output_field ({shear}, fp_shear, linear=true);
-//   fclose(fp_shear);
-// }
+event shearmovie (t+=0.1, t<=10)
+{
+  scalar shear[];
+  foreach()
+  	shear[] = (mu(f[]))*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  // foreach()
+  //   if (y<0.3)
+  //   {
+  //     shear[] = (mu1)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  //   }
+  // foreach()
+  //   if (y>=0.3)
+  //   {
+  //     shear[] = (mu2)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  //   }
+  // foreach()
+  // shear[] = (u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  boundary ({shear});
+  view (fov=9, width=800, height=350);
+  clear();
+  squares("shear", spread=1, linear=true, map=cool_warm);
+  draw_vof("f", lc = {0.0,0.0,0.0}, lw=2);
+  draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
+  save("shearMovie.mp4");
+  FILE * fp_shear = fopen("shear", "w");
+  output_field ({shear}, fp_shear, linear=true);
+  fclose(fp_shear);
+}
 
 event interface (t+=10)
 {
