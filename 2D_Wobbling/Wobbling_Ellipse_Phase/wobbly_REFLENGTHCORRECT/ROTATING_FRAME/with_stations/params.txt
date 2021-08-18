@@ -16,9 +16,3 @@ L0: 8
 (Min) DeltaX: 0.0141217 
 (Min) DeltaY: 0.042365 
 Diffusion Stability condition (must be <=0.5, see code for source): 0.0020058 
-(Max) Total #Cells: 40116 
-(Max) #Cells along width: 70.8131 
-(Max) #Cells along length: 566.505 
-(Min) DeltaX: 0.0141217 
-(Min) DeltaY: 0.042365 
-Diffusion Stability condition (must be <=0.5, see code for source): 0.0020058 

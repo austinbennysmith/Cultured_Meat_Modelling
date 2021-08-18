@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 # stations = np.genfromtxt("with_stations/stations")
-stations = np.genfromtxt("with_stations/stations")
+stations = np.genfromtxt("with_stations_old/stations")
 
 uniquetimes = []
 for i in stations[:, 0]:
@@ -62,7 +62,7 @@ plt.title("Tracer Values throughout Ellipse")
 plt.xlabel("x")
 plt.ylabel("y")
 # anim.save("stations.mp4")
-anim.save("stations_headspace.mp4")
+anim.save("stations_old.mp4")
 plt.show()
 # print(finalArray.shape)
 
@@ -121,5 +121,5 @@ ax2list[1].set_xlabel("Time")
 ax2list[1].set_ylabel("Mixing State χ")
 
 # plt.savefig("var_chi.png")
-plt.savefig("var_chi_headspace.png")
+plt.savefig("var_chi_old.png")
 plt.show()

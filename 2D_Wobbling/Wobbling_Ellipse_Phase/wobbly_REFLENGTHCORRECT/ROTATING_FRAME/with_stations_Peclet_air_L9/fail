@@ -1,0 +1,6 @@
+/home/benny/basilisk/src/navier-stokes/centered.h:298:error: [Thread debugging using libthread_db enabled]
+/home/benny/basilisk/src/navier-stokes/centered.h:298:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+/home/benny/basilisk/src/navier-stokes/centered.h:298:error: [New Thread 0x7ffff37f8700 (LWP 199446)]
+/home/benny/basilisk/src/navier-stokes/centered.h:298:error: [New Thread 0x7ffff2ff7700 (LWP 199447)]
+/home/benny/basilisk/src/navier-stokes/centered.h:298:error: [New Thread 0x7ffff27f6700 (LWP 199448)]
+/home/benny/basilisk/src/navier-stokes/centered.h:298:error: Thread 1 "with_stations_P" received signal SIGTERM, Terminated.

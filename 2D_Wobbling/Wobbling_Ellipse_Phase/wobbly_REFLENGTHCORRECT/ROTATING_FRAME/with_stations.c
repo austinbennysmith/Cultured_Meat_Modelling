@@ -208,8 +208,8 @@ event init(t = 0) {
   // foreach() {
   //   TT[] = exp(-(10*x*x+10*y*y));
   // }
-  // fraction (TT, -(sq(x) + sq(y) - sq(0.25)));
-  fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+  fraction (TT, -(0.05*sq(x) + sq(y+0.7) - sq(0.2)));
+  // fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
   boundary({TT});
 
   // boundary conditions
@@ -422,7 +422,7 @@ event tracemovie (t+=1.0)
  save ("tracemovie.mp4");
 }
 
-event shearmovie (t+=0.1, t<=10)
+event shearmovie (t+=1.0)
 {
   scalar shear[];
   foreach()

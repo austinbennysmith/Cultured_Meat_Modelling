@@ -1,4 +1,4 @@
-### Path to cd into sometimes: /home/benny/Documents/Cultured_Meat_Modelling/learning_basilisk/couette_example/multiFluid
+### Path to cd into sometimes: /home/benny/Documents/Cultured_Meat_Modelling/2D_Wobbling/Wobbling_Ellipse_Phase/wobbly_REFLENGTHCORRECT/ROTATING_FRAME
 
 ### To view something with gfsview: gfsview2D file.gfs
 
