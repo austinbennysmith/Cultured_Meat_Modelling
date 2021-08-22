@@ -10,9 +10,9 @@ Weber Number: 13.4615
 Froude Number: 1 
 Dimensionless gravity: 1 
 L0: 8 
-(Max) Total #Cells: 157536 
-(Max) #Cells along width: 140.328 
-(Max) #Cells along length: 1122.63 
-(Min) DeltaX: 0.00712615 
-(Min) DeltaY: 0.0213785 
-Diffusion Stability condition (must be <=0.5, see code for source): 7.8768e-05 
+(Max) Total #Cells: 40116 
+(Max) #Cells along width: 70.8131 
+(Max) #Cells along length: 566.505 
+(Min) DeltaX: 0.0141217 
+(Min) DeltaY: 0.042365 
+Diffusion Stability condition (must be <=0.5, see code for source): 2.0058e-05 

@@ -1,0 +1,13 @@
+/home/benny/basilisk/src/viscosity-embed.h: In function ‘relax_diffusion’:
+/home/benny/basilisk/src/viscosity-embed.h:52:54: error: ‘RHO’ undeclared (first use in this function)
+   52 |  (sq(Delta)*(rho[]*lambda.x + dt*d) + avgmu);
+      |                                                      ^  
+/home/benny/basilisk/src/viscosity-embed.h:52:54: note: each undeclared identifier is reported only once for each function it appears in
+/home/benny/basilisk/src/viscosity-embed.h: In function ‘residual_diffusion’:
+/home/benny/basilisk/src/viscosity-embed.h:90:83: error: ‘RHO’ undeclared (first use in this function)
+   90 |       res.x[] = r.x[] - rho[]*lambda.x*u.x[] - dt*a/Delta;
+      |                                                                                   ^  
+sideProj_embed.c: In function ‘init_0’:
+sideProj_embed.c:108:3: error: expected ‘;’ before ‘}’ token
+  108 |   }
+      |   ^

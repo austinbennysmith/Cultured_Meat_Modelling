@@ -1,0 +1,9 @@
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o ThreePhase/ThreePhase ThreePhase.c  -lm
+ThreePhase.c:1:10: fatal error: three-phase.h: No such file or directory
+    1 | #line 1 "ThreePhase-cpp.c"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [ThreePhase.s] Error 1

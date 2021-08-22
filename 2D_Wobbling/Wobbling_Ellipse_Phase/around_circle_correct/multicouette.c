@@ -118,7 +118,7 @@ event init(t = 0) {
   mask (y > 0.5 ? top : none);
   mask (y < -0.5 ? bottom : none);
   
-  fraction (f, 0.3-y);
+  fraction (f, -y);
 
   // boundary conditions
   u.t[top] = dirichlet(1.);

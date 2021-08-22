@@ -10,10 +10,10 @@
 scalar TT[];
 // scalar * tracers = {T};
 double bWater = 2.01e-9; // Diffusion coefficient of O2 in Water (m^2/s):
-double bOil = 4.01e-9 // Madeup number. Should be diffusion coefficient in oil/air
+double bOil = 4.01e-9; // Madeup number. Should be diffusion coefficient in oil/air
 // https://www.engineeringtoolbox.com/diffusion-coefficients-d_1404.html
 
-const double tmax = 5000.0; // How many time steps it will run for
+const double tmax = 300.0; // How many time steps it will run for
 
 double thetaNOW;
 double omegaNOW;
@@ -386,6 +386,31 @@ event logstats (t += 1.0) {
 
       fclose(fp_params);
     }
+}
+
+double uxmax;
+double uymax;
+double UMAX;
+event advection_test (t+=1.0) {
+  uxmax = statsf(u.x).max;
+  uymax = statsf(u.y).max;
+  UMAX = sqrt(sq(uxmax)+sq(uymax));
+  Advection_Stability = (UMAX*DT)/DeltaX;
+
+  FILE * fp_uxmax = fopen("ux_max", "a");
+  FILE * fp_uymax = fopen("uy_max", "a");
+  FILE * fp_UMAX = fopen("UMAX", "a");
+  FILE * fp_adv = fopen("advection_stability", "a");
+
+  fprintf(fp_uxmax, "%g %g \n", t, uxmax);
+  fprintf(fp_uymax, "%g %g \n", t, uymax);
+  fprintf(fp_UMAX, "%g %g \n", t, UMAX);
+  fprintf(fp_adv, "%g %g \n", t, Advection_Stability);
+
+  fclose(fp_uxmax);
+  fclose(fp_uymax);
+  fclose(fp_UMAX);
+  fclose(fp_adv);
 }
 
 event gfsview (t += 10.0) { // RC
