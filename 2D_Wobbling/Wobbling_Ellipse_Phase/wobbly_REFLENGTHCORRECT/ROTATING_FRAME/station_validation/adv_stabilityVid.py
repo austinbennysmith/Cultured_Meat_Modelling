@@ -4,8 +4,11 @@ from matplotlib.animation import FuncAnimation
 
 my_dpi = 144 # https://stackoverflow.com/questions/13714454/specifying-and-saving-a-figure-with-exact-size-in-pixels
 
-Advection_Stability = np.genfromtxt("with_stations_air/advection_stability")
-Advection_StabilityOld = np.genfromtxt("with_stations_air/advection_stability")
+# Advection_Stability = np.genfromtxt("with_stations_air/advection_stability")
+# Advection_StabilityOld = np.genfromtxt("with_stations_air/advection_stability")
+
+Advection_Stability = np.genfromtxt("with_air_viscUp1/blobL9/advection_stability")
+Advection_StabilityOld = np.genfromtxt("with_air_viscUp1/blobL9/advection_stability")
 print(max(Advection_StabilityOld[:, 1]))
 
 print(Advection_Stability.shape)
@@ -52,5 +55,5 @@ plt.ylim([min(Advection_StabilityOld[:, 1]), max(Advection_StabilityOld[:, 1])])
 plt.xlabel('Dimensionless Time')
 plt.ylabel('Umax*dt/dx')
 plt.title('Advection Stability Criterion')
-anim.save("graphy.mp4", dpi=my_dpi)
+anim.save("stability_blob.mp4", dpi=my_dpi)
 plt.show()

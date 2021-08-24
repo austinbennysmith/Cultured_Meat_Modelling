@@ -1,0 +1,23 @@
+rho1: 1 
+rho2: 0.001225 
+mu1: 0.000319438 
+mu2: 5.78183e-05 
+sigma: 0.0742857 
+refLength: 0.01 
+refVelocity: 0.31305 
+Reynolds Number: 3130.5 
+Weber Number: 13.4615 
+Froude Number: 1 
+Dimensionless gravity: 1 
+L0: 8 
+Water Diffusion coefficient: 2.01e-09 
+Oil Diffusion coefficient: 1.9e-05 
+Water Peclet Number: 1.55746e+06 
+Oil Peclet Number: 164.763 
+(Max) Total #Cells: 40116 
+(Max) #Cells along width: 70.8131 
+(Max) #Cells along length: 566.505 
+(Min) DeltaX: 0.0141217 
+(Min) DeltaY: 0.042365 
+Water Diffusion Stability condition (must be <=0.5, see code for source): 6.43933e-05 
+Oil Diffusion Stability condition (must be <=0.5, see code for source): 0.608693 

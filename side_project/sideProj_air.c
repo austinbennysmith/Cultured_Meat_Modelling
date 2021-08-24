@@ -45,7 +45,7 @@ FILE * fp1;
 #define yrim 0.1
 
 // Boundary Conditions:
-u.n[left] = dirichlet(100.0); // Left inflow
+u.n[left] = dirichlet(0.0); // Left inflow
 // u.n[left] = (f[] == 1.0 ? dirichlet(1.0) : dirichlet(0.0))
 // f[left]  = ( y <= yrim ? 1.0 : 0.0 );
 
@@ -159,7 +159,7 @@ event gfsview (t += 1.0) { // RC
     fclose(fp_gfs);
 }
 
-event xmovie (t+=1.0)
+event xmovie (t+=1.0, t<=100.0)
 {
  // view (fov=9, width=800, height=350);
  clear();
@@ -171,7 +171,7 @@ event xmovie (t+=1.0)
  save ("xmovie.mp4");
 }
 
-event ymovie (t+=1.0)
+event ymovie (t+=1.0, t<=100.0)
 {
  // view (fov=9, width=800, height=350);
  clear();

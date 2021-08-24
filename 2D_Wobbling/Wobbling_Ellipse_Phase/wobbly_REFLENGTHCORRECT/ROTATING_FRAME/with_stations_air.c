@@ -79,8 +79,8 @@ u.n[right] = dirichlet(0.0);
 // I use the following variables to determine the cell length/width
 const double ymax = semiminor+0.5; // ymax of domain (used in masking & profiling, etc.)
 const double ymin = -semiminor-0.5; // ymin of domain (used in masking & profiling, etc.)
-const double xmax = semimajor+1.0; // xmax of domain (used in profiling)
-const double xmin = -semimajor-1.0; // xmin of domain (used in profiling)
+const double xmax = semimajor+3.0; // xmax of domain (used in profiling)
+const double xmin = -semimajor-3.0; // xmin of domain (used in profiling)
 // long int sizeNow; // Total # of cells at t=0.0 (as long int)
 // double sizeNowDouble; // Total # of cells at t=0.0 (as double)
 // double numCellsX; // # of cells in x (long) direction
@@ -144,6 +144,7 @@ int main() {
   fprintf(fp_params, "sigma: %g \n", f.sigma);
   fprintf(fp_params, "refLength: %g \n", refLength);
   fprintf(fp_params, "refVelocity: %g \n", refVelocity);
+  fprintf(fp_params, "refTime: %g \n", (refLength/refVelocity));
   fprintf(fp_params, "Reynolds Number: %g \n", Re);
   fprintf(fp_params, "Weber Number: %g \n", We);
   fprintf(fp_params, "Froude Number: %g \n", Fr);
@@ -210,8 +211,8 @@ event init(t = 0) {
   //   TT[] = exp(-(10*x*x+10*y*y));
   // }
   // fraction (TT, -(0.05*sq(x) + sq(y+0.7) - sq(0.2)));
-  // fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
-  fraction (TT, -(sq(x) + sq(y) - sq(0.5)));
+  fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+  // fraction (TT, -(sq(x) + sq(y) - sq(0.5)));
   boundary({TT});
 
   // boundary conditions

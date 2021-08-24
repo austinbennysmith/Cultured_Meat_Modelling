@@ -5,7 +5,13 @@ from matplotlib.animation import FuncAnimation
 my_dpi = 144 # https://stackoverflow.com/questions/13714454/specifying-and-saving-a-figure-with-exact-size-in-pixels
 
 # stations = np.genfromtxt("with_stations/stations")
-stations = np.genfromtxt("with_stations_old/stations")
+# stations = np.genfromtxt("with_stations_old/stations")
+# stations = np.genfromtxt("with_air_viscUp1/blobL9/stations")
+stations = np.genfromtxt("with_air_viscUp1/circleL9/stations")
+# stations1 = np.genfromtxt("with_stations_air/stations")
+# print(stations1)
+# stations = stations1[:-150000, :]
+# print(stations)
 
 uniquetimes = []
 for i in stations[:, 0]:
@@ -97,5 +103,5 @@ plt.ylim([min(chi[:]), max(chi[:])])
 plt.xlabel('Dimensionless Time')
 plt.ylabel('Mixing State χ')
 plt.title('Mixing State χ over Time')
-anim.save("mixing_state.mp4", dpi=my_dpi)
+anim.save("with_stations_air.mp4", dpi=my_dpi)
 plt.show()

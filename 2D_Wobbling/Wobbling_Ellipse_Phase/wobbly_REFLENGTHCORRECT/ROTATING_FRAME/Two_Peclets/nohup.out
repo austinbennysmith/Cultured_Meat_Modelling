@@ -1,18 +1,22 @@
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_2Peclets/with_stations_2Peclets with_stations_2Peclets.c -lm
-[with_stations_2Peclets.tst]
-/home/benny/basilisk/src/grid/multigrid-common.h:31:error: [Thread debugging using libthread_db enabled]
-/home/benny/basilisk/src/grid/multigrid-common.h:31:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
-/home/benny/basilisk/src/grid/multigrid-common.h:31:error: [New Thread 0x7ffff37f8700 (LWP 273358)]
-/home/benny/basilisk/src/grid/multigrid-common.h:31:error: [New Thread 0x7ffff2ff7700 (LWP 273359)]
-/home/benny/basilisk/src/grid/multigrid-common.h:31:error: [New Thread 0x7ffff27f6700 (LWP 273360)]
-/home/benny/basilisk/src/grid/multigrid-common.h:31:error: Thread 1 "with_stations_2" received signal SIGTERM, Terminated.
-make: *** [/home/benny/basilisk/src/Makefile.defs:45: with_stations_2Peclets.tst] Error 1
-qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_2Peclets/with_stations_2Peclets with_stations_2Peclets.c -lm
-[with_stations_2Peclets.tst]
-/home/benny/basilisk/src/poisson.h:324:error: [Thread debugging using libthread_db enabled]
-/home/benny/basilisk/src/poisson.h:324:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
-/home/benny/basilisk/src/poisson.h:324:error: [New Thread 0x7ffff37f8700 (LWP 276116)]
-/home/benny/basilisk/src/poisson.h:324:error: [New Thread 0x7ffff2ff7700 (LWP 276117)]
-/home/benny/basilisk/src/poisson.h:324:error: [New Thread 0x7ffff27f6700 (LWP 276118)]
-/home/benny/basilisk/src/poisson.h:324:error: Thread 1 "with_stations_2" received signal SIGTERM, Terminated.
-make: *** [/home/benny/basilisk/src/Makefile.defs:45: with_stations_2Peclets.tst] Error 1
+qcc -autolink -O2 -Wall -fopenmp  -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_2Peclets_air/with_stations_2Peclets_air with_stations_2Peclets_air.c  -lm
+with_stations_2Peclets_air.c: In function ‘main’:
+with_stations_2Peclets_air.c:159:58: error: ‘bOil’ undeclared (first use in this function)
+  159 |   fprintf(fp_params, "Oil Diffusion coefficient: %g \n", bOil);
+      |                                                          ^~~~
+with_stations_2Peclets_air.c:159:58: note: each undeclared identifier is reported only once for each function it appears in
+with_stations_2Peclets_air.c: In function ‘integration’:
+with_stations_2Peclets_air.c:298:127: error: ‘bOil’ undeclared (first use in this function)
+  298 |       qh[] = (f[]*(1.0/PeWater) + (1-f[])*(1/PeOil))*(TT[-1,0]-TT[0,0])/Delta + u.x[]*(TT[0,0]+TT[-1,0])/2.0 - ((sq(u.x[])*dt)/(2.0*Delta))*(TT[0,0]-TT[-1,0]);
+      |                                                                                                                               ^~~~
+with_stations_2Peclets_air.c: In function ‘logstats’:
+with_stations_2Peclets_air.c:369:65: error: ‘bOil’ undeclared (first use in this function)
+  369 |       Diffusion_StabilityOil = (2*(1/PeOil)*DT)/sq(DeltaX);
+      |                                                                 ^   
+make: *** [with_stations_2Peclets_air.s] Error 1
+make: *** [/home/benny/basilisk/src/Makefile.defs:61: with_stations_2Peclets_air.s] Error 1
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_2Peclets_air/with_stations_2Peclets_air with_stations_2Peclets_air.c -lm
+[with_stations_2Peclets_air.tst]
+/home/benny/basilisk/src/heights.h:328:error: [Thread debugging using libthread_db enabled]
+/home/benny/basilisk/src/heights.h:328:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+/home/benny/basilisk/src/heights.h:328:error: Program received signal SIGTERM, Terminated.
+make: *** [/home/benny/basilisk/src/Makefile.defs:45: with_stations_2Peclets_air.tst] Error 1
