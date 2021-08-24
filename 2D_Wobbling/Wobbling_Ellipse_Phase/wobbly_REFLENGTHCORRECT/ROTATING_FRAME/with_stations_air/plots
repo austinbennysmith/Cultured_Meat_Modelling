@@ -11,7 +11,7 @@
 # // scalar * tracers = {T};
 # double b = 0.00002; // Diffusion coefficient
 # 
-# const double tmax = 1000.0; // How many time steps it will run for
+# const double tmax = 100.0; // How many time steps it will run for
 # 
 # double thetaNOW;
 # double omegaNOW;
@@ -38,7 +38,8 @@
 # #define rhoWater 1000.0 // kg/m^3
 # #define rhoAir 1.225 // kg/m^3
 # #define muWater 0.001 // approximatley the viscosity of water
-# #define muAir 1.81e-5 // approximateley the viscosity of air
+# // #define muAir 1.81e-5 // approximateley the viscosity of air
+# #define muAir 1.81e-4 // visc. of air *10
 # 
 # #define sig 0.0728  //surface tension of water
 # 
@@ -80,14 +81,14 @@
 # const double ymin = -semiminor-0.5; // ymin of domain (used in masking & profiling, etc.)
 # const double xmax = semimajor+1.0; // xmax of domain (used in profiling)
 # const double xmin = -semimajor-1.0; // xmin of domain (used in profiling)
-# long int sizeNow; // Total # of cells at t=0.0 (as long int)
-# double sizeNowDouble; // Total # of cells at t=0.0 (as double)
-# double numCellsX; // # of cells in x (long) direction
-# double numCellsY; // # of cells in y (short) direction
+# // long int sizeNow; // Total # of cells at t=0.0 (as long int)
+# // double sizeNowDouble; // Total # of cells at t=0.0 (as double)
+# // double numCellsX; // # of cells in x (long) direction
+# // double numCellsY; // # of cells in y (short) direction
 # double DeltaX; // Length of smallest cell in x direction
-# double DeltaY; // Length of smallest cell in y direction
-# double ylength; // Domain length in y direction
-# double xlength; // Domain length in x direction
+# // double DeltaY; // Length of smallest cell in y direction
+# // double ylength; // Domain length in y direction
+# // double xlength; // Domain length in x direction
 # double Diffusion_Stability; // test for stability of the FTCS diffusion scheme
 # double Advection_Stability; // test for stability of the Lax-Wendroff advection scheme
 # 
@@ -122,10 +123,10 @@
 #   mu2 = mu_ratio*mu1; // air dynamic viscosity
 #   f.sigma=1/We; // change this later
 # 
-#   DT = 1.0e-4; // RC
+#   DT = 1.0e-3; // RC
 #   NITERMIN = 1; // default 1
-#   NITERMAX = 700; // default 100
-#   TOLERANCE = 1e-6; // default 1e-3
+#   NITERMAX = 500; // default 100
+#   TOLERANCE = 1e-5; // default 1e-3
 # 
 #   char params[200];
 #   sprintf(params, "params.txt");
@@ -209,7 +210,8 @@
 #   //   TT[] = exp(-(10*x*x+10*y*y));
 #   // }
 #   // fraction (TT, -(0.05*sq(x) + sq(y+0.7) - sq(0.2)));
-#   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+#   // fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+#   fraction (TT, -(sq(x) + sq(y) - sq(0.5)));
 #   boundary({TT});
 # 
 #   // boundary conditions
@@ -343,14 +345,15 @@
 #       fp_params=fopen(params, "a");
 #       }
 # 
-#       sizeNow = grid->n;
-#       xlength = L0;
-#       ylength = ymax-ymin;
-#       sizeNowDouble = (double) sizeNow;
-#       numCellsY = sqrt(sizeNow/xlength);
-#       numCellsX = (sizeNow/numCellsY);
-#       DeltaX = (xlength/numCellsX);
-#       DeltaY = (ylength/numCellsY);
+#       // sizeNow = grid->n;
+#       // xlength = L0;
+#       // ylength = ymax-ymin;
+#       // sizeNowDouble = (double) sizeNow;
+#       // numCellsY = sqrt(sizeNow/xlength);
+#       // numCellsX = (sizeNow/numCellsY);
+#       // DeltaX = (xlength/numCellsX);
+#       // DeltaY = (ylength/numCellsY);
+#       DeltaX = (L0/pow(2, MAXLEVEL));
 # 
 #       // Here I perform a stability test for the FTCS diffusion discretization.
 #       // I must have Diffusion_Stability<=0.5
@@ -365,11 +368,11 @@
 #       // Putting grid setup parameters in the params.txt file. I'm taking the MAXIMUM # of cells in order to get the MINIMUM cell size.
 #       // I'm doing this because I want the scheme to be stable for every grid cell, so I test the stability for the smallest grid cell.
 #       // If it's stable for the smallest grid cell, it's stable for all of them.
-#       fprintf(fp_params, "(Max) Total #Cells: %g \n", sizeNowDouble);
-#       fprintf(fp_params, "(Max) #Cells along width: %g \n", numCellsY);
-#       fprintf(fp_params, "(Max) #Cells along length: %g \n", numCellsX);
+#       // fprintf(fp_params, "(Max) Total #Cells: %g \n", sizeNowDouble);
+#       // fprintf(fp_params, "(Max) #Cells along width: %g \n", numCellsY);
+#       // fprintf(fp_params, "(Max) #Cells along length: %g \n", numCellsX);
 #       fprintf(fp_params, "(Min) DeltaX: %g \n", DeltaX);
-#       fprintf(fp_params, "(Min) DeltaY: %g \n", DeltaY);
+#       // fprintf(fp_params, "(Min) DeltaY: %g \n", DeltaY);
 #       fprintf(fp_params, "Diffusion Stability condition (must be <=0.5, see code for source): %g \n", Diffusion_Stability);
 #       // fprintf(fp_params, "Advection Stability condition (must be <=1, see code for source): %g \n", Advection_Stability);
 # 
