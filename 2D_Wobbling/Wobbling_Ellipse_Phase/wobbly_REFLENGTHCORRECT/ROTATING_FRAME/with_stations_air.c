@@ -11,7 +11,7 @@ scalar TT[];
 // scalar * tracers = {T};
 double b = 0.00002; // Diffusion coefficient
 
-const double tmax = 100.0; // How many time steps it will run for
+const double tmax = 500.0; // How many time steps it will run for
 
 double thetaNOW;
 double omegaNOW;
