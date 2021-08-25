@@ -1,6 +1,0 @@
-WARNING: convergence for p not reached after 300 iterations
-  res: 2.1553e+89 sum: 6020.1 nrelax: 100
-WARNING: CFL must be <= 0.5 for VOF (cfl - 0.5 = 2.41936e+86)
-WARNING: CFL must be <= 0.5 for VOF (cfl - 0.5 = 1.59429e+86)
-WARNING: convergence for pf not reached after 300 iterations
-  res: 8.88903e+163 sum: 4.57047e+171 nrelax: 100

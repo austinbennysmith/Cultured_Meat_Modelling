@@ -11,15 +11,15 @@ scalar TT[];
 // scalar * tracers = {T};
 double b = 0.00002; // Diffusion coefficient
 
-const double tmax = 500.0; // How many time steps it will run for
+double tmax = 500.0; // How many time steps it will run for
 
 double thetaNOW;
 double omegaNOW;
 
-const double period = 80.0; // how many seconds it takes to go through a complete rocking cycle
+double period = 80.0; // how many seconds it takes to go through a complete rocking cycle
 double BB = (2.0*3.14159265)/period;
 
-const double maxDegrees = 7.0; // degrees through which the reactor rotates
+double maxDegrees = 7.0; // degrees through which the reactor rotates
 double maxRads = maxDegrees*(3.14159265/180.0);
 
 // The following doubles will be used in the acceleration event to avoid really long lines of code:
@@ -54,8 +54,8 @@ FILE *fp1 ;
 #define Re (rhoWater*refVelocity*refLength/muWater)  // Reynolds number
 #define We (rhoWater*pow(refVelocity,2)*refLength/sig)
 
-const double semiminor = 1.0;
-const double semimajor = semiminor*3.0;
+double semiminor = 1.0;
+double semimajor = semiminor*3.0;
 
 FILE *fp_params;
 
@@ -77,10 +77,10 @@ u.t[right] = dirichlet(0.0);
 u.n[right] = dirichlet(0.0);
 
 // I use the following variables to determine the cell length/width
-const double ymax = semiminor+0.5; // ymax of domain (used in masking & profiling, etc.)
-const double ymin = -semiminor-0.5; // ymin of domain (used in masking & profiling, etc.)
-const double xmax = semimajor+3.0; // xmax of domain (used in profiling)
-const double xmin = -semimajor-3.0; // xmin of domain (used in profiling)
+double ymax = semiminor+0.5; // ymax of domain (used in masking & profiling, etc.)
+double ymin = -semiminor-0.5; // ymin of domain (used in masking & profiling, etc.)
+double xmax = semimajor+3.0; // xmax of domain (used in profiling)
+double xmin = -semimajor-3.0; // xmin of domain (used in profiling)
 // long int sizeNow; // Total # of cells at t=0.0 (as long int)
 // double sizeNowDouble; // Total # of cells at t=0.0 (as double)
 // double numCellsX; // # of cells in x (long) direction

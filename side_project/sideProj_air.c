@@ -107,9 +107,9 @@ event init(t = 0) {
   // mask (y < -0.5 ? bottom : none);
 
   // Left Ellipse:
-  mask (0.3*sq(x) + 2.0*sq(y-2.0) < 0.8 ? bottom : none);
+  // mask (0.3*sq(x) + 2.0*sq(y-2.0) < 0.8 ? bottom : none);
   // Right Ellipse:
-  mask (0.3*sq(x-8.0) + 2.0*sq(y-2.0) < 0.8 ? bottom : none);
+  // mask (0.3*sq(x-8.0) + 2.0*sq(y-2.0) < 0.8 ? bottom : none);
 
   // mask(sq(x)+sq(y)<0.5);
   
