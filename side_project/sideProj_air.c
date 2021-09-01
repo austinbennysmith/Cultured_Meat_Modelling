@@ -165,7 +165,7 @@ event xmovie (t+=1.0, t<=100.0)
  clear();
  // cells(lc={0.5,0.5,0.5}, lw=0.5);
  squares("u.x", spread=-1, linear=true, map=cool_warm);
- draw_vof ("f", fc = {0.0,0.0,0.0}, lw=2);
+ // draw_vof ("f", fc = {0.0,0.0,0.0}, lw=2);
  // draw_vof("left_ellipse", lc = {0.0,0.0,0.0}, lw=2);
  // cells();
  save ("xmovie.mp4");
@@ -176,7 +176,7 @@ event ymovie (t+=1.0, t<=100.0)
  // view (fov=9, width=800, height=350);
  clear();
  squares("u.y", spread=-1, linear=true, map=cool_warm);
- draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
+ // draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
  // draw_vof("left_ellipse", lc = {0.0,0.0,0.0}, lw=2);
  // draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
  // cells(); // Movie is black when this line is included

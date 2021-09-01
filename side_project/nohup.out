@@ -4,3 +4,5 @@ qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o 
 [sideProj_start.tst]
 qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o sideProj_air/sideProj_air sideProj_air.c -lm
 [sideProj_air.tst]
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o sideProj_air/sideProj_air sideProj_air.c -lm
+[sideProj_air.tst]
