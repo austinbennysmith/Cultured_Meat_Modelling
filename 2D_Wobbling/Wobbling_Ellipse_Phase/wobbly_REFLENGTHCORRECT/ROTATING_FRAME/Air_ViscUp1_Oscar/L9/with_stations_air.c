@@ -4,7 +4,7 @@
 #include "navier-stokes/centered.h"
 #include "two-phase.h"
 #include "tension.h"
-// #include "view.h"
+#include "view.h"
 #include "fractions.h"
 
 scalar TT[];
@@ -419,70 +419,70 @@ event gfsview (t += 10.0) { // RC
     fclose(fp_gfs);
 }
 
-// event xmovie (t+=1.0)
-// {
-//  view (fov=9, width=800, height=350);
-//  clear();
-//  // cells(lc={0.5,0.5,0.5}, lw=0.5);
-//  squares("u.x", spread=-1, linear=true, map=cool_warm);
-//  draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
-//  draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
-//  // cells();
-//  save ("xmovie.mp4");
-// }
+event xmovie (t+=1.0)
+{
+ view (fov=9, width=800, height=350);
+ clear();
+ // cells(lc={0.5,0.5,0.5}, lw=0.5);
+ squares("u.x", spread=-1, linear=true, map=cool_warm);
+ draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
+ draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
+ // cells();
+ save ("xmovie.mp4");
+}
 
-// event ymovie (t+=1.0)
-// {
-//  view (fov=9, width=800, height=350);
-//  clear();
-//  squares("u.y", spread=-1, linear=true, map=cool_warm);
-//  draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
-//  draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
-//  // draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
-//  // cells(); // Movie is black when this line is included
-//  save ("ymovie.mp4");
-// }
+event ymovie (t+=1.0)
+{
+ view (fov=9, width=800, height=350);
+ clear();
+ squares("u.y", spread=-1, linear=true, map=cool_warm);
+ draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
+ draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
+ // draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
+ // cells(); // Movie is black when this line is included
+ save ("ymovie.mp4");
+}
 
-// event tracemovie (t+=1.0)
-// {
-//  view (fov=9, width=800, height=350);
-//  clear();
-//  // cells(lc={0.5,0.5,0.5}, lw=0.5);
-//  squares("TT", min=0.0, max=1.0, linear=true, map=cool_warm);
-//  draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
-//  draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
-//  // cells();
-//  save ("tracemovie.mp4");
-// }
+event tracemovie (t+=1.0)
+{
+ view (fov=9, width=800, height=350);
+ clear();
+ // cells(lc={0.5,0.5,0.5}, lw=0.5);
+ squares("TT", min=0.0, max=1.0, linear=true, map=cool_warm);
+ draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
+ draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
+ // cells();
+ save ("tracemovie.mp4");
+}
 
-// event shearmovie (t+=1.0)
-// {
-//   scalar shear[];
-//   foreach()
-//   	shear[] = (mu(f[]))*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-//   // foreach()
-//   //   if (y<0.3)
-//   //   {
-//   //     shear[] = (mu1)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-//   //   }
-//   // foreach()
-//   //   if (y>=0.3)
-//   //   {
-//   //     shear[] = (mu2)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-//   //   }
-//   // foreach()
-//   // shear[] = (u.x[0, 1]-u.x[0, -1])/(2.*Delta);
-//   boundary ({shear});
-//   view (fov=9, width=800, height=350);
-//   clear();
-//   squares("shear", spread=1, linear=true, map=cool_warm);
-//   draw_vof("f", lc = {0.0,0.0,0.0}, lw=2);
-//   draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
-//   save("shearMovie.mp4");
-//   FILE * fp_shear = fopen("shear", "w");
-//   output_field ({shear}, fp_shear, linear=true);
-//   fclose(fp_shear);
-// }
+event shearmovie (t+=1.0)
+{
+  scalar shear[];
+  foreach()
+  	shear[] = (mu(f[]))*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  // foreach()
+  //   if (y<0.3)
+  //   {
+  //     shear[] = (mu1)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  //   }
+  // foreach()
+  //   if (y>=0.3)
+  //   {
+  //     shear[] = (mu2)*(u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  //   }
+  // foreach()
+  // shear[] = (u.x[0, 1]-u.x[0, -1])/(2.*Delta);
+  boundary ({shear});
+  view (fov=9, width=800, height=350);
+  clear();
+  squares("shear", spread=1, linear=true, map=cool_warm);
+  draw_vof("f", lc = {0.0,0.0,0.0}, lw=2);
+  draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
+  save("shearMovie.mp4");
+  FILE * fp_shear = fopen("shear", "w");
+  output_field ({shear}, fp_shear, linear=true);
+  fclose(fp_shear);
+}
 
 event interface (t+=10)
 {
@@ -558,17 +558,17 @@ event stations (t = 0; t+=1.0; t<=tmax) // RC restricted the output a little, do
   fclose(fp);
 }
 
-// event vortmovie (t+=1.0, t<=10.0)
-// {
-//   scalar omega[];
-//   vorticity(u, omega);
+event vortmovie (t+=1.0, t<=10.0)
+{
+  scalar omega[];
+  vorticity(u, omega);
 
-//   view (fov=9, width=800, height=350);
-//   clear();
-//   squares("omega", spread=-1.0, linear=true, map=cool_warm);
-//   draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
-//   draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
-//   // draw_vof("fs",fc = {0.0,0.0,0.0}, lw=1); 
-//   // draw_vof("f", lc = {0.0,0.0,0.0}, lw=1); // For some reason Basilisk throws an error if you don't put spaces between 'lc='
-//   save("Vorticity.mp4");
-// }
+  view (fov=9, width=800, height=350);
+  clear();
+  squares("omega", spread=-1.0, linear=true, map=cool_warm);
+  draw_vof ("f", lc = {0.0,0.0,0.0}, lw=2);
+  draw_vof("circle", lc = {0.0,0.0,0.0}, lw=2);
+  // draw_vof("fs",fc = {0.0,0.0,0.0}, lw=1); 
+  // draw_vof("f", lc = {0.0,0.0,0.0}, lw=1); // For some reason Basilisk throws an error if you don't put spaces between 'lc='
+  save("Vorticity.mp4");
+}
