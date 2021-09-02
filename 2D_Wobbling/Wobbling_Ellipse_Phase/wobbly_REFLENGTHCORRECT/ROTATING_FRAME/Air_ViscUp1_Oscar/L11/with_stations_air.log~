@@ -1,0 +1,27 @@
+In file included from /usr/include/stdint.h:25:0,
+                 from /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:9,
+                 from with_stations_air-cpp.c:6:
+/usr/include/features.h:330:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+ #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+    ^
+with_stations_air.c:20:1: error: initializer element is not constant
+ const double BB = (2.0*3.14159265)/period;
+ ^
+with_stations_air.c:23:1: error: initializer element is not constant
+ const double maxRads = maxDegrees*(3.14159265/180.0);
+ ^
+with_stations_air.c:58:1: error: initializer element is not constant
+ double semimajor = semiminor*3.0;
+ ^
+with_stations_air.c:80:1: error: initializer element is not constant
+ const double ymax = semiminor+0.5; // ymax of domain (used in masking & profiling, etc.)
+ ^
+with_stations_air.c:81:1: error: initializer element is not constant
+ const double ymin = -semiminor-0.5; // ymin of domain (used in masking & profiling, etc.)
+ ^
+with_stations_air.c:82:1: error: initializer element is not constant
+ const double xmax = semimajor+3.0; // xmax of domain (used in profiling)
+ ^
+with_stations_air.c:83:1: error: initializer element is not constant
+ const double xmin = -semimajor-3.0; // xmin of domain (used in profiling)
+ ^

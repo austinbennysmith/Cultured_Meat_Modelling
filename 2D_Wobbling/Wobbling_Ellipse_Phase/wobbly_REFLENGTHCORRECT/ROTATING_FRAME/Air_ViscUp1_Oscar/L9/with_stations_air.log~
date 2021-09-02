@@ -1,0 +1,308 @@
+In file included from /usr/include/stdint.h:25:0,
+                 from /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:9,
+                 from with_stations_air-cpp.c:6:
+/usr/include/features.h:330:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+ #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+    ^
+with_stations_air.c:80:25: error: expected identifier or ‘(’ before ‘+’ token
+ const double ymax = semiminor+0.5; // ymax of domain (used in masking & profiling, etc.)
+                         ^
+with_stations_air.c:81:26: error: expected identifier or ‘(’ before ‘-’ token
+ const double ymin = -semiminor-0.5; // ymin of domain (used in masking & profiling, etc.)
+                          ^
+with_stations_air.c:82:26: error: expected identifier or ‘(’ before numeric constant
+ const double xmax = semimajor+3.0; // xmax of domain (used in profiling)
+                          ^
+with_stations_air.c:82:30: error: expected identifier or ‘(’ before ‘+’ token
+ const double xmax = semimajor+3.0; // xmax of domain (used in profiling)
+                              ^
+with_stations_air.c:83:27: error: expected identifier or ‘(’ before numeric constant
+ const double xmin = -semimajor-3.0; // xmin of domain (used in profiling)
+                           ^
+with_stations_air.c:83:31: error: expected identifier or ‘(’ before ‘-’ token
+ const double xmin = -semimajor-3.0; // xmin of domain (used in profiling)
+                               ^
+with_stations_air.c: In function ‘main’:
+with_stations_air.c:107:16: error: invalid type argument of unary ‘*’ (have ‘double’)
+   L0 = 2.0*semimajor+2.0;
+                ^
+with_stations_air.c:107:21: warning: statement with no effect [-Wunused-value]
+   L0 = 2.0*semimajor+2.0;
+                     ^
+with_stations_air.c:108:39: error: expected ‘}’ before ‘;’ token
+   origin(-L0/2., -semiminor-0.5); // Change -0.5 to -L0/16??
+                                       ^
+with_stations_air.c: In function ‘acceleration_2’:
+with_stations_air.c:168:18: error: invalid type argument of unary ‘*’ (have ‘double’)
+   thetaNOW = maxRads*sin(BB*t); // Derivation in notebook. Should write this up at some point.
+                  ^
+with_stations_air.c:168:64: error: expected ‘)’ before ‘;’ token
+   thetaNOW = maxRads*sin(BB*t); // Derivation in notebook. Should write this up at some point.
+                                                                ^
+with_stations_air.c:168:38: error: invalid type argument of unary ‘*’ (have ‘double’)
+   thetaNOW = maxRads*sin(BB*t); // Derivation in notebook. Should write this up at some point.
+                                      ^
+with_stations_air.c:169:37: error: invalid type argument of unary ‘*’ (have ‘double’)
+   omegaNOW = BB*maxRads*cos(BB*t); // Derivative of omegaNOW w/respect to t
+                                     ^
+with_stations_air.c:169:42: error: invalid type argument of unary ‘*’ (have ‘double’)
+   omegaNOW = BB*maxRads*cos(BB*t); // Derivative of omegaNOW w/respect to t
+                                          ^
+with_stations_air.c:169:88: error: expected ‘)’ before ‘;’ token
+   omegaNOW = BB*maxRads*cos(BB*t); // Derivative of omegaNOW w/respect to t
+                                                                                        ^
+with_stations_air.c:169:62: error: invalid type argument of unary ‘*’ (have ‘double’)
+   omegaNOW = BB*maxRads*cos(BB*t); // Derivative of omegaNOW w/respect to t
+                                                              ^
+with_stations_air.c:174:83: error: invalid type argument of unary ‘*’ (have ‘double’)
+     coriolisX = 2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t);
+                                                                                   ^
+with_stations_air.c:174:88: error: invalid type argument of unary ‘*’ (have ‘double’)
+     coriolisX = 2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t);
+                                                                                        ^
+with_stations_air.c:174:134: error: expected ‘)’ before ‘;’ token
+     coriolisX = 2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t);
+                                                                                                                                      ^
+with_stations_air.c:174:108: error: invalid type argument of unary ‘*’ (have ‘double’)
+     coriolisX = 2.0*((u.y[]+u.y[-1])/2.0)*BB*maxRads*cos(BB*t);
+                                                                                                            ^
+with_stations_air.c:175:46: error: expected ‘)’ before ‘;’ token
+     centripetalX = x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+                                              ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:175:46: error: expected ‘)’ before ‘;’ token
+     centripetalX = x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+                                              ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:175:56: error: expected ‘)’ before ‘;’ token
+     centripetalX = x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+                                                        ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:175:56: error: expected ‘)’ before ‘;’ token
+     centripetalX = x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+                                                        ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:175:107: error: expected ‘)’ before ‘;’ token
+     centripetalX = x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+                                                                                                           ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:175:107: error: expected ‘)’ before ‘;’ token
+     centripetalX = x*sq(BB)*sq(maxRads)*sq(cos(BB*t));
+                                                                                                           ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:181:84: error: invalid type argument of unary ‘*’ (have ‘double’)
+     coriolisY = -2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t);
+                                                                                    ^
+with_stations_air.c:181:89: error: invalid type argument of unary ‘*’ (have ‘double’)
+     coriolisY = -2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t);
+                                                                                         ^
+with_stations_air.c:181:135: error: expected ‘)’ before ‘;’ token
+     coriolisY = -2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t);
+                                                                                                                                       ^
+with_stations_air.c:181:109: error: invalid type argument of unary ‘*’ (have ‘double’)
+     coriolisY = -2.0*((u.x[]+u.x[-1])/2.0)*BB*maxRads*cos(BB*t);
+                                                                                                             ^
+with_stations_air.c:182:44: error: expected ‘)’ before ‘;’ token
+     centripetalY = sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+                                            ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:182:44: error: expected ‘)’ before ‘;’ token
+     centripetalY = sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+                                            ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:182:54: error: expected ‘)’ before ‘;’ token
+     centripetalY = sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+                                                      ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:182:54: error: expected ‘)’ before ‘;’ token
+     centripetalY = sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+                                                      ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:182:105: error: expected ‘)’ before ‘;’ token
+     centripetalY = sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+                                                                                                         ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:182:105: error: expected ‘)’ before ‘;’ token
+     centripetalY = sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+                                                                                                         ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:182:118: error: expected ‘)’ before ‘;’ token
+     centripetalY = sq(BB)*sq(maxRads)*sq(cos(BB*t))*(y+semiminor);
+                                                                                                                      ^
+with_stations_air.c: In function ‘init_0’:
+with_stations_air.c:204:28: error: expected ‘)’ before ‘;’ token
+   refine(level<MAXLEVEL && (1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) < 1.0);
+                            ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:204:28: error: expected ‘)’ before ‘;’ token
+   refine(level<MAXLEVEL && (1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) < 1.0);
+                            ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:204:56: error: expected ‘)’ before ‘;’ token
+   refine(level<MAXLEVEL && (1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) < 1.0);
+                                                        ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:204:56: error: expected ‘)’ before ‘;’ token
+   refine(level<MAXLEVEL && (1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) < 1.0);
+                                                        ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:205:78: error: expected ‘)’ before ‘;’ token
+   unrefine(level<MAXLEVEL && (1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) > sq(1.0));
+                                                                              ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:205:78: error: expected ‘)’ before ‘;’ token
+   unrefine(level<MAXLEVEL && (1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) > sq(1.0));
+                                                                              ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:205:106: error: expected ‘)’ before ‘;’ token
+   unrefine(level<MAXLEVEL && (1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) > sq(1.0));
+                                                                                                          ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:205:106: error: expected ‘)’ before ‘;’ token
+   unrefine(level<MAXLEVEL && (1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) > sq(1.0));
+                                                                                                          ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:214:41: error: expected ‘)’ before ‘;’ token
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                         ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:57:26: note: in definition of macro ‘min’
+ @define min(a,b) ((a) < (b) ? (a) : (b))
+                          ^
+with_stations_air.c:214:35: note: in expansion of macro ‘sq’
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                   ^
+with_stations_air.c:214:41: error: expected ‘)’ before ‘;’ token
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                         ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:57:26: note: in definition of macro ‘min’
+ @define min(a,b) ((a) < (b) ? (a) : (b))
+                          ^
+with_stations_air.c:214:35: note: in expansion of macro ‘sq’
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                   ^
+with_stations_air.c:214:69: error: expected ‘)’ before ‘;’ token
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                                                     ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:57:26: note: in definition of macro ‘min’
+ @define min(a,b) ((a) < (b) ? (a) : (b))
+                          ^
+with_stations_air.c:214:63: note: in expansion of macro ‘sq’
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                                               ^
+with_stations_air.c:214:69: error: expected ‘)’ before ‘;’ token
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                                                     ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:57:26: note: in definition of macro ‘min’
+ @define min(a,b) ((a) < (b) ? (a) : (b))
+                          ^
+with_stations_air.c:214:63: note: in expansion of macro ‘sq’
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                                               ^
+with_stations_air.c:214:41: error: expected ‘)’ before ‘;’ token
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                         ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:57:38: note: in definition of macro ‘min’
+ @define min(a,b) ((a) < (b) ? (a) : (b))
+                                      ^
+with_stations_air.c:214:35: note: in expansion of macro ‘sq’
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                   ^
+with_stations_air.c:214:41: error: expected ‘)’ before ‘;’ token
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                         ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:57:38: note: in definition of macro ‘min’
+ @define min(a,b) ((a) < (b) ? (a) : (b))
+                                      ^
+with_stations_air.c:214:35: note: in expansion of macro ‘sq’
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                   ^
+with_stations_air.c:214:69: error: expected ‘)’ before ‘;’ token
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                                                     ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:57:38: note: in definition of macro ‘min’
+ @define min(a,b) ((a) < (b) ? (a) : (b))
+                                      ^
+with_stations_air.c:214:63: note: in expansion of macro ‘sq’
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                                               ^
+with_stations_air.c:214:69: error: expected ‘)’ before ‘;’ token
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                                                     ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:57:38: note: in definition of macro ‘min’
+ @define min(a,b) ((a) < (b) ? (a) : (b))
+                                      ^
+with_stations_air.c:214:63: note: in expansion of macro ‘sq’
+   fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+                                                               ^
+with_stations_air.c: In function ‘circle_flow’:
+with_stations_air.c:225:31: error: expected ‘)’ before ‘;’ token
+   fraction (circle, ((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0));
+                               ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:225:31: error: expected ‘)’ before ‘;’ token
+   fraction (circle, ((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0));
+                               ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c:225:59: error: expected ‘)’ before ‘;’ token
+   fraction (circle, ((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0));
+                                                           ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:17: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                 ^
+with_stations_air.c:225:59: error: expected ‘)’ before ‘;’ token
+   fraction (circle, ((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0));
+                                                           ^
+/gpfs/runtime/opt/basilisk/1.0/src/common.h:58:21: note: in definition of macro ‘sq’
+ @define sq(x) ((x)*(x))
+                     ^
+with_stations_air.c: In function ‘stations’:
+with_stations_air.c:545:24: error: invalid type argument of unary ‘*’ (have ‘double’)
+   for (double x = -semimajor; x <= semimajor+0.1; x+=0.1) {
+                        ^
+with_stations_air.c:545:29: error: expected expression before ‘;’ token
+   for (double x = -semimajor; x <= semimajor+0.1; x+=0.1) {
+                             ^
