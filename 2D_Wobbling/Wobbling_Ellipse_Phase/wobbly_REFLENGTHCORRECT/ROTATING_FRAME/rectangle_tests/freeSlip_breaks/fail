@@ -1,0 +1,905 @@
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0384 sum: 69190.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0424 sum: 69213.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0416 sum: 69257.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0553 sum: 69280.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0437 sum: 69302.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0475 sum: 69324.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0502 sum: 69347.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0722 sum: 69369.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0787 sum: 69594.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0946 sum: 69616.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1075 sum: 69637.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0941 sum: 69681.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1089 sum: 69702.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.125 sum: 69723.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.0978 sum: 69744.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1166 sum: 69765.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1031 sum: 69785.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.12 sum: 69807.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1344 sum: 69828.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1306 sum: 69848.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1241 sum: 69869.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1269 sum: 69890.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1257 sum: 69911.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1419 sum: 69932.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.135 sum: 69952.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1705 sum: 69973.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1525 sum: 69993.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1502 sum: 70014.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1485 sum: 70035.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1722 sum: 70056.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1659 sum: 70076.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1649 sum: 70096.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1746 sum: 70117.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1824 sum: 70137.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1828 sum: 70157.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1678 sum: 70177.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1592 sum: 70198 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1618 sum: 70218.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1768 sum: 70239 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1804 sum: 70258.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1905 sum: 70278.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.192 sum: 70298 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.187 sum: 70318.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1956 sum: 70337.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1982 sum: 70357.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.1904 sum: 70377.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2118 sum: 70397.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2027 sum: 70417.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2155 sum: 70437.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2192 sum: 70456.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2269 sum: 70476 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2285 sum: 70495.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2314 sum: 70514.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2145 sum: 70533.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2262 sum: 70553.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.238 sum: 70572.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2105 sum: 70591.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2443 sum: 70611.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2429 sum: 70630.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2536 sum: 70649.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2424 sum: 70668.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2509 sum: 70688.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2422 sum: 70707.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.245 sum: 70726.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2551 sum: 70745.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2574 sum: 70764.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2585 sum: 70783.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2575 sum: 70801.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2683 sum: 70820.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2524 sum: 70838.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2639 sum: 70858.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2686 sum: 70876.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2574 sum: 70894.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2829 sum: 70913.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2871 sum: 70931.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2567 sum: 70949 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2825 sum: 70967.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2922 sum: 70985.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2807 sum: 71003 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2797 sum: 71020.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3088 sum: 71039.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2838 sum: 71058 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3176 sum: 71076.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2913 sum: 71094.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.306 sum: 71112.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.321 sum: 71130.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3148 sum: 71148.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3025 sum: 71166.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.2951 sum: 71184.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.322 sum: 71202.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3191 sum: 71219.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.32 sum: 71237.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3221 sum: 71255.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3328 sum: 71273.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3145 sum: 71290.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.324 sum: 71307.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3437 sum: 71325.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3442 sum: 71342.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3571 sum: 71359.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.349 sum: 71376.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3543 sum: 71393.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3435 sum: 71410.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3517 sum: 71427.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3405 sum: 71444.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.365 sum: 71460.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.358 sum: 71477.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3469 sum: 71494.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3584 sum: 71511.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3593 sum: 71527.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3535 sum: 71543.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3685 sum: 71560.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3526 sum: 71576.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3506 sum: 71592.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3874 sum: 71609 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3713 sum: 71624.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3779 sum: 71640.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.371 sum: 71656.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3983 sum: 71672.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3718 sum: 71688 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3802 sum: 71704.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3972 sum: 71720.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3941 sum: 71736.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3985 sum: 71752.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.399 sum: 71767.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3939 sum: 71783 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4156 sum: 71799.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.3891 sum: 71814.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4359 sum: 71828.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4217 sum: 71843.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4194 sum: 71858.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4065 sum: 71873.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4126 sum: 71888.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4236 sum: 71902.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.433 sum: 71917.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4318 sum: 71932.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4279 sum: 71946.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.431 sum: 71961.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4369 sum: 71976.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4176 sum: 71990.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4313 sum: 72005.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4314 sum: 72020.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4512 sum: 72035 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4323 sum: 72049.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4461 sum: 72064.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4413 sum: 72078.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4512 sum: 72093 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4441 sum: 72107.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4538 sum: 72121.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4376 sum: 72136 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4573 sum: 72150.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4387 sum: 72164.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4542 sum: 72179.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.448 sum: 72193.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4667 sum: 72207.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4619 sum: 72222.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4624 sum: 72236.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4829 sum: 72251 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4697 sum: 72264.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4726 sum: 72279 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4774 sum: 72293.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4781 sum: 72307.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4717 sum: 72322 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.478 sum: 72335.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4622 sum: 72349.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4871 sum: 72363.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4852 sum: 72377.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4743 sum: 72392.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4945 sum: 72405.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4882 sum: 72418.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4907 sum: 72433.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4942 sum: 72447.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4994 sum: 72460.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5184 sum: 72474.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5222 sum: 72487.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5033 sum: 72500.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4843 sum: 72514 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5102 sum: 72527.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5108 sum: 72541.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.4914 sum: 72554.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.525 sum: 72568.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5379 sum: 72581 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.502 sum: 72594.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5186 sum: 72607.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5084 sum: 72620.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5354 sum: 72633.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5253 sum: 72646.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5349 sum: 72660.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.548 sum: 72672.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5308 sum: 72685.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5281 sum: 72698.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5419 sum: 72711.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5321 sum: 72724.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5436 sum: 72737.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5351 sum: 72750.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5321 sum: 72762.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5425 sum: 72775.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5596 sum: 72788.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5719 sum: 72800.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5542 sum: 72813.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5471 sum: 72825.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5573 sum: 72838.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5628 sum: 72851.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5576 sum: 72863.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5733 sum: 72875.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5615 sum: 72888 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5665 sum: 72900.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5795 sum: 72912.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5758 sum: 72924.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5881 sum: 72936.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5857 sum: 72948.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5845 sum: 72959.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5785 sum: 72971.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5995 sum: 72983 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5761 sum: 72994.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5975 sum: 73006 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.584 sum: 73017.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5957 sum: 73029.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5808 sum: 73040.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5962 sum: 73053.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5878 sum: 73065.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5914 sum: 73077.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.586 sum: 73088.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5979 sum: 73100.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5946 sum: 73112.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6029 sum: 73123.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.603 sum: 73135.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5868 sum: 73146.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5988 sum: 73157.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6026 sum: 73168.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6001 sum: 73179.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6082 sum: 73190.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5957 sum: 73201.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6089 sum: 73212.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5838 sum: 73223.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5954 sum: 73235.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6123 sum: 73245.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6148 sum: 73256.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6119 sum: 73268 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6101 sum: 73278.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6118 sum: 73288.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6246 sum: 73300.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6249 sum: 73311.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6013 sum: 73321.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6198 sum: 73332.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6159 sum: 73343.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6361 sum: 73354.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6377 sum: 73364 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.632 sum: 73374.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6247 sum: 73385.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6345 sum: 73395.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6314 sum: 73405.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6454 sum: 73415.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6322 sum: 73425.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6357 sum: 73435.6 nrelax: 100
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+draw_vof(): no field named 'circle'
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6351 sum: 73445.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6526 sum: 73455.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6378 sum: 73465.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6648 sum: 73475.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6485 sum: 73484.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6528 sum: 73494.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6402 sum: 73503.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6476 sum: 73513 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6556 sum: 73521.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6425 sum: 73530.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6698 sum: 73540.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.661 sum: 73549 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6596 sum: 73558 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6602 sum: 73566.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6636 sum: 73575.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6618 sum: 73584.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6627 sum: 73592.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6656 sum: 73600.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6599 sum: 73609.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6576 sum: 73618.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6716 sum: 73626.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6581 sum: 73634.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6736 sum: 73642.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6574 sum: 73651.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6813 sum: 73660.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6671 sum: 73668.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6772 sum: 73676.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6875 sum: 73685.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6736 sum: 73694.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6797 sum: 73702.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6716 sum: 73711.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6776 sum: 73720.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6856 sum: 73729 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6946 sum: 73738.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.689 sum: 73747.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6942 sum: 73756.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6783 sum: 73765.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6785 sum: 73774.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6851 sum: 73783.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6941 sum: 73792.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6933 sum: 73801.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6783 sum: 73809.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6564 sum: 73818.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6638 sum: 73827 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.675 sum: 73835.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6699 sum: 73843.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6599 sum: 73851.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6749 sum: 73859.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6488 sum: 73867 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6344 sum: 73875.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.647 sum: 73883.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6424 sum: 73891.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.654 sum: 73900 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6298 sum: 73908 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6221 sum: 73916.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6447 sum: 73925 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6324 sum: 73933.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6243 sum: 73942.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.623 sum: 73951.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6425 sum: 73961.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6293 sum: 73970.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6266 sum: 73980.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6098 sum: 73990.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6218 sum: 74001.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6325 sum: 74011.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6313 sum: 74021 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6139 sum: 74031.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6437 sum: 74042.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6275 sum: 74053.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6159 sum: 74064.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6172 sum: 74075.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6204 sum: 74086.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6124 sum: 74097.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6122 sum: 74109.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6346 sum: 74121.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6216 sum: 74133 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6218 sum: 74144.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6262 sum: 74156.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6148 sum: 74168.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5974 sum: 74180.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6257 sum: 74193.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6191 sum: 74205.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6219 sum: 74218.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5869 sum: 74230.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6171 sum: 74242.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6041 sum: 74255.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6366 sum: 74268.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6283 sum: 74280.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6226 sum: 74293.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6013 sum: 74307.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6223 sum: 74320.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6089 sum: 74333.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6234 sum: 74346.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6187 sum: 74359.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6219 sum: 74373.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6139 sum: 74386.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6353 sum: 74399.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6093 sum: 74412.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6168 sum: 74425.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6031 sum: 74438.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6255 sum: 74452.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6194 sum: 74466.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6217 sum: 74479.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6232 sum: 74494 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.5946 sum: 74508 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6206 sum: 74522.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6168 sum: 74536.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6246 sum: 74550.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6207 sum: 74565.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6138 sum: 74578.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6249 sum: 74593.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6242 sum: 74607.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6221 sum: 74623.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6293 sum: 74637.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6318 sum: 74651.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6263 sum: 74666.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6464 sum: 74681.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6372 sum: 74695.9 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.635 sum: 74711.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6083 sum: 74727 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.63 sum: 74742.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6111 sum: 74758.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6404 sum: 74774.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6238 sum: 74790.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6492 sum: 74806.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6251 sum: 74822.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6358 sum: 74838.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.637 sum: 74854.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6273 sum: 74871.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6477 sum: 74888.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.651 sum: 74904.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6411 sum: 74920.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6689 sum: 74938 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6451 sum: 74954.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6537 sum: 74971.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6466 sum: 74987.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.665 sum: 75005.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6601 sum: 75022.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6527 sum: 75039.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6522 sum: 75057 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6685 sum: 75074.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6682 sum: 75091.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6608 sum: 75108.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6577 sum: 75126 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6689 sum: 75143.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6583 sum: 75161 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6784 sum: 75178.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6839 sum: 75195.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6654 sum: 75212.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6701 sum: 75230.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6852 sum: 75248.3 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6789 sum: 75266.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6538 sum: 75283.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6768 sum: 75301.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6768 sum: 75319.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6697 sum: 75337.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6776 sum: 75355.1 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6932 sum: 75372.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6802 sum: 75390.7 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6881 sum: 75409.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6924 sum: 75426.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6888 sum: 75444.2 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6997 sum: 75461.8 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.7034 sum: 75479.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6906 sum: 75497.6 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.6989 sum: 75516.4 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.7076 sum: 75534.5 nrelax: 100
+WARNING: convergence for p not reached after 500 iterations
+  res: 10.7081 sum: 75552.8 nrelax: 100
+/home/benny/basilisk/src/grid/multigrid-common.h:29:error: [Thread debugging using libthread_db enabled]
+/home/benny/basilisk/src/grid/multigrid-common.h:29:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+/home/benny/basilisk/src/grid/multigrid-common.h:29:error: [New Thread 0x7ffff3a06700 (LWP 40470)]
+/home/benny/basilisk/src/grid/multigrid-common.h:29:error: [New Thread 0x7ffff3205700 (LWP 40471)]
+/home/benny/basilisk/src/grid/multigrid-common.h:29:error: [New Thread 0x7ffff2a04700 (LWP 40472)]
+/home/benny/basilisk/src/grid/multigrid-common.h:29:error: Thread 1 "rectangle_air" received signal SIGTERM, Terminated.

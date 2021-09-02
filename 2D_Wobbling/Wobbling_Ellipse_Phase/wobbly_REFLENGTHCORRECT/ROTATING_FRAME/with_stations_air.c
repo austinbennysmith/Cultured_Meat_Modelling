@@ -39,7 +39,8 @@ FILE *fp1 ;
 #define rhoAir 1.225 // kg/m^3
 #define muWater 0.001 // approximatley the viscosity of water
 // #define muAir 1.81e-5 // approximateley the viscosity of air
-#define muAir 1.81e-4 // visc. of air *10
+// #define muAir 1.81e-4 // visc. of air *10
+#define muAir 1.81e-3 // visc. of air *10
 
 #define sig 0.0728  //surface tension of water
 
@@ -211,8 +212,8 @@ event init(t = 0) {
   //   TT[] = exp(-(10*x*x+10*y*y));
   // }
   // fraction (TT, -(0.05*sq(x) + sq(y+0.7) - sq(0.2)));
-  fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
-  // fraction (TT, -(sq(x) + sq(y) - sq(0.5)));
+  // fraction (TT, intersection((y), (-((1.0/sq(semimajor))*sq(x) + (1.0/sq(semiminor))*sq(y) - 1.0))));
+  fraction (TT, -(sq(x) + sq(y) - sq(0.5)));
   boundary({TT});
 
   // boundary conditions
