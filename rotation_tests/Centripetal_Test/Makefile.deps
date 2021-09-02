@@ -16,12 +16,6 @@ ALLPAGES = \
 centripetalTest.s:	\
 	/home/benny/basilisk/src/navier-stokes/centered.h \
 	/home/benny/basilisk/src/view.h \
-	/home/benny/basilisk/src/embed.h \
-	/home/benny/basilisk/src/fractions.h \
-	/home/benny/basilisk/src/embed-tree.h \
-	/home/benny/basilisk/src/geometry.h \
-	/home/benny/basilisk/src/myc2d.h \
-	/home/benny/basilisk/src/myc.h \
 	/home/benny/basilisk/src/utils.h \
 	/home/benny/basilisk/src/input.h \
 	/home/benny/basilisk/src/vertexbuffer.h \
@@ -32,6 +26,9 @@ centripetalTest.s:	\
 	/home/benny/basilisk/src/gl/font.h \
 	/home/benny/basilisk/src/draw_json.h \
 	/home/benny/basilisk/src/gl/og_font.h \
+	/home/benny/basilisk/src/geometry.h \
+	/home/benny/basilisk/src/myc2d.h \
+	/home/benny/basilisk/src/myc.h \
 	/home/benny/basilisk/src/utils.h \
 	/home/benny/basilisk/src/output.h \
 	/home/benny/basilisk/src/run.h \

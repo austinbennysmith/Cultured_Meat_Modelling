@@ -1,0 +1,6 @@
+vfprintf-internal.c:1328:error: [Thread debugging using libthread_db enabled]
+vfprintf-internal.c:1328:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+vfprintf-internal.c:1328:error: [New Thread 0x7ffff39f2700 (LWP 20366)]
+vfprintf-internal.c:1328:error: [New Thread 0x7ffff31f1700 (LWP 20367)]
+vfprintf-internal.c:1328:error: [New Thread 0x7ffff29f0700 (LWP 20368)]
+vfprintf-internal.c:1328:error: Thread 1 "edited_ellipse" received signal SIGSEGV, Segmentation fault.

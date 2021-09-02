@@ -1,0 +1,7 @@
+around_circle.c:121:error: [Thread debugging using libthread_db enabled]
+around_circle.c:121:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+around_circle.c:121:error: [New Thread 0x7ffff3f22700 (LWP 33331)]
+around_circle.c:121:error: [New Thread 0x7ffff3721700 (LWP 33332)]
+around_circle.c:121:error: [New Thread 0x7ffff2f20700 (LWP 33333)]
+around_circle.c:121:error: Thread 2 "around_circle" received signal SIGSEGV, Segmentation fault.
+around_circle.c:121:error: [Switching to Thread 0x7ffff3f22700 (LWP 33331)]
