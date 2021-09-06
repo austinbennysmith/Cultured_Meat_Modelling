@@ -1,0 +1,10 @@
+[with_stations_air.tst]
+/gpfs/runtime/opt/basilisk/1.0/src/Makefile.defs:8: Makefile.tests: No such file or directory
+/gpfs/runtime/opt/basilisk/1.0/src/Makefile.defs:203: Makefile.deps: No such file or directory
+sh /gpfs/runtime/opt/basilisk/1.0/src/tests.sh
+updating Makefile.tests
+updating Makefile.deps
+/gpfs/runtime/opt/basilisk/1.0/src/qcc -MD -o with_stations_air.s.d with_stations_air.c
+updating Makefile.deps
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_air/with_stations_air with_stations_air.c -lm
+[with_stations_air.tst]
