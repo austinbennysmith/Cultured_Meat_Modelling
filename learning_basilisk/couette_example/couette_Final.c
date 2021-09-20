@@ -64,6 +64,15 @@ event init(t = 0) {
 
 }
 
+event acceleration (i++)
+{
+  face vector av = a;
+  // foreach_face(x)
+  //   av.x[] -= 0.1*exp(x);
+  foreach_face(y)
+    av.y[] -= 0.98; // This needs to be changed
+}
+
 event end (t = 400) {
   printf ("i = %d t = %g\n", i, t);
 }

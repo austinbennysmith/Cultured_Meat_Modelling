@@ -1,0 +1,6 @@
+qcc -autolink -O2 -Wall -fopenmp  -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_air/with_stations_air with_stations_air.c  -lm
+with_stations_air.c:9: error: droplet_stat.h: No such file or directory
+make: *** [with_stations_air.s] Error 1
+make: *** [/home/benny/basilisk/src/Makefile.defs:61: with_stations_air.s] Error 1
+qcc -autolink -O2 -Wall -fopenmp -g -Wall -pipe -D_FORTIFY_SOURCE=2 -DDUMBGL -o with_stations_air/with_stations_air with_stations_air.c -lm
+[with_stations_air.tst]

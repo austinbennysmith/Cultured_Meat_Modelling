@@ -1,0 +1,92 @@
+ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.3.0-10ubuntu2)
+  configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  WARNING: library configuration mismatch
+  avcodec     configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared --enable-version3 --disable-doc --disable-programs --enable-libaribb24 --enable-liblensfun --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libtesseract --enable-libvo_amrwbenc
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, image2pipe, from 'pipe:':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: ppm, rgb24, 600x600, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (ppm (native) -> h264 (libx264))
+[libx264 @ 0x5555555e0800] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x5555555e0800] profile High, level 3.0
+Output #0, mpegts, to 'ymovie.mp4':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: h264 (libx264), yuv420p, 600x600, q=-1--1, 25 fps, 90k tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+frame=    7 fps=3.3 q=14.0 size=      13kB time=00:00:00.24 bitrate= 438.6kbits/s speed=0.113x    frame=    8 fps=1.9 q=14.0 size=      15kB time=00:00:00.28 bitrate= 424.3kbits/s speed=0.0667x    frame=    9 fps=1.4 q=14.0 size=      17kB time=00:00:00.32 bitrate= 427.7kbits/s speed=0.0492x    frame=   10 fps=1.1 q=15.0 size=      19kB time=00:00:00.36 bitrate= 421.9kbits/s speed=0.0401x    frame=   11 fps=0.9 q=15.0 size=      21kB time=00:00:00.40 bitrate= 424.9kbits/s speed=0.0345x    frame=   12 fps=0.8 q=15.0 size=      23kB time=00:00:00.44 bitrate= 427.3kbits/s speed=0.0308x    frame=   13 fps=0.8 q=15.0 size=      25kB time=00:00:00.48 bitrate= 429.3kbits/s speed=0.0286x    frame=   14 fps=0.7 q=14.0 size=      26kB time=00:00:00.52 bitrate= 410.7kbits/s speed=0.0272x    frame=   15 fps=0.7 q=14.0 size=      27kB time=00:00:00.56 bitrate= 392.1kbits/s speed=0.0262x    frame=   16 fps=0.7 q=14.0 size=      28kB time=00:00:00.60 bitrate= 376.0kbits/s speed=0.0255x    frame=   17 fps=0.7 q=14.0 size=      29kB time=00:00:00.64 bitrate= 366.6kbits/s speed=0.0249x    frame=   18 fps=0.6 q=14.0 size=      30kB time=00:00:00.68 bitrate= 367.1kbits/s speed=0.0243x    frame=   19 fps=0.6 q=15.0 size=      33kB time=00:00:00.72 bitrate= 373.9kbits/s speed=0.0239x    frame=   20 fps=0.6 q=15.0 size=      35kB time=00:00:00.76 bitrate= 378.0kbits/s speed=0.0232x    frame=   21 fps=0.6 q=15.0 size=      37kB time=00:00:00.80 bitrate= 381.6kbits/s speed=0.0225x    frame=   22 fps=0.6 q=15.0 size=      39kB time=00:00:00.84 bitrate= 377.8kbits/s speed=0.022x    frame=   23 fps=0.6 q=14.0 size=      40kB time=00:00:00.88 bitrate= 376.0kbits/s speed=0.0217x    frame=   24 fps=0.6 q=14.0 size=      41kB time=00:00:00.92 bitrate= 369.5kbits/s speed=0.0211x    frame=   25 fps=0.5 q=14.0 size=      43kB time=00:00:00.96 bitrate= 363.5kbits/s speed=0.0204x    frame=   26 fps=0.5 q=14.0 size=      44kB time=00:00:01.00 bitrate= 357.9kbits/s speed=0.0195x    frame=   27 fps=0.5 q=14.0 size=      45kB time=00:00:01.04 bitrate= 351.4kbits/s speed=0.0184x    frame=   28 fps=0.4 q=14.0 size=      46kB time=00:00:01.08 bitrate= 345.4kbits/s speed=0.017x    frame=   29 fps=0.4 q=14.0 size=      46kB time=00:00:01.12 bitrate= 337.1kbits/s speed=0.0158x    frame=   30 fps=0.4 q=14.0 size=      47kB time=00:00:01.16 bitrate= 329.3kbits/s speed=0.0144x    frame=   31 fps=0.3 q=13.0 size=      48kB time=00:00:01.20 bitrate= 324.6kbits/s speed=0.0129x    frame=   32 fps=0.3 q=13.0 size=      48kB time=00:00:01.24 bitrate= 317.8kbits/s speed=0.0111x    frame=   33 fps=0.2 q=13.0 size=      49kB time=00:00:01.28 bitrate= 311.4kbits/s speed=0.00924x    frame=   34 fps=0.2 q=13.0 size=      49kB time=00:00:01.32 bitrate= 305.4kbits/s speed=0.00724x    frame=   35 fps=0.1 q=13.0 size=      50kB time=00:00:01.36 bitrate= 298.6kbits/s speed=0.0053x    Error while decoding stream #0:0: Invalid data found when processing input
+frame=   35 fps=0.1 q=13.0 size=      50kB time=00:00:01.36 bitrate= 298.6kbits/s speed=0.00341x    frame=   35 fps=0.1 q=13.0 Lsize=      50kB time=00:00:01.36 bitrate= 298.6kbits/s speed=0.0024x    
+video:42kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 18.781298%
+[libx264 @ 0x5555555e0800] frame I:1     Avg QP: 0.98  size:  1344
+[libx264 @ 0x5555555e0800] frame P:34    Avg QP: 2.95  size:  1217
+[libx264 @ 0x5555555e0800] mb I  I16..4: 99.4%  0.0%  0.6%
+[libx264 @ 0x5555555e0800] mb P  I16..4:  1.6%  1.1%  0.7%  P16..4:  2.3%  1.1%  0.5%  0.0%  0.0%    skip:92.7%
+[libx264 @ 0x5555555e0800] 8x8 transform intra:17.8% inter:62.6%
+[libx264 @ 0x5555555e0800] coded y,uvDC,uvAC intra: 19.7% 32.7% 28.6% inter: 1.0% 1.2% 0.8%
+[libx264 @ 0x5555555e0800] i16 v,h,dc,p: 54% 24% 18%  4%
+[libx264 @ 0x5555555e0800] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 23% 30%  5%  8%  7%  7%  3%  9%
+[libx264 @ 0x5555555e0800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13% 25% 32%  3% 11%  5%  5%  2%  5%
+[libx264 @ 0x5555555e0800] i8c dc,h,v,p: 59% 34%  2%  5%
+[libx264 @ 0x5555555e0800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5555555e0800] ref P L0: 76.8%  2.4% 11.3%  4.1%  3.0%  2.4%
+[libx264 @ 0x5555555e0800] kb/s:244.19
+Exiting normally, received signal 2.
+ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.3.0-10ubuntu2)
+  configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  WARNING: library configuration mismatch
+  avcodec     configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared --enable-version3 --disable-doc --disable-programs --enable-libaribb24 --enable-liblensfun --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libtesseract --enable-libvo_amrwbenc
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, image2pipe, from 'pipe:':
+  Duration: N/A, bitrate: N/A
+    Stream #0:0: Video: ppm, rgb24, 600x600, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (ppm (native) -> h264 (libx264))
+[libx264 @ 0x5555555e0800] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x5555555e0800] profile High, level 3.0
+Output #0, mpegts, to 'xmovie.mp4':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: h264 (libx264), yuv420p, 600x600, q=-1--1, 25 fps, 90k tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+frame=    7 fps=3.2 q=14.0 size=      13kB time=00:00:00.24 bitrate= 457.4kbits/s speed=0.11x    frame=    8 fps=1.9 q=14.0 size=      15kB time=00:00:00.28 bitrate= 435.1kbits/s speed=0.0658x    frame=    9 fps=1.4 q=14.0 size=      16kB time=00:00:00.32 bitrate= 413.6kbits/s speed=0.0488x    frame=   10 fps=1.1 q=14.0 size=      17kB time=00:00:00.36 bitrate= 388.5kbits/s speed=0.0398x    frame=   11 fps=0.9 q=14.0 size=      18kB time=00:00:00.40 bitrate= 372.2kbits/s speed=0.0344x    frame=   12 fps=0.8 q=14.0 size=      19kB time=00:00:00.44 bitrate= 355.5kbits/s speed=0.0307x    frame=   13 fps=0.8 q=14.0 size=      20kB time=00:00:00.48 bitrate= 341.5kbits/s speed=0.0285x    frame=   14 fps=0.7 q=14.0 size=      21kB time=00:00:00.52 bitrate= 335.5kbits/s speed=0.0271x    frame=   15 fps=0.7 q=14.0 size=      23kB time=00:00:00.56 bitrate= 341.1kbits/s speed=0.0262x    frame=   16 fps=0.7 q=15.0 size=      26kB time=00:00:00.60 bitrate= 353.4kbits/s speed=0.0254x    frame=   17 fps=0.7 q=15.0 size=      28kB time=00:00:00.64 bitrate= 357.2kbits/s speed=0.0248x    frame=   18 fps=0.6 q=15.0 size=      30kB time=00:00:00.68 bitrate= 356.1kbits/s speed=0.0243x    frame=   19 fps=0.6 q=15.0 size=      31kB time=00:00:00.72 bitrate= 350.9kbits/s speed=0.0238x    frame=   20 fps=0.6 q=15.0 size=      33kB time=00:00:00.76 bitrate= 352.2kbits/s speed=0.0232x    frame=   21 fps=0.6 q=14.0 size=      34kB time=00:00:00.80 bitrate= 347.8kbits/s speed=0.0225x    frame=   22 fps=0.6 q=14.0 size=      35kB time=00:00:00.84 bitrate= 345.6kbits/s speed=0.022x    frame=   23 fps=0.6 q=15.0 size=      37kB time=00:00:00.88 bitrate= 345.2kbits/s speed=0.0217x    frame=   24 fps=0.5 q=15.0 size=      38kB time=00:00:00.92 bitrate= 341.7kbits/s speed=0.0211x    frame=   25 fps=0.5 q=14.0 size=      40kB time=00:00:00.96 bitrate= 341.5kbits/s speed=0.0204x    frame=   26 fps=0.5 q=14.0 size=      41kB time=00:00:01.00 bitrate= 335.4kbits/s speed=0.0195x    frame=   27 fps=0.5 q=14.0 size=      42kB time=00:00:01.04 bitrate= 329.7kbits/s speed=0.0183x    frame=   28 fps=0.4 q=14.0 size=      42kB time=00:00:01.08 bitrate= 321.7kbits/s speed=0.017x    frame=   29 fps=0.4 q=14.0 size=      43kB time=00:00:01.12 bitrate= 314.2kbits/s speed=0.0158x    frame=   30 fps=0.4 q=13.0 size=      44kB time=00:00:01.16 bitrate= 307.3kbits/s speed=0.0144x    frame=   31 fps=0.3 q=13.0 size=      44kB time=00:00:01.20 bitrate= 300.8kbits/s speed=0.0128x    frame=   32 fps=0.3 q=13.0 size=      45kB time=00:00:01.24 bitrate= 294.7kbits/s speed=0.0111x    frame=   33 fps=0.2 q=13.0 size=      45kB time=00:00:01.28 bitrate= 289.0kbits/s speed=0.00923x    frame=   34 fps=0.2 q=13.0 size=      46kB time=00:00:01.32 bitrate= 283.7kbits/s speed=0.00724x    frame=   35 fps=0.1 q=13.0 size=      46kB time=00:00:01.36 bitrate= 278.7kbits/s speed=0.0053x    Error while decoding stream #0:0: Invalid data found when processing input
+frame=   35 fps=0.1 q=13.0 size=      46kB time=00:00:01.36 bitrate= 278.7kbits/s speed=0.00341x    frame=   35 fps=0.1 q=13.0 Lsize=      46kB time=00:00:01.36 bitrate= 278.7kbits/s speed=0.0024x    
+video:39kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 19.790640%
+[libx264 @ 0x5555555e0800] frame I:1     Avg QP: 1.35  size:  1560
+[libx264 @ 0x5555555e0800] frame P:34    Avg QP: 3.07  size:  1117
+[libx264 @ 0x5555555e0800] mb I  I16..4: 99.4%  0.0%  0.6%
+[libx264 @ 0x5555555e0800] mb P  I16..4:  1.7%  0.9%  0.7%  P16..4:  1.6%  1.2%  0.5%  0.0%  0.0%    skip:93.4%
+[libx264 @ 0x5555555e0800] 8x8 transform intra:13.9% inter:65.0%
+[libx264 @ 0x5555555e0800] coded y,uvDC,uvAC intra: 17.2% 31.6% 26.9% inter: 1.0% 1.4% 0.7%
+[libx264 @ 0x5555555e0800] i16 v,h,dc,p: 55% 22% 19%  5%
+[libx264 @ 0x5555555e0800] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35%  9% 30%  1%  4% 12%  3%  2%  4%
+[libx264 @ 0x5555555e0800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 23% 30%  2%  5%  6%  2%  2%  3%
+[libx264 @ 0x5555555e0800] i8c dc,h,v,p: 56% 34%  6%  4%
+[libx264 @ 0x5555555e0800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5555555e0800] ref P L0: 77.9%  2.8%  9.1%  4.4%  1.8%  4.0%
+[libx264 @ 0x5555555e0800] kb/s:225.99
+Exiting normally, received signal 2.

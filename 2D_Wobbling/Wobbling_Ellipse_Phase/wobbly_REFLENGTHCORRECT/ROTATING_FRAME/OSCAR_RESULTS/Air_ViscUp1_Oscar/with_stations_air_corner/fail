@@ -1,0 +1,6 @@
+fputc.c:37:error: [Thread debugging using libthread_db enabled]
+fputc.c:37:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+fputc.c:37:error: [New Thread 0x7ffff37e4700 (LWP 12856)]
+fputc.c:37:error: [New Thread 0x7ffff2fe3700 (LWP 12857)]
+fputc.c:37:error: [New Thread 0x7ffff27e2700 (LWP 12858)]
+fputc.c:37:error: Thread 1 "with_stations_a" received signal SIGTERM, Terminated.

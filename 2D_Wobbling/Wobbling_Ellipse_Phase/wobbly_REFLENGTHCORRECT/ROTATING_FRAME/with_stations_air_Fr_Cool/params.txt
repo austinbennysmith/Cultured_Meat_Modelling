@@ -1,0 +1,15 @@
+rho1: 1 
+rho2: 0.001225 
+mu1: 1.52716e-05 
+mu2: 2.76417e-05 
+sigma: 0.000169786 
+refLength: 0.01 
+refVelocity: 6.54809 
+refTime: 0.00152716 
+Reynolds Number: 65480.9 
+Weber Number: 5889.76 
+Froude Number: 12.0765 
+Dimensionless gravity: 0.00685675 
+L0: 8 
+(Min) DeltaX: 0.015625 
+Diffusion Stability condition (must be <=0.5, see code for source): 0.00016384 

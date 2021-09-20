@@ -1,0 +1,6 @@
+/home/benny/basilisk/src/viscosity.h:41:error: [Thread debugging using libthread_db enabled]
+/home/benny/basilisk/src/viscosity.h:41:error: Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+/home/benny/basilisk/src/viscosity.h:41:error: [New Thread 0x7ffff37f8700 (LWP 8582)]
+/home/benny/basilisk/src/viscosity.h:41:error: [New Thread 0x7ffff2ff7700 (LWP 8583)]
+/home/benny/basilisk/src/viscosity.h:41:error: [New Thread 0x7ffff27f6700 (LWP 8584)]
+/home/benny/basilisk/src/viscosity.h:41:error: Thread 1 "with_stations_a" received signal SIGTERM, Terminated.

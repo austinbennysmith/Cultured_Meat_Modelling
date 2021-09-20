@@ -3,7 +3,7 @@
 // #include "embed.h"
 #include "navier-stokes/centered.h"
 #include "view.h"
-// #include "two-phase.h"
+#include "two-phase.h"
 
 #define LEVEL 9
 
@@ -114,12 +114,12 @@ int main() {
 //   }
 // }
 
-event acceleration (i++)
-{
-  face vector av = a;
-  foreach_face(y)
-    av.y[] -= 1; // This needs to be changed
-}
+// event acceleration (i++)
+// {
+//   face vector av = a;
+//   foreach_face(y)
+//     av.y[] -= 1; // This needs to be changed
+// }
 
 event init(t=0) {
 	// vertex scalar phi[];
@@ -130,6 +130,8 @@ event init(t=0) {
 
 	mask (y > 4.0 ? top : none);
     mask (y < 0.0 ? bottom : none);
+
+    fraction (f, 2.0-y);
 	
 	// vertex scalar phi[];
 	// foreach_vertex()
